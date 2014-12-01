@@ -3,3 +3,82 @@
 	padding:0;
 	margin:0;
 }
+
+body {
+    font-family: verdana;
+}
+
+a {
+    color: #000;
+}
+a:hover {
+    color: #555;
+}
+
+.headerMenu {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.headerMenu li {
+    border-right: 1px solid black;
+    display: inline;
+    list-style: none outside none;
+    margin-left: 8px;
+}
+
+.headerMenu a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.formCadastro {
+    margin: 70px auto 0;
+    width: 500px;
+}
+
+
+.footerCenter {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footerBoxCenter {
+    margin: 0 auto;
+    width: 100px;
+}
+
+.footerCenter {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+.formBoxMensagem {
+    height: 150px;
+}
+
+.formBox {
+    height: 70px;
+}
+
+textarea[name="taMensagem"] {
+    height: 100px;
+    width: 480px;
+}
+
+.margenInput {
+    margin-right: 20px;
+}
+
+.float {
+    float: left;
+}
+
+
+.botaoEnviar {
+    text-align: center;
+}

@@ -2,7 +2,7 @@
 
 class DBConnection {
 
-    private $conn;
+    protected $conn;
 
     protected function Connect() {
         try {
@@ -14,16 +14,28 @@ class DBConnection {
         }
         return $this->conn;
     }
-
-    protected function Prepare($sql) {
+    
+//    protected function startTransaction(){
+//        return $this->Connect()->beginTransaction();
+//    }
+//     protected function backTransaction(){
+//        return $this->Connect()->rollBack();
+//    }
+//    
+//    protected function endTransaction(){
+//        return $this->Connect()->commit();
+//    }
+    
+    
+    protected function prepare($sql) {
         return $this->Connect()->prepare($sql);
     }
 
-    protected function RunQuery($stm) {//INSERT, UPDATE, DELETE
+    protected function runQuery($stm) {//INSERT, UPDATE, DELETE
         return $stm->execute(); //RETORNA TRUE OR FALSE
     }
 
-    protected function RunSelect($stm) {//SELECT
+    protected function runSelect($stm) {//SELECT
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
     }

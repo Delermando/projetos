@@ -20,7 +20,7 @@ class setVar {
                 if (!isset($_POST[$arrayAssocVarIn[$a]])) {
                     $arrayAssocVarOut[$a] = "";
                 } else {
-                    $arrayAssocVarOut[$a] = trim($_POST[$arrayAssocVarIn[$a]]);
+                    $arrayAssocVarOut[$a] = mysql_real_escape_string(trim($_POST[$arrayAssocVarIn[$a]]));
                 }
             }
             $retorno = array_combine($arrayAssocVarIn, $arrayAssocVarOut);

@@ -13,14 +13,12 @@
                     <div class="headerBarMenu">
                         <div class="headerBarMenuCenter">
                             <nav>
-                                <div clss="headerMenu">
+                                <div class="headerMenu">
                                     <ul>
-                                        <li><a href="?action=empresa">Empresa</a></li>
-                                        <li><a href="?action=servicos">Serviços</a></li>
-                                        <li><a href="?action=portifolio">Portifólio</a></li>
-                                        <li><a href="?action=clientes">Clientes</a></li>
-                                        <li><a href="?action=orcamento">Orçamento</a></li> 
-                                        <li><a href="?action=contato">Contato</a></li>
+                                        <li><a href="?action=cadastrar">Cadastrar</a></li>
+                                        <li><a href="?action=listar">Listar</a></li>
+                                        <li><a href="?action=alterar">Alterar</a></li>
+                                        <li><a href="?action=deletar">Deletar</a></li>
                                     </ul>
                                 </div>
                             </nav>

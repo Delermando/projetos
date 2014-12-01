@@ -1,8 +1,8 @@
 <?php
-define('DB_HOST', 'localhost');
+define('DB_HOST', '192.168.0.198');
 define('DB_NAME', 'agenda');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USER', 'agenda');
+define('DB_PASS', 'agenda');
 
 $varSet = array(
     "default"

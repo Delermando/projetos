@@ -2,7 +2,7 @@
             </section>
             <footer>
                 <div class="footerCenter">
-                    <div id="footerBoxCenter">
+                    <div class="footerBoxCenter">
                         <p>Personare</p>
                     </div>
                 </div>

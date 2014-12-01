@@ -13,13 +13,21 @@ error_log("erro => ");
 
 require_once("class/clsSetVar.class.php");
 require_once("ctlGlobals.php"); 
-require_once("class/clsDBConnection.class.php");
 require_once("class/clsQueryStatement.class.php");
 require_once("class/clsMensages.class.php");
 
-$query = new QueryStatement();
-$teste = $query->deleteUserAgenda(2);
-var_dump($teste);
+
+//$query = new QueryStatement();
+////$teste = $query->insertUserAgenda("d", "de", "del", false, "deler","24/01/1992");
+//$array = array(
+//    'id' => '13',
+//    'table' => 'psnAgendaDestinatario',
+//    'column' => 'agnEmailDestinatario',
+//    'value' => 'delermando'
+//);
+//
+//$teste = $query->updateUserAgenda($array);
+//var_dump($teste);
 
 switch ($action) {
     case "":
