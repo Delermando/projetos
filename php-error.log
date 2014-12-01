@@ -1,0 +1,463 @@
+[28-Nov-2014 20:26:05 UTC] erro => 
+[28-Nov-2014 20:26:05 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:26:06 UTC] PHP Stack trace:
+[28-Nov-2014 20:26:06 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:26:06 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:26:06 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:33:09 UTC] erro => 
+[28-Nov-2014 20:33:09 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:33:10 UTC] PHP Stack trace:
+[28-Nov-2014 20:33:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:33:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:33:10 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:40:45 UTC] erro => 
+[28-Nov-2014 20:40:45 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:40:45 UTC] PHP Stack trace:
+[28-Nov-2014 20:40:45 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:40:45 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:40:45 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:41:30 UTC] erro => 
+[28-Nov-2014 20:41:30 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:41:30 UTC] PHP Stack trace:
+[28-Nov-2014 20:41:30 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:41:30 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:41:30 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:41:31 UTC] erro => 
+[28-Nov-2014 20:41:31 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:41:31 UTC] PHP Stack trace:
+[28-Nov-2014 20:41:32 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:41:32 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:41:32 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:41:33 UTC] erro => 
+[28-Nov-2014 20:41:33 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:41:33 UTC] PHP Stack trace:
+[28-Nov-2014 20:41:33 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:41:33 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:41:34 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:41:34 UTC] erro => 
+[28-Nov-2014 20:41:34 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:41:34 UTC] PHP Stack trace:
+[28-Nov-2014 20:41:34 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:41:34 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:41:34 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:42:41 UTC] erro => 
+[28-Nov-2014 20:42:41 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:42:42 UTC] PHP Stack trace:
+[28-Nov-2014 20:42:42 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:42:42 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:42:42 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:42:58 UTC] erro => 
+[28-Nov-2014 20:42:58 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:42:58 UTC] PHP Stack trace:
+[28-Nov-2014 20:42:58 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:42:59 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:42:59 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:43:43 UTC] erro => 
+[28-Nov-2014 20:43:43 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:43:43 UTC] PHP Stack trace:
+[28-Nov-2014 20:43:43 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:43:43 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:43:44 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:44:33 UTC] erro => 
+[28-Nov-2014 20:44:33 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:44:33 UTC] PHP Stack trace:
+[28-Nov-2014 20:44:33 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:44:33 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:44:33 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:48:46 UTC] erro => 
+[28-Nov-2014 20:48:46 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:48:46 UTC] PHP Stack trace:
+[28-Nov-2014 20:48:46 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:48:46 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:48:46 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:48:49 UTC] erro => 
+[28-Nov-2014 20:48:49 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:48:49 UTC] PHP Stack trace:
+[28-Nov-2014 20:48:49 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:48:49 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:48:49 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:48:51 UTC] erro => 
+[28-Nov-2014 20:48:51 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:48:51 UTC] PHP Stack trace:
+[28-Nov-2014 20:48:51 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:48:51 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:48:51 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:50:10 UTC] erro => 
+[28-Nov-2014 20:50:10 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:50:10 UTC] PHP Stack trace:
+[28-Nov-2014 20:50:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:50:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:50:10 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:50:11 UTC] erro => 
+[28-Nov-2014 20:50:11 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:50:11 UTC] PHP Stack trace:
+[28-Nov-2014 20:50:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:50:12 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:50:12 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:54:30 UTC] erro => 
+[28-Nov-2014 20:54:30 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:54:30 UTC] PHP Stack trace:
+[28-Nov-2014 20:54:31 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:54:31 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:54:31 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:54:32 UTC] erro => 
+[28-Nov-2014 20:54:32 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:54:32 UTC] PHP Stack trace:
+[28-Nov-2014 20:54:32 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:54:32 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:54:32 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:54:33 UTC] erro => 
+[28-Nov-2014 20:54:33 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:54:33 UTC] PHP Stack trace:
+[28-Nov-2014 20:54:33 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:54:33 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:54:33 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:54:33 UTC] erro => 
+[28-Nov-2014 20:54:33 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:54:33 UTC] PHP Stack trace:
+[28-Nov-2014 20:54:34 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:54:34 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:54:34 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:54:34 UTC] erro => 
+[28-Nov-2014 20:54:34 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:54:34 UTC] PHP Stack trace:
+[28-Nov-2014 20:54:34 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:54:34 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:54:35 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:54:35 UTC] erro => 
+[28-Nov-2014 20:54:35 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:54:35 UTC] PHP Stack trace:
+[28-Nov-2014 20:54:35 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:54:35 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:54:35 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 20:54:36 UTC] erro => 
+[28-Nov-2014 20:54:36 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 20:54:36 UTC] PHP Stack trace:
+[28-Nov-2014 20:54:36 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 20:54:36 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 20:54:36 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 21:26:24 UTC] erro => 
+[28-Nov-2014 21:26:24 UTC] erro => 
+[28-Nov-2014 21:26:24 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 21:26:24 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 21:26:24 UTC] PHP Stack trace:
+[28-Nov-2014 21:26:24 UTC] PHP Stack trace:
+[28-Nov-2014 21:26:25 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 21:26:25 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 21:26:25 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 21:26:25 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 21:26:25 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 21:26:25 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 21:26:25 UTC] erro => 
+[28-Nov-2014 21:26:25 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 21:26:25 UTC] PHP Stack trace:
+[28-Nov-2014 21:26:25 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 21:26:25 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 21:26:25 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[28-Nov-2014 21:26:25 UTC] erro => 
+[28-Nov-2014 21:26:25 UTC] PHP Fatal error:  Class 'setVar' not found in /usr/local/www/data-dist/projetos/controllers/incGlobals.php on line 34
+[28-Nov-2014 21:26:25 UTC] PHP Stack trace:
+[28-Nov-2014 21:26:25 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[28-Nov-2014 21:26:25 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[28-Nov-2014 21:26:25 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/incHeader.php:13
+[01-Dec-2014 07:18:31 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:18:31 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:19:20 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:19:20 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:21 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:21 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:23 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:23 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:24 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:24 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:41 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:41 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:42 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:42 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:42 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:42 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:43 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:43 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:43 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:43 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:43 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:43 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:45 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:45 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:45 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:45 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:20:53 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:20:53 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:21:02 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:21:02 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:21:12 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:21:12 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:21:12 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:21:12 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:21:58 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:21:58 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:22:00 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:22:00 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:22:36 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:22:36 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:22:37 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:22:37 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:23:10 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:23:10 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:23:13 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:23:13 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:23:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:23:14 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:23:28 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:23:28 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:23:32 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:23:32 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:12 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:12 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:13 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:13 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:14 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:14 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:14 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:14 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:14 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:15 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:15 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:15 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:15 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:15 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:15 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:15 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:15 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:15 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:15 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:16 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:16 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:23 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:23 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:42 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:42 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:24:43 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:24:43 America/Sao_Paulo] PHP Fatal error:  Class 'setVar' not found in C:\xampp2\htdocs\controllers\ctlGlobals.php on line 34
+[01-Dec-2014 07:25:28 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:25:28 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:28 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:30 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:25:30 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:30 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:30 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:25:30 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:30 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:30 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:25:30 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:30 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:50 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:25:50 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:25:50 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:48 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:26:48 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:48 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:49 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:26:49 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:49 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:49 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:26:49 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:49 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:49 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:26:49 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:49 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:59 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:26:59 America/Sao_Paulo] PHP Warning:  require_once(class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:26:59 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:27:04 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:27:04 America/Sao_Paulo] PHP Warning:  require_once(../class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:27:04 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:27:05 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:27:05 America/Sao_Paulo] PHP Warning:  require_once(../class/clsSetVar.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:27:05 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '../class/clsSetVar.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 14
+[01-Dec-2014 07:27:59 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:27:59 America/Sao_Paulo] PHP Warning:  require_once(class/clsQueryStatement.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 16
+[01-Dec-2014 07:27:59 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsQueryStatement.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 16
+[01-Dec-2014 07:28:24 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:28:24 America/Sao_Paulo] PHP Notice:  Undefined index: jssor.core in C:\xampp2\htdocs\controllers\ctlHeader.php on line 21
+[01-Dec-2014 07:28:24 America/Sao_Paulo] PHP Warning:  require_once(actions/actAgenda.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\index.php on line 5
+[01-Dec-2014 07:28:24 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'actions/actAgenda.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\index.php on line 5
+[01-Dec-2014 07:28:49 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:28:49 America/Sao_Paulo] PHP Warning:  require_once(actions/actAgenda.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\index.php on line 5
+[01-Dec-2014 07:28:49 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'actions/actAgenda.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\index.php on line 5
+[01-Dec-2014 07:29:05 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:29:05 America/Sao_Paulo] PHP Warning:  require_once(actions/home.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\index.php on line 5
+[01-Dec-2014 07:29:05 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'actions/home.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\index.php on line 5
+[01-Dec-2014 07:29:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:29:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:29:44 America/Sao_Paulo] PHP Warning:  require_once(class/clsDBConnection.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 16
+[01-Dec-2014 07:29:44 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsDBConnection.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 16
+[01-Dec-2014 07:30:06 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:31:15 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:31:19 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:31:23 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:31:23 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'agenda'' in C:\xampp2\htdocs\class\clsDBConnection.class.php:9
+Stack trace:
+#0 C:\xampp2\htdocs\class\clsDBConnection.class.php(9): PDO->__construct('mysql:host=loca...', 'roost', '')
+#1 C:\xampp2\htdocs\controllers\ctlHeader.php(18): DBConnection->Connect()
+#2 C:\xampp2\htdocs\index.php(2): require_once('C:\\xampp2\\htdoc...')
+#3 {main}
+  thrown in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:31:28 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:31:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:34:17 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:34:17 America/Sao_Paulo] PHP Warning:  require_once(class/clsQueryStatement.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\controllers\ctlHeader.php on line 17
+[01-Dec-2014 07:34:17 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'class/clsQueryStatement.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\controllers\ctlHeader.php on line 17
+[01-Dec-2014 07:34:28 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:34:28 America/Sao_Paulo] PHP Fatal error:  Non-abstract method QueryStatement::insertUserAgenda() must contain body in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 7
+[01-Dec-2014 07:34:51 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:34:51 America/Sao_Paulo] PHP Warning:  require_once(clsDBConnection.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 2
+[01-Dec-2014 07:34:51 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'clsDBConnection.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 2
+[01-Dec-2014 07:35:07 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:35:07 America/Sao_Paulo] PHP Fatal error:  Class 'DB' not found in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 4
+[01-Dec-2014 07:35:39 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:37:06 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:37:06 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:42:38 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:42:38 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:42:42 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:42:42 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:43:09 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:43:09 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:43:21 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:43:21 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:43:30 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:43:30 America/Sao_Paulo] PHP Warning:  require_once(clssDBConnection.class.php): failed to open stream: No such file or directory in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 2
+[01-Dec-2014 07:43:30 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required 'clssDBConnection.class.php' (include_path='.;C:\xampp2\php\PEAR') in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 2
+[01-Dec-2014 07:43:51 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:43:51 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:45:05 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:45:05 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 14
+[01-Dec-2014 07:45:06 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:45:06 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 14
+[01-Dec-2014 07:45:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:45:44 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:45:46 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:45:46 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:46:12 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:46:12 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:46:13 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:46:13 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:46:20 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:46:20 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:46:28 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:46:28 America/Sao_Paulo] PHP Strict Standards:  Non-static method DBConnection::Connect() should not be called statically in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:46:28 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:46:39 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:46:39 America/Sao_Paulo] PHP Fatal error:  Call to undefined method DBConnection::classConnect() in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:46:59 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:46:59 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:47:01 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:47:01 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:47:34 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:47:34 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:49:16 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:49:16 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:50:43 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:43 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:43 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:43 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:43 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:43 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:44 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:44 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:44 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:44 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:44 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:50:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:50:44 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 9
+[01-Dec-2014 07:52:20 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:52:20 America/Sao_Paulo] PHP Strict Standards:  Non-static method DBConnection::Prepare() should not be called statically in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 13
+[01-Dec-2014 07:52:20 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 13
+[01-Dec-2014 07:53:46 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:53:46 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 16
+[01-Dec-2014 07:54:23 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:54:23 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 16
+[01-Dec-2014 07:56:03 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:56:03 America/Sao_Paulo] PHP Strict Standards:  Accessing static property QueryStatement::$DB as non static in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 8
+[01-Dec-2014 07:56:03 America/Sao_Paulo] PHP Strict Standards:  Accessing static property QueryStatement::$DB as non static in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 16
+[01-Dec-2014 07:57:07 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:57:07 America/Sao_Paulo] PHP Strict Standards:  Accessing static property QueryStatement::$DB as non static in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 8
+[01-Dec-2014 07:57:07 America/Sao_Paulo] PHP Strict Standards:  Accessing static property QueryStatement::$DB as non static in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 16
+[01-Dec-2014 07:57:44 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:57:44 America/Sao_Paulo] PHP Strict Standards:  Accessing static property QueryStatement::$DB as non static in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 8
+[01-Dec-2014 07:57:44 America/Sao_Paulo] PHP Strict Standards:  Accessing static property QueryStatement::$DB as non static in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 14
+[01-Dec-2014 07:58:15 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:58:47 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:59:49 America/Sao_Paulo] erro => 
+[01-Dec-2014 07:59:49 America/Sao_Paulo] PHP Fatal error:  Call to undefined method PDO::bindParam() in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 14
+[01-Dec-2014 08:03:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:03:40 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:04:27 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:04:27 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '}' in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 16
+[01-Dec-2014 08:04:34 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:04:34 America/Sao_Paulo] PHP Fatal error:  Call to a member function execute() on a non-object in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 15
+[01-Dec-2014 08:05:26 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:08:38 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:08:38 America/Sao_Paulo] PHP Notice:  Undefined property: QueryStatement::$table in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 13
+[01-Dec-2014 08:08:38 America/Sao_Paulo] PHP Fatal error:  Call to undefined function bindParam() in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 15
+[01-Dec-2014 08:08:50 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:08:50 America/Sao_Paulo] PHP Fatal error:  Call to undefined function bindParam() in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 15
+[01-Dec-2014 08:08:59 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:09:14 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:10:54 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:11:10 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:12:29 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:12:29 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'agenda.psnagenda' doesn't exist' in C:\xampp2\htdocs\class\clsQueryStatement.class.php:15
+Stack trace:
+#0 C:\xampp2\htdocs\class\clsQueryStatement.class.php(15): PDOStatement->execute()
+#1 C:\xampp2\htdocs\controllers\ctlHeader.php(21): QueryStatement->selectUnicUserAgenda(2)
+#2 C:\xampp2\htdocs\index.php(2): require_once('C:\\xampp2\\htdoc...')
+#3 {main}
+  thrown in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 15
+[01-Dec-2014 08:13:03 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:14:40 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:14:40 America/Sao_Paulo] PHP Fatal error:  Call to undefined method QueryStatement::RunSelect() in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 17
+[01-Dec-2014 08:14:46 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:14:46 America/Sao_Paulo] PHP Notice:  Undefined variable: stm in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 17
+[01-Dec-2014 08:14:46 America/Sao_Paulo] PHP Fatal error:  Call to a member function execute() on a non-object in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 15
+[01-Dec-2014 08:15:02 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:16:33 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:16:35 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:16:56 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:19:04 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:19:04 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 13
+[01-Dec-2014 08:20:55 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:21:18 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:21:18 America/Sao_Paulo] PHP Warning:  Missing argument 1 for QueryStatement::selectUnicUserAgenda(), called in C:\xampp2\htdocs\controllers\ctlHeader.php on line 21 and defined in C:\xampp2\htdocs\class\clsQueryStatement.class.php on line 10
+[01-Dec-2014 08:21:26 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:21:34 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:24:32 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:24:32 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'agenda.agenda' doesn't exist' in C:\xampp2\htdocs\class\clsDBConnection.class.php:17
+Stack trace:
+#0 C:\xampp2\htdocs\class\clsDBConnection.class.php(17): PDOStatement->execute()
+#1 C:\xampp2\htdocs\class\clsQueryStatement.class.php(27): DBConnection->RunQuery(Object(PDOStatement))
+#2 C:\xampp2\htdocs\controllers\ctlHeader.php(21): QueryStatement->deleteUserAgenda(2)
+#3 C:\xampp2\htdocs\index.php(2): require_once('C:\\xampp2\\htdoc...')
+#4 {main}
+  thrown in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 17
+[01-Dec-2014 08:26:27 America/Sao_Paulo] erro => 
+[01-Dec-2014 08:26:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'agenda.agenda' doesn't exist' in C:\xampp2\htdocs\class\clsDBConnection.class.php:23
+Stack trace:
+#0 C:\xampp2\htdocs\class\clsDBConnection.class.php(23): PDOStatement->execute()
+#1 C:\xampp2\htdocs\class\clsQueryStatement.class.php(27): DBConnection->RunQuery(Object(PDOStatement))
+#2 C:\xampp2\htdocs\controllers\ctlHeader.php(21): QueryStatement->deleteUserAgenda(2)
+#3 C:\xampp2\htdocs\index.php(2): require_once('C:\\xampp2\\htdoc...')
+#4 {main}
+  thrown in C:\xampp2\htdocs\class\clsDBConnection.class.php on line 23
+[01-Dec-2014 08:26:47 America/Sao_Paulo] erro => 

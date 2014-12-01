@@ -1,43 +1,0 @@
-[33mcommit 3c5b4a48c534f09948f8ed1d67b4cee1eddb6151[m
-Author: delsantos <delsantos@hotmail.com.br>
-Date:   Sat May 24 14:10:33 2014 -0300
-
-    mais duas linhas
-
-[1mdiff --git a/Novo Documento de Texto.txt b/Novo Documento de Texto.txt[m
-[1mindex e69de29..3db8d62 100644[m
-[1m--- a/Novo Documento de Texto.txt[m	
-[1m+++ b/Novo Documento de Texto.txt[m	
-[36m@@ -0,0 +1,2 @@[m
-[32m+[m[32mlinha 1[m
-[32m+[m[32mlinha 22[m
-\ No newline at end of file[m
-
-[33mcommit e4abdf44cc7004a0a68fe9648c77c0881721d7fe[m
-Author: delsantos <delsantos@hotmail.com.br>
-Date:   Sat May 24 13:51:40 2014 -0300
-
-    adicionar htacess
-
-[1mdiff --git a/.htaccess b/.htaccess[m
-[1mnew file mode 100644[m
-[1mindex 0000000..daea459[m
-[1m--- /dev/null[m
-[1m+++ b/.htaccess[m
-[36m@@ -0,0 +1,3 @@[m
-[32m+[m[32m# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working[m[41m[m
-[32m+[m[32mRewriteBase /[m[41m[m
-[32m+[m[41m[m
-
-[33mcommit eda685412c2895b5147c472724ec9ce141d14694[m
-Author: delsantos <delsantos@hotmail.com.br>
-Date:   Sat May 24 13:29:25 2014 -0300
-
-    comit inicial
-
-[1mdiff --git a/Novo Documento de Texto.txt b/Novo Documento de Texto.txt[m
-[1mnew file mode 100644[m
-[1mindex 0000000..e69de29[m
-[1mdiff --git a/php.ini b/php.ini[m
-[1mnew file mode 100644[m
-[1mindex 0000000..e69de29[m
