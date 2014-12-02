@@ -35,8 +35,18 @@ switch ($action) {
         $title = $arrayTitle['home'];
         $caminho = 'actions/actHome.php';
         break;
-    
+    case "cadastrar":
+        $linksCabecalho = $arrayLinksCabecalho['default'];
+        $title = $arrayTitle['cadastrar'];
+        $caminho = 'actions/actCadastrar.php';
+        break;
+    case "editar":
+        $linksCabecalho = $arrayLinksCabecalho['default'];
+        $title = $arrayTitle['editar'];
+        $caminho = 'actions/actEditar.php';
+        break;
     default :
+        $linksCabecalho = $arrayLinksCabecalho['default'];
         $title = $arrayTitle['error'];
         $caminho = 'actions/actErroMensage.php';
 }

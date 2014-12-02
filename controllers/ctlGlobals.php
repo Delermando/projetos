@@ -17,7 +17,10 @@ $varGET = array(
 );
 
 $arrayTitle = array(
-    'home' => 'Sistema agenda'
+    'home' => 'Personare - Sistema agenda',
+    'error' => 'Personare - Error',
+    'editar' => 'Personare - Editar',
+    'cadastrar' => 'Personare - Cadastro' 
 );
 
 $systemMensages = array(

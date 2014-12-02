@@ -15,10 +15,9 @@
                             <nav>
                                 <div class="headerMenu">
                                     <ul>
+                                        <li><a href="index.php">Home</a></li>
                                         <li><a href="?action=cadastrar">Cadastrar</a></li>
-                                        <li><a href="?action=listar">Listar</a></li>
-                                        <li><a href="?action=alterar">Alterar</a></li>
-                                        <li><a href="?action=deletar">Deletar</a></li>
+                                        <li><a href="?action=editar">Editar</a></li>
                                     </ul>
                                 </div>
                             </nav>
