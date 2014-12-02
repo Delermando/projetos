@@ -1,4 +1,4 @@
 <?php
-	require_once("views/vwsErroMensage.php");
+	//require_once("views/vwsErroMensage.php");
 
    
