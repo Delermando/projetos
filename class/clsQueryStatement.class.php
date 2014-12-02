@@ -20,8 +20,8 @@ class QueryStatement extends DBConnection {
         return $this->RunSelect($stm);
     }
 
-    public function selectAllUserAgenda() {
-        $sql = "SELECT agnRemetenteEmail,agnRemetenteNome, agnEmailDestinatario,agnNomeDestinatario,angMensagem,agnDataEnvio,agnDataCriacao
+    public function selectAllCard() {
+        $sql = "SELECT e.agnID AS idEnvio, r.agnID AS idRemetente, d.agnID AS idDestinatario, m.agnID AS idMensagem ,agnRemetenteEmail,agnRemetenteNome, agnEmailDestinatario,agnNomeDestinatario,angMensagem,agnDataCriacao,agnDataEnvio
                     FROM psnAgendaEnvio AS e 
                     INNER JOIN psnAgendaRemetente AS r ON (e.agnIDRemetente = r.agnID) 
                     INNER JOIN psnAgendaDestinatario AS d ON (e.agnIDDestinatario = d.agnID)
@@ -30,14 +30,14 @@ class QueryStatement extends DBConnection {
         return $this->RunSelect($stm);
     }
 
-    public function deleteUserAgenda($id) {
+    public function deleteCard($id) {
         $sql = "DELETE FROM psnAgendaEnvio WHERE agnID= :id";
         $stm = $this->DB->prepare($sql);
         $stm->bindParam(":id", $id, PDO::PARAM_INT);
         return $this->runQuery($stm); //nao retorna false caso nao seja encontrado o id para deletar
     }
 
-    public function updateUserAgenda($array) {
+    public function updateLine($array) {
         $sql = "UPDATE {$array['table']} SET {$array['column']} = :value WHERE agnID = :id";
         $stm = $this->DB->prepare($sql);
         $stm->bindParam(":value", $array['value'], PDO::PARAM_STR);
@@ -45,7 +45,7 @@ class QueryStatement extends DBConnection {
         return $this->runQuery($stm);
     }
 
-    public function insertUserAgenda($destinatarioEmail, $destinatarioNome, $remetenteEmail, $remetenteNome, $mensagem, $dataEnvio) {
+    public function insertCard($destinatarioEmail, $destinatarioNome, $remetenteEmail, $remetenteNome, $mensagem, $dataEnvio) {
         $retorno = true;
         $sql1 = "INSERT INTO psnAgendaDestinatario(agnEmailDestinatario,agnNomeDestinatario) VALUES (:destinatarioEmail, :destinatarioNome)";
         $stm1 = $this->DB->prepare($sql1);
@@ -59,7 +59,7 @@ class QueryStatement extends DBConnection {
         $stm2->bindParam(":remetenteNome", $remetenteNome, PDO::PARAM_STR);
         $status[] = $this->runQuery($stm2);
 
-        $sql3 = "INSERT INTO psnAgendaMensagem(angMensagem, agnDataEnvio) VALUES (:mensagem, :dataEnvio)";
+        $sql3 = "INSERT INTO psnAgendaMensagem(angMensagem, agnDataCriacao) VALUES (:mensagem, :dataEnvio)";
         $stm3 = $this->DB->prepare($sql3);
         $stm3->bindParam(":mensagem", $mensagem, PDO::PARAM_STR);
         $stm3->bindParam(":dataEnvio", $dataEnvio, PDO::PARAM_STR);

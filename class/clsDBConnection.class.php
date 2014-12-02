@@ -7,26 +7,14 @@ class DBConnection {
     protected function Connect() {
         try {
             $this->conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            //$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
         return $this->conn;
     }
-    
-//    protected function startTransaction(){
-//        return $this->Connect()->beginTransaction();
-//    }
-//     protected function backTransaction(){
-//        return $this->Connect()->rollBack();
-//    }
-//    
-//    protected function endTransaction(){
-//        return $this->Connect()->commit();
-//    }
-    
-    
+
     protected function prepare($sql) {
         return $this->Connect()->prepare($sql);
     }

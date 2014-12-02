@@ -4,6 +4,7 @@ define('DB_NAME', 'agenda');
 define('DB_USER', 'agenda');
 define('DB_PASS', 'agenda');
 $msgInformativo = "";
+
 $varSet = array(
     "default"
 );
@@ -18,13 +19,15 @@ $varPOST = array(
     "selectDia",
     "selectMes",
     "selectAno",
-    "btnEnviar"
+    "btnEnviar",
+    "arrayExcluir"
 );
 
 $varGET = array(
     "action",
     "cadastrar",
-    "cadastrarCartoes"
+    "cadastrarCartoes",
+    "excluirMensagens"
 );
 
 $arrayTitle = array(
@@ -40,17 +43,23 @@ $systemMensages = array(
     'sendFailed' => "Por favor tente novamente! Ocorreu durante o envio!",
     'registratioFailed' => "Por favor tente novamente! Ocorreu algum erro durante o cadastro!",
     'registrationSucess' => 'Cadastro realizado com sucesso!',
-    'fieldIncomplete' => 'Preencha todos os campos!'
+    'fieldIncomplete' => 'Preencha todos os campos!',
+    'dataExclusionSucess'=> 'Os dados foram excluidos com sucesso! Total de linhas: ',
+    'dataExclusionFailed'=> 'Nem todos os dados foram excluidos com sucesso!'
 );
 
 
 $arrayLinksCabecalho = array(
     'default' => '',
+    'jquery' => '<script type="text/javascript" src="views/js/jQuery.js"></script>',
+    'scripts' => '<script type="text/javascript" src="views/js/scripts.js"></script>',
     'editOnPageJS' => '<script type="text/javascript" lang="javascript" src="views/js/editOnPage.js"></script>',
     'editOnPageCSS' => '<link type="text/css" rel="stylesheet" href="views/css/editOnPage.css" />',
     'jeditable' => '<script type="text/javascript" src="views/js/jeditable.js"></script>',
     'configJeditable' => '<script type="text/javascript" src="views/js/configJeditable.js"></script>'
 );
+
+
 
 $varSetadas = setVar::varIsSet($varSet);
 extract($varSetadas);

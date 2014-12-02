@@ -16,18 +16,7 @@ require_once("ctlGlobals.php");
 require_once("class/clsQueryStatement.class.php");
 require_once("class/clsMensages.class.php");
 require_once("class/clsValidation.class.php");
-
-//$query = new QueryStatement();
-////$teste = $query->insertUserAgenda("d", "de", "del", false, "deler","24/01/1992");
-//$array = array(
-//    'id' => '13',
-//    'table' => 'psnAgendaDestinatario',
-//    'column' => 'agnEmailDestinatario',
-//    'value' => 'delermando'
-//);
-//
-//$teste = $query->updateUserAgenda($array);
-//var_dump($teste);
+require_once("class/clsFormatacao.class.php");
 
 switch ($action) {
     case "":
@@ -45,9 +34,17 @@ switch ($action) {
     
         break;
     case "editar":
-        $linksCabecalho = $arrayLinksCabecalho['default'];
+        $linksCabecalho = $arrayLinksCabecalho['jquery'];
+        $linksCabecalho .= $arrayLinksCabecalho['scripts'];
+        $linksCabecalho .= $arrayLinksCabecalho['editOnPageJS'];
+        $linksCabecalho .= $arrayLinksCabecalho['editOnPageCSS'];
+        $linksCabecalho .= $arrayLinksCabecalho['jeditable'];
+        $linksCabecalho .= $arrayLinksCabecalho['configJeditable'];
         $title = $arrayTitle['editar'];
         $caminho = 'actions/actEditar.php';
+        if(is_array($arrayExcluir)){
+            require_once("actions/actExcluirMensagens.php");
+        }
         break;
     default :
         $linksCabecalho = $arrayLinksCabecalho['default'];

@@ -156,3 +156,6 @@ textarea[name="txtMensagem"] {
 .messageFailedBackground{
     background-image: url("../img/alerta_vermelho.png");
 }
+.erro{
+    color:red;
+}
