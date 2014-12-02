@@ -65,7 +65,7 @@ a:hover {
     height: 70px;
 }
 
-textarea[name="taMensagem"] {
+textarea[name="txtMensagem"] {
     height: 100px;
     width: 480px;
 }
@@ -137,4 +137,22 @@ textarea[name="taMensagem"] {
 
 .editCenter form {
     display: inline;
+}
+.message {
+    margin-top: 10px;
+    border: 1px solid;
+    color: #fff;
+    font-weight: bold;
+    height: 27px;
+    overflow: auto;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    z-index: 999999;
+}
+.messageSucessBackground{
+    background-image: url("../img/alerta_verde.png");
+}
+.messageFailedBackground{
+    background-image: url("../img/alerta_vermelho.png");
 }

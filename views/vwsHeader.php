@@ -16,7 +16,7 @@
                                 <div class="headerMenu">
                                     <ul>
                                         <li><a href="index.php">Home</a></li>
-                                        <li><a href="?action=cadastrar">Cadastrar</a></li>
+                                        <li><a href="?action=cadastro">Cadastro</a></li>
                                         <li><a href="?action=editar">Editar</a></li>
                                     </ul>
                                 </div>
@@ -26,4 +26,5 @@
             </header>
             <section>
                 <main>
+                    <?php echo $msgInformativo ?>
                 

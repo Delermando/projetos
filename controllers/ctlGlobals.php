@@ -3,29 +3,43 @@ define('DB_HOST', '192.168.0.198');
 define('DB_NAME', 'agenda');
 define('DB_USER', 'agenda');
 define('DB_PASS', 'agenda');
-
+$msgInformativo = "";
 $varSet = array(
     "default"
 );
 
 $varPOST = array(
-    "default"
+    "default",
+    "txtMensagem",
+    "txtNomeRemetente",
+    "txtEmailRemetente",
+    "txtNomeDestinatario",
+    "txtEmailDestinatario",
+    "selectDia",
+    "selectMes",
+    "selectAno",
+    "btnEnviar"
 );
 
 $varGET = array(
-    "action"
+    "action",
+    "cadastrar",
+    "cadastrarCartoes"
 );
 
 $arrayTitle = array(
     'home' => 'Personare - Sistema agenda',
     'error' => 'Personare - Error',
     'editar' => 'Personare - Editar',
-    'cadastrar' => 'Personare - Cadastro' 
+    'cadastro' => 'Personare - Cadastro' 
 );
 
 $systemMensages = array(
     'default' => "",
-    'sendSucess' => "Mensagem enviada com sucesso",
+    'sendSucess' => "Mensagem enviada com sucesso!",
+    'sendFailed' => "Por favor tente novamente! Ocorreu durante o envio!",
+    'registratioFailed' => "Por favor tente novamente! Ocorreu algum erro durante o cadastro!",
+    'registrationSucess' => 'Cadastro realizado com sucesso!',
     'fieldIncomplete' => 'Preencha todos os campos!'
 );
 

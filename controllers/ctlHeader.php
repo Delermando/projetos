@@ -15,7 +15,7 @@ require_once("class/clsSetVar.class.php");
 require_once("ctlGlobals.php"); 
 require_once("class/clsQueryStatement.class.php");
 require_once("class/clsMensages.class.php");
-
+require_once("class/clsValidation.class.php");
 
 //$query = new QueryStatement();
 ////$teste = $query->insertUserAgenda("d", "de", "del", false, "deler","24/01/1992");
@@ -35,10 +35,14 @@ switch ($action) {
         $title = $arrayTitle['home'];
         $caminho = 'actions/actHome.php';
         break;
-    case "cadastrar":
+    case "cadastro":
         $linksCabecalho = $arrayLinksCabecalho['default'];
-        $title = $arrayTitle['cadastrar'];
-        $caminho = 'actions/actCadastrar.php';
+        $title = $arrayTitle['cadastro'];
+        $caminho = 'actions/actCadastro.php';
+        if($cadastrarCartoes == true){
+            require_once("actions/actCadastrarCartoes.php");
+        }
+    
         break;
     case "editar":
         $linksCabecalho = $arrayLinksCabecalho['default'];
