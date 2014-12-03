@@ -3198,3 +3198,936 @@ Stack trace:
 [02-Dec-2014 21:25:04 UTC] erro => 
 [02-Dec-2014 21:25:08 UTC] erro => 
 [02-Dec-2014 21:25:15 UTC] erro => 
+[02-Dec-2014 21:28:29 UTC] erro => 
+[02-Dec-2014 21:28:38 UTC] erro => 
+[02-Dec-2014 21:28:41 UTC] erro => 
+[02-Dec-2014 21:28:43 UTC] erro => 
+[02-Dec-2014 21:28:47 UTC] erro => 
+[02-Dec-2014 21:29:04 UTC] erro => 
+[03-Dec-2014 11:49:03 UTC] erro => 
+[03-Dec-2014 11:49:03 UTC] PHP Notice:  Undefined variable: arrayUnicUser in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[03-Dec-2014 11:49:03 UTC] PHP Stack trace:
+[03-Dec-2014 11:49:03 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 11:49:03 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 11:51:59 UTC] erro => 
+[03-Dec-2014 11:53:17 UTC] erro => 
+[03-Dec-2014 11:53:38 UTC] erro => 
+[03-Dec-2014 11:53:38 UTC] erro => 
+[03-Dec-2014 11:54:16 UTC] erro => 
+[03-Dec-2014 11:54:36 UTC] erro => 
+[03-Dec-2014 11:54:37 UTC] erro => 
+[03-Dec-2014 11:54:37 UTC] erro => 
+[03-Dec-2014 11:54:38 UTC] erro => 
+[03-Dec-2014 11:54:38 UTC] erro => 
+[03-Dec-2014 11:54:38 UTC] erro => 
+[03-Dec-2014 11:54:59 UTC] erro => 
+[03-Dec-2014 11:54:59 UTC] PHP Notice:  Undefined variable: stm in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 24
+[03-Dec-2014 11:54:59 UTC] PHP Stack trace:
+[03-Dec-2014 11:54:59 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 11:54:59 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 11:54:59 UTC] PHP   3. QueryStatement->selectUnicUser() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:28
+[03-Dec-2014 11:54:59 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 11:54:59 UTC] PHP Stack trace:
+[03-Dec-2014 11:54:59 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 11:54:59 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 11:54:59 UTC] PHP   3. QueryStatement->selectUnicUser() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:28
+[03-Dec-2014 11:54:59 UTC] PHP   4. DBConnection->runSelect() /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:24
+[03-Dec-2014 11:55:06 UTC] erro => 
+[03-Dec-2014 11:56:56 UTC] erro => 
+[03-Dec-2014 11:57:52 UTC] erro => 
+[03-Dec-2014 11:57:53 UTC] erro => 
+[03-Dec-2014 11:58:11 UTC] erro => 
+[03-Dec-2014 11:58:11 UTC] erro => 
+[03-Dec-2014 11:58:12 UTC] erro => 
+[03-Dec-2014 11:58:12 UTC] erro => 
+[03-Dec-2014 11:58:45 UTC] erro => 
+[03-Dec-2014 11:58:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 11:59:28 UTC] erro => 
+[03-Dec-2014 11:59:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 11:59:56 UTC] erro => 
+[03-Dec-2014 11:59:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 12:00:29 UTC] erro => 
+[03-Dec-2014 12:00:45 UTC] erro => 
+[03-Dec-2014 12:00:46 UTC] erro => 
+[03-Dec-2014 12:00:46 UTC] erro => 
+[03-Dec-2014 12:02:55 UTC] erro => 
+[03-Dec-2014 13:31:14 UTC] erro => 
+[03-Dec-2014 13:31:15 UTC] erro => 
+[03-Dec-2014 13:31:19 UTC] erro => 
+[03-Dec-2014 13:31:22 UTC] erro => 
+[03-Dec-2014 13:31:37 UTC] erro => 
+[03-Dec-2014 13:31:58 UTC] erro => 
+[03-Dec-2014 13:31:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:31:59 UTC] erro => 
+[03-Dec-2014 13:32:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:11 UTC] erro => 
+[03-Dec-2014 13:32:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:12 UTC] erro => 
+[03-Dec-2014 13:32:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:12 UTC] erro => 
+[03-Dec-2014 13:32:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:12 UTC] erro => 
+[03-Dec-2014 13:32:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:12 UTC] erro => 
+[03-Dec-2014 13:32:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:12 UTC] erro => 
+[03-Dec-2014 13:32:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:13 UTC] erro => 
+[03-Dec-2014 13:32:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:13 UTC] erro => 
+[03-Dec-2014 13:32:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:13 UTC] erro => 
+[03-Dec-2014 13:32:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:13 UTC] erro => 
+[03-Dec-2014 13:32:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:42 UTC] erro => 
+[03-Dec-2014 13:32:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(25): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:42 UTC] erro => 
+[03-Dec-2014 13:32:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(25): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:42 UTC] erro => 
+[03-Dec-2014 13:32:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(25): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:43 UTC] erro => 
+[03-Dec-2014 13:32:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(25): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:48 UTC] erro => 
+[03-Dec-2014 13:32:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(25): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:32:48 UTC] erro => 
+[03-Dec-2014 13:32:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(25): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:33:34 UTC] erro => 
+[03-Dec-2014 13:34:19 UTC] erro => 
+[03-Dec-2014 13:34:20 UTC] erro => 
+[03-Dec-2014 13:34:20 UTC] erro => 
+[03-Dec-2014 13:34:20 UTC] erro => 
+[03-Dec-2014 13:34:29 UTC] erro => 
+[03-Dec-2014 13:34:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(25): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:35:26 UTC] erro => 
+[03-Dec-2014 13:35:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:35:27 UTC] erro => 
+[03-Dec-2014 13:35:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:35:27 UTC] erro => 
+[03-Dec-2014 13:35:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:35:27 UTC] erro => 
+[03-Dec-2014 13:35:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:35:28 UTC] erro => 
+[03-Dec-2014 13:35:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:35:28 UTC] erro => 
+[03-Dec-2014 13:35:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''psnAgendaDestinatario'' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(24): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:35:55 UTC] erro => 
+[03-Dec-2014 13:35:55 UTC] erro => 
+[03-Dec-2014 13:37:04 UTC] erro => 
+[03-Dec-2014 13:37:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'psnAgendaDestinatario' in 'where clause'' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:27
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(27): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(22): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(28): QueryStatement->selectUnicUser(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 27
+[03-Dec-2014 13:37:10 UTC] erro => 
+[03-Dec-2014 13:37:26 UTC] erro => 
+[03-Dec-2014 13:39:00 UTC] erro => 
+[03-Dec-2014 13:39:00 UTC] PHP Notice:  Undefined variable: retorno in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 21
+[03-Dec-2014 13:39:00 UTC] PHP Stack trace:
+[03-Dec-2014 13:39:00 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 13:39:00 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 13:39:00 UTC] PHP   3. QueryStatement->selectUnicUser() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:28
+[03-Dec-2014 13:39:10 UTC] erro => 
+[03-Dec-2014 13:39:52 UTC] erro => 
+[03-Dec-2014 13:39:52 UTC] erro => 
+[03-Dec-2014 13:39:52 UTC] erro => 
+[03-Dec-2014 13:39:53 UTC] erro => 
+[03-Dec-2014 13:39:53 UTC] erro => 
+[03-Dec-2014 13:39:53 UTC] erro => 
+[03-Dec-2014 13:40:07 UTC] erro => 
+[03-Dec-2014 13:46:13 UTC] erro => 
+[03-Dec-2014 13:46:31 UTC] erro => 
+[03-Dec-2014 13:47:55 UTC] erro => 
+[03-Dec-2014 13:47:56 UTC] erro => 
+[03-Dec-2014 13:48:03 UTC] erro => 
+[03-Dec-2014 13:48:08 UTC] erro => 
+[03-Dec-2014 13:48:08 UTC] PHP Notice:  Undefined offset: 0 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 17
+[03-Dec-2014 13:48:08 UTC] PHP Stack trace:
+[03-Dec-2014 13:48:08 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 13:48:08 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 13:48:08 UTC] PHP   3. QueryStatement->selectUnicUser() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:28
+[03-Dec-2014 13:48:09 UTC] erro => 
+[03-Dec-2014 13:48:09 UTC] PHP Notice:  Undefined offset: 0 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 17
+[03-Dec-2014 13:48:09 UTC] PHP Stack trace:
+[03-Dec-2014 13:48:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 13:48:09 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 13:48:09 UTC] PHP   3. QueryStatement->selectUnicUser() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:28
+[03-Dec-2014 13:49:35 UTC] erro => 
+[03-Dec-2014 13:59:52 UTC] erro => 
+[03-Dec-2014 14:00:01 UTC] erro => 
+[03-Dec-2014 14:00:24 UTC] erro => 
+[03-Dec-2014 14:00:29 UTC] erro => 
+[03-Dec-2014 14:00:54 UTC] erro => 
+[03-Dec-2014 14:01:35 UTC] erro => 
+[03-Dec-2014 14:01:37 UTC] erro => 
+[03-Dec-2014 14:01:53 UTC] erro => 
+[03-Dec-2014 14:02:02 UTC] erro => 
+[03-Dec-2014 14:02:06 UTC] erro => 
+[03-Dec-2014 14:02:26 UTC] erro => 
+[03-Dec-2014 14:02:52 UTC] erro => 
+[03-Dec-2014 14:03:09 UTC] erro => 
+[03-Dec-2014 14:14:23 UTC] erro => 
+[03-Dec-2014 14:14:23 UTC] PHP Fatal error:  Call to undefined method DBConnection::lastInsert() in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 79
+[03-Dec-2014 14:14:23 UTC] PHP Stack trace:
+[03-Dec-2014 14:14:23 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 14:14:23 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 14:14:23 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:42
+[03-Dec-2014 14:14:23 UTC] PHP   4. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php:15
+[03-Dec-2014 14:16:29 UTC] erro => 
+[03-Dec-2014 14:16:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:24
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(24): PDOStatement->fetchAll(2)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 24
+[03-Dec-2014 14:17:42 UTC] erro => 
+[03-Dec-2014 14:17:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:24
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(24): PDOStatement->fetch(2)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 24
+[03-Dec-2014 14:18:29 UTC] erro => 
+[03-Dec-2014 14:18:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:24
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(24): PDOStatement->fetch(2)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 24
+[03-Dec-2014 14:18:41 UTC] erro => 
+[03-Dec-2014 14:18:46 UTC] erro => 
+[03-Dec-2014 14:18:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:24
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(24): PDOStatement->fetch(2)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 24
+[03-Dec-2014 14:19:28 UTC] erro => 
+[03-Dec-2014 14:19:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute(Array)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:20:44 UTC] erro => 
+[03-Dec-2014 14:20:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute(Array)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:20:59 UTC] erro => 
+[03-Dec-2014 14:20:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute(Array)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:21:01 UTC] erro => 
+[03-Dec-2014 14:21:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute(Array)
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:21:35 UTC] erro => 
+[03-Dec-2014 14:21:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:22:16 UTC] erro => 
+[03-Dec-2014 14:22:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:22:51 UTC] erro => 
+[03-Dec-2014 14:22:51 UTC] PHP Fatal error:  Call to undefined method DBConnection::lastInsertId() in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 79
+[03-Dec-2014 14:22:51 UTC] PHP Stack trace:
+[03-Dec-2014 14:22:51 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 14:22:51 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 14:22:51 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:42
+[03-Dec-2014 14:22:51 UTC] PHP   4. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php:15
+[03-Dec-2014 14:24:27 UTC] erro => 
+[03-Dec-2014 14:24:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING angID' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:25:46 UTC] erro => 
+[03-Dec-2014 14:25:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING angID' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php(15): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(42): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 14:26:11 UTC] erro => 
+[03-Dec-2014 14:26:11 UTC] PHP Fatal error:  Call to undefined method PDOStatement::lastInsert() in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 24
+[03-Dec-2014 14:26:11 UTC] PHP Stack trace:
+[03-Dec-2014 14:26:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 14:26:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 14:26:11 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:42
+[03-Dec-2014 14:26:11 UTC] PHP   4. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php:15
+[03-Dec-2014 14:26:11 UTC] PHP   5. DBConnection->runQuery() /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:78
+[03-Dec-2014 14:26:48 UTC] erro => 
+[03-Dec-2014 14:26:48 UTC] PHP Fatal error:  Call to undefined method PDOStatement::lastInsertId() in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 24
+[03-Dec-2014 14:26:48 UTC] PHP Stack trace:
+[03-Dec-2014 14:26:48 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 14:26:48 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 14:26:48 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:42
+[03-Dec-2014 14:26:48 UTC] PHP   4. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php:15
+[03-Dec-2014 14:26:48 UTC] PHP   5. DBConnection->runQuery() /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:78
+[03-Dec-2014 14:26:50 UTC] erro => 
+[03-Dec-2014 14:26:50 UTC] PHP Fatal error:  Call to undefined method PDOStatement::lastInsertId() in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 24
+[03-Dec-2014 14:26:51 UTC] PHP Stack trace:
+[03-Dec-2014 14:26:51 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 14:26:51 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 14:26:51 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:42
+[03-Dec-2014 14:26:51 UTC] PHP   4. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/actions/actCadastrarCartoes.php:15
+[03-Dec-2014 14:26:51 UTC] PHP   5. DBConnection->runQuery() /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:78
+[03-Dec-2014 14:27:07 UTC] erro => 
+[03-Dec-2014 14:29:05 UTC] erro => 
+[03-Dec-2014 14:29:16 UTC] erro => 
+[03-Dec-2014 14:30:08 UTC] erro => 
+[03-Dec-2014 14:30:13 UTC] erro => 
+[03-Dec-2014 15:02:30 UTC] erro => 
+[03-Dec-2014 15:02:30 UTC] PHP Notice:  Undefined variable: dataEnvio in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 27
+[03-Dec-2014 15:02:30 UTC] PHP Stack trace:
+[03-Dec-2014 15:02:30 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:02:31 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:02:31 UTC] PHP Fatal error:  Using $this when not in object context in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 39
+[03-Dec-2014 15:02:31 UTC] PHP Stack trace:
+[03-Dec-2014 15:02:31 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:02:31 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:03:14 UTC] erro => 
+[03-Dec-2014 15:03:14 UTC] PHP Fatal error:  Using $this when not in object context in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 36
+[03-Dec-2014 15:03:14 UTC] PHP Stack trace:
+[03-Dec-2014 15:03:14 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:03:14 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:04:14 UTC] erro => 
+[03-Dec-2014 15:04:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'agnEmailDestinatario' cannot be null' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(29): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 15:04:54 UTC] erro => 
+[03-Dec-2014 15:04:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'agnEmailDestinatario' cannot be null' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(78): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 15:05:01 UTC] erro => 
+[03-Dec-2014 15:05:03 UTC] erro => 
+[03-Dec-2014 15:05:10 UTC] erro => 
+[03-Dec-2014 15:05:13 UTC] erro => 
+[03-Dec-2014 15:05:20 UTC] erro => 
+[03-Dec-2014 15:07:20 UTC] erro => 
+[03-Dec-2014 15:07:20 UTC] PHP Parse error:  syntax error, unexpected '}' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 100
+[03-Dec-2014 15:07:20 UTC] PHP Stack trace:
+[03-Dec-2014 15:07:20 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:07:20 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:07:39 UTC] erro => 
+[03-Dec-2014 15:07:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'There is no active transaction' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:98
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(98): PDO->commit()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 98
+[03-Dec-2014 15:08:03 UTC] erro => 
+[03-Dec-2014 15:08:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'There is no active transaction' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:99
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(99): PDO->commit()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 99
+[03-Dec-2014 15:08:25 UTC] erro => 
+[03-Dec-2014 15:08:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'There is no active transaction' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:99
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(99): PDO->commit()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 99
+[03-Dec-2014 15:08:44 UTC] erro => 
+[03-Dec-2014 15:08:44 UTC] PHP Fatal error:  Call to undefined method QueryStatement::execute() in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 80
+[03-Dec-2014 15:08:44 UTC] PHP Stack trace:
+[03-Dec-2014 15:08:45 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:08:45 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:08:45 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:33
+[03-Dec-2014 15:09:09 UTC] erro => 
+[03-Dec-2014 15:09:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'There is no active transaction' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:99
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(99): PDO->commit()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 99
+[03-Dec-2014 15:10:17 UTC] erro => 
+[03-Dec-2014 15:10:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'There is no active transaction' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:82
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(82): PDO->commit()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 82
+[03-Dec-2014 15:10:18 UTC] erro => 
+[03-Dec-2014 15:10:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'There is no active transaction' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:82
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(82): PDO->commit()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 82
+[03-Dec-2014 15:10:19 UTC] erro => 
+[03-Dec-2014 15:10:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'There is no active transaction' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:82
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(82): PDO->commit()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 82
+[03-Dec-2014 15:12:08 UTC] erro => 
+[03-Dec-2014 15:12:08 UTC] PHP Fatal error:  Call to undefined method PDO::Connect() in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 82
+[03-Dec-2014 15:12:08 UTC] PHP Stack trace:
+[03-Dec-2014 15:12:08 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:12:08 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:12:08 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:33
+[03-Dec-2014 15:12:15 UTC] erro => 
+[03-Dec-2014 15:12:20 UTC] erro => 
+[03-Dec-2014 15:12:20 UTC] erro => 
+[03-Dec-2014 15:12:21 UTC] erro => 
+[03-Dec-2014 15:12:22 UTC] erro => 
+[03-Dec-2014 15:28:12 UTC] erro => 
+[03-Dec-2014 15:28:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'salmo1' in 'field list'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:29:10 UTC] erro => 
+[03-Dec-2014 15:29:12 UTC] erro => 
+[03-Dec-2014 15:29:22 UTC] erro => 
+[03-Dec-2014 15:33:05 UTC] erro => 
+[03-Dec-2014 15:33:05 UTC] PHP Notice:  Undefined variable: sql1 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 79
+[03-Dec-2014 15:33:05 UTC] PHP Stack trace:
+[03-Dec-2014 15:33:05 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:33:05 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:33:05 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:33
+[03-Dec-2014 15:33:05 UTC] PHP Notice:  Undefined variable: sql1 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 84
+[03-Dec-2014 15:33:05 UTC] PHP Stack trace:
+[03-Dec-2014 15:33:06 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:33:06 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:33:06 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:33
+[03-Dec-2014 15:33:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:33:38 UTC] erro => 
+[03-Dec-2014 15:33:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:33:56 UTC] erro => 
+[03-Dec-2014 15:33:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' FROM psnAgendaRemetente WHERE agnRemetenteEmail = ''teste''
+                ) ' at line 4' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:34:16 UTC] erro => 
+[03-Dec-2014 15:34:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' FROM psnAgendaRemetente WHERE agnRemetenteEmail = ''teste'') LIMIT 1' at line 4' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:34:35 UTC] erro => 
+[03-Dec-2014 15:34:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:35:02 UTC] erro => 
+[03-Dec-2014 15:35:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:35:03 UTC] erro => 
+[03-Dec-2014 15:35:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:35:35 UTC] erro => 
+[03-Dec-2014 15:35:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:37:10 UTC] erro => 
+[03-Dec-2014 15:37:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:37:11 UTC] erro => 
+[03-Dec-2014 15:37:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:37:34 UTC] erro => 
+[03-Dec-2014 15:37:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:37:34 UTC] erro => 
+[03-Dec-2014 15:37:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:86
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(86): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 86
+[03-Dec-2014 15:37:50 UTC] erro => 
+[03-Dec-2014 15:37:50 UTC] PHP Notice:  Undefined variable: sql1 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 79
+[03-Dec-2014 15:37:50 UTC] PHP Stack trace:
+[03-Dec-2014 15:37:50 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:37:50 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:37:50 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:33
+[03-Dec-2014 15:37:50 UTC] PHP Notice:  Undefined variable: sql1 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 84
+[03-Dec-2014 15:37:50 UTC] PHP Stack trace:
+[03-Dec-2014 15:37:50 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:37:50 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:37:50 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:33
+[03-Dec-2014 15:37:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:37:59 UTC] erro => 
+[03-Dec-2014 15:38:00 UTC] erro => 
+[03-Dec-2014 15:39:16 UTC] erro => 
+[03-Dec-2014 15:39:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'teste'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:39:43 UTC] erro => 
+[03-Dec-2014 15:39:46 UTC] erro => 
+[03-Dec-2014 15:39:47 UTC] erro => 
+[03-Dec-2014 15:39:47 UTC] erro => 
+[03-Dec-2014 15:39:52 UTC] erro => 
+[03-Dec-2014 15:39:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'testes'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:40:49 UTC] erro => 
+[03-Dec-2014 15:40:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'testes'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:40:50 UTC] erro => 
+[03-Dec-2014 15:40:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'testes'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:41:40 UTC] erro => 
+[03-Dec-2014 15:41:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'testes'' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:42:03 UTC] erro => 
+[03-Dec-2014 15:42:04 UTC] erro => 
+[03-Dec-2014 15:42:09 UTC] erro => 
+[03-Dec-2014 15:42:15 UTC] erro => 
+[03-Dec-2014 15:42:15 UTC] erro => 
+[03-Dec-2014 15:42:15 UTC] erro => 
+[03-Dec-2014 15:42:16 UTC] erro => 
+[03-Dec-2014 15:42:16 UTC] erro => 
+[03-Dec-2014 15:42:16 UTC] erro => 
+[03-Dec-2014 15:45:05 UTC] erro => 
+[03-Dec-2014 15:45:05 UTC] PHP Notice:  Undefined index: emailRemetente in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 67
+[03-Dec-2014 15:45:05 UTC] PHP Stack trace:
+[03-Dec-2014 15:45:05 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 15:45:05 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 15:45:06 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:33
+[03-Dec-2014 15:45:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(33): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:46:29 UTC] erro => 
+[03-Dec-2014 15:46:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php:87
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(87): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(36): QueryStatement->insertCard(Array)
+#2 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#3 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 87
+[03-Dec-2014 15:47:11 UTC] erro => 
+[03-Dec-2014 15:47:16 UTC] erro => 
+[03-Dec-2014 15:47:16 UTC] erro => 
+[03-Dec-2014 15:47:17 UTC] erro => 
+[03-Dec-2014 15:47:17 UTC] erro => 
+[03-Dec-2014 15:47:17 UTC] erro => 
+[03-Dec-2014 15:47:26 UTC] erro => 
+[03-Dec-2014 15:47:40 UTC] erro => 
+[03-Dec-2014 15:47:58 UTC] erro => 
+[03-Dec-2014 15:47:59 UTC] erro => 
+[03-Dec-2014 15:48:00 UTC] erro => 
+[03-Dec-2014 15:48:00 UTC] erro => 
+[03-Dec-2014 15:48:00 UTC] erro => 
+[03-Dec-2014 15:48:12 UTC] erro => 
+[03-Dec-2014 15:48:22 UTC] erro => 
+[03-Dec-2014 15:48:55 UTC] erro => 
+[03-Dec-2014 15:48:56 UTC] erro => 
+[03-Dec-2014 15:49:09 UTC] erro => 
+[03-Dec-2014 15:49:19 UTC] erro => 
+[03-Dec-2014 16:04:39 UTC] erro => 
+[03-Dec-2014 16:04:39 UTC] PHP Notice:  Undefined index: mensagem in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 100
+[03-Dec-2014 16:04:40 UTC] PHP Stack trace:
+[03-Dec-2014 16:04:40 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 16:04:40 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 16:04:40 UTC] PHP   3. QueryStatement->insertCard() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:36
+[03-Dec-2014 16:04:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(103): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(36): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 16:05:03 UTC] erro => 
+[03-Dec-2014 16:05:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'agnDataEnvio' cannot be null' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(103): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(36): QueryStatement->insertCard(Array)
+#3 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#4 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 16:06:18 UTC] erro => 
+[03-Dec-2014 16:06:43 UTC] erro => 
+[03-Dec-2014 16:06:44 UTC] erro => 
+[03-Dec-2014 16:07:01 UTC] erro => 
+[03-Dec-2014 16:07:01 UTC] erro => 
+[03-Dec-2014 16:07:02 UTC] erro => 
+[03-Dec-2014 16:07:02 UTC] erro => 
+[03-Dec-2014 16:09:49 UTC] erro => 
+[03-Dec-2014 16:10:01 UTC] erro => 
+[03-Dec-2014 16:10:33 UTC] erro => 
+[03-Dec-2014 16:11:57 UTC] erro => 
+[03-Dec-2014 16:13:19 UTC] erro => 
+[03-Dec-2014 16:13:52 UTC] erro => 
+[03-Dec-2014 16:14:45 UTC] erro => 
+[03-Dec-2014 16:15:17 UTC] erro => 
+[03-Dec-2014 16:15:18 UTC] erro => 
+[03-Dec-2014 16:15:19 UTC] erro => 
+[03-Dec-2014 16:15:21 UTC] erro => 
+[03-Dec-2014 16:15:22 UTC] erro => 
+[03-Dec-2014 16:15:26 UTC] erro => 
+[03-Dec-2014 16:19:31 UTC] erro => 
+[03-Dec-2014 16:21:19 UTC] erro => 
+[03-Dec-2014 16:32:04 UTC] erro => 
+[03-Dec-2014 16:32:42 UTC] erro => 
+[03-Dec-2014 16:32:48 UTC] erro => 
+[03-Dec-2014 16:32:49 UTC] erro => 
+[03-Dec-2014 16:32:50 UTC] erro => 
+[03-Dec-2014 16:33:58 UTC] erro => 
+[03-Dec-2014 16:34:26 UTC] erro => 
+[03-Dec-2014 16:34:32 UTC] erro => 
+[03-Dec-2014 16:34:37 UTC] erro => 
+[03-Dec-2014 16:41:06 UTC] erro => 
+[03-Dec-2014 16:41:07 UTC] erro => 

@@ -3,6 +3,7 @@ define('DB_HOST', '192.168.0.198');
 define('DB_NAME', 'agenda');
 define('DB_USER', 'agenda');
 define('DB_PASS', 'agenda');
+
 $msgInformativo = "";
 
 $varSet = array(
@@ -58,7 +59,6 @@ $arrayLinksCabecalho = array(
     'jeditable' => '<script type="text/javascript" src="views/js/jeditable.js"></script>',
     'configJeditable' => '<script type="text/javascript" src="views/js/configJeditable.js"></script>'
 );
-
 
 
 $varSetadas = setVar::varIsSet($varSet);

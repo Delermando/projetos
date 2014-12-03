@@ -8,8 +8,13 @@ class setVar {
             for ($a = 0; $qtdIndices > $a; $a++) {
                 if (!isset($_POST[$arrayAssocVarIn[$a]])) {
                     $arrayAssocVarOut[$a] = "";
-                } else {
-                    $arrayAssocVarOut[$a] = $_POST[$arrayAssocVarIn[$a]];
+                } else {                   
+                    if(is_string($arrayAssocVarOut)){
+                        $arrayAssocVarOut[$a] = mysql_real_escape_string(trim($_POST[$arrayAssocVarIn[$a]]));
+                    }else{
+                        $arrayAssocVarOut[$a] = $_POST[$arrayAssocVarIn[$a]];
+                    }
+                    
                 }
             }
             $retorno = array_combine($arrayAssocVarIn, $arrayAssocVarOut);

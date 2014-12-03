@@ -4,8 +4,15 @@ if ($cadastrarCartoes == true && Validation::duplicatedPost() == true) {
     $dataEnvio = $selectDia . "/" . $selectMes . "/" . $selectAno;
     if ($txtEmailDestinatario != "" && $txtNomeDestinatario != "" && $txtEmailRemetente != "" && $txtNomeRemetente != "" && $txtMensagem != "" && $dataEnvio) {
         $query = new QueryStatement();
-        $queryInsert = $query->insertCard($txtEmailDestinatario, $txtNomeDestinatario, $txtEmailRemetente, $txtNomeRemetente, $txtMensagem, $dataEnvio);
-
+        $arrayInsert = array(
+            'emailDestinatario' => $txtEmailDestinatario,
+            'nomeDestinatario' => $txtNomeDestinatario,
+            'emailRemetente' => $txtEmailRemetente,
+            'nomeRemetente' => $txtNomeRemetente,
+            'mensagem' => $txtMensagem,
+            'dataEnvio' => $dataEnvio
+        );
+        $queryInsert = $query->insertCard($arrayInsert);
         if ($queryInsert == true) {
             $mensagem = $systemMensages['registrationSucess'];
         } else {
