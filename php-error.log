@@ -4131,3 +4131,291 @@ Stack trace:
 [03-Dec-2014 16:34:37 UTC] erro => 
 [03-Dec-2014 16:41:06 UTC] erro => 
 [03-Dec-2014 16:41:07 UTC] erro => 
+[03-Dec-2014 17:56:09 UTC] erro => 
+[03-Dec-2014 17:56:09 UTC] erro => 
+[03-Dec-2014 18:17:04 UTC] erro => 
+[03-Dec-2014 18:17:08 UTC] erro => 
+[03-Dec-2014 18:24:52 UTC] erro => 
+[03-Dec-2014 18:25:04 UTC] erro => 
+[03-Dec-2014 18:25:15 UTC] erro => 
+[03-Dec-2014 18:25:24 UTC] erro => 
+[03-Dec-2014 18:25:34 UTC] erro => 
+[03-Dec-2014 18:28:13 UTC] erro => 
+[03-Dec-2014 18:28:18 UTC] erro => 
+[03-Dec-2014 18:28:19 UTC] erro => 
+[03-Dec-2014 18:30:46 UTC] erro => 
+[03-Dec-2014 18:30:47 UTC] erro => 
+[03-Dec-2014 18:30:50 UTC] erro => 
+[03-Dec-2014 18:30:50 UTC] PHP Notice:  Undefined index: agnIDDestinatario in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 49
+[03-Dec-2014 18:30:50 UTC] PHP Stack trace:
+[03-Dec-2014 18:30:50 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:30:50 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:30:50 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:30:50 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:30:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:29
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(29): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(51): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php(6): QueryStatement->deleteCard('24')
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(46): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 29
+[03-Dec-2014 18:31:28 UTC] erro => 
+[03-Dec-2014 18:31:31 UTC] erro => 
+[03-Dec-2014 18:31:31 UTC] PHP Notice:  Undefined variable: numOcorrencia in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 53
+[03-Dec-2014 18:31:31 UTC] PHP Stack trace:
+[03-Dec-2014 18:31:31 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:31:31 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:31:31 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:31:31 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:32:54 UTC] erro => 
+[03-Dec-2014 18:32:54 UTC] PHP Notice:  Undefined variable: numOcorrencia in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 53
+[03-Dec-2014 18:32:54 UTC] PHP Stack trace:
+[03-Dec-2014 18:32:54 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:32:55 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:32:55 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:32:55 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:33:01 UTC] erro => 
+[03-Dec-2014 18:33:01 UTC] PHP Notice:  Undefined variable: numOcorrencia in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 53
+[03-Dec-2014 18:33:01 UTC] PHP Stack trace:
+[03-Dec-2014 18:33:01 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:33:01 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:33:02 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:33:02 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:33:13 UTC] erro => 
+[03-Dec-2014 18:33:51 UTC] erro => 
+[03-Dec-2014 18:34:09 UTC] erro => 
+[03-Dec-2014 18:34:09 UTC] PHP Fatal error:  Cannot use object of type PDOStatement as array in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 59
+[03-Dec-2014 18:34:10 UTC] PHP Stack trace:
+[03-Dec-2014 18:34:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:34:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:34:10 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:34:10 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:34:34 UTC] erro => 
+[03-Dec-2014 18:34:34 UTC] PHP Notice:  Undefined offset: 2 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 59
+[03-Dec-2014 18:34:34 UTC] PHP Stack trace:
+[03-Dec-2014 18:34:34 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:34:34 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:34:34 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:34:34 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:34:39 UTC] erro => 
+[03-Dec-2014 18:34:50 UTC] erro => 
+[03-Dec-2014 18:34:50 UTC] PHP Notice:  Undefined offset: 1 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 59
+[03-Dec-2014 18:34:50 UTC] PHP Stack trace:
+[03-Dec-2014 18:34:50 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:34:50 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:34:50 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:34:50 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:35:02 UTC] erro => 
+[03-Dec-2014 18:35:17 UTC] erro => 
+[03-Dec-2014 18:35:17 UTC] PHP Notice:  Undefined index: agnID in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 59
+[03-Dec-2014 18:35:17 UTC] PHP Stack trace:
+[03-Dec-2014 18:35:17 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:35:17 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:35:17 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:35:17 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:35:57 UTC] erro => 
+[03-Dec-2014 18:36:20 UTC] erro => 
+[03-Dec-2014 18:36:31 UTC] erro => 
+[03-Dec-2014 18:36:39 UTC] erro => 
+[03-Dec-2014 18:37:11 UTC] erro => 
+[03-Dec-2014 18:37:11 UTC] PHP Notice:  Undefined variable: retorno in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 59
+[03-Dec-2014 18:37:11 UTC] PHP Stack trace:
+[03-Dec-2014 18:37:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:37:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:37:11 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 18:37:11 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 18:37:20 UTC] erro => 
+[03-Dec-2014 18:37:29 UTC] erro => 
+[03-Dec-2014 18:37:32 UTC] erro => 
+[03-Dec-2014 18:37:37 UTC] erro => 
+[03-Dec-2014 18:37:41 UTC] erro => 
+[03-Dec-2014 18:37:43 UTC] erro => 
+[03-Dec-2014 18:37:54 UTC] erro => 
+[03-Dec-2014 18:38:09 UTC] erro => 
+[03-Dec-2014 18:38:31 UTC] erro => 
+[03-Dec-2014 18:38:45 UTC] erro => 
+[03-Dec-2014 18:39:42 UTC] erro => 
+[03-Dec-2014 18:39:49 UTC] erro => 
+[03-Dec-2014 18:39:53 UTC] erro => 
+[03-Dec-2014 18:39:55 UTC] erro => 
+[03-Dec-2014 18:39:57 UTC] erro => 
+[03-Dec-2014 18:39:59 UTC] erro => 
+[03-Dec-2014 18:40:02 UTC] erro => 
+[03-Dec-2014 18:40:05 UTC] erro => 
+[03-Dec-2014 18:40:08 UTC] erro => 
+[03-Dec-2014 18:40:13 UTC] erro => 
+[03-Dec-2014 18:40:14 UTC] erro => 
+[03-Dec-2014 18:40:17 UTC] erro => 
+[03-Dec-2014 18:41:25 UTC] erro => 
+[03-Dec-2014 18:41:28 UTC] erro => 
+[03-Dec-2014 18:41:30 UTC] erro => 
+[03-Dec-2014 18:41:32 UTC] erro => 
+[03-Dec-2014 18:42:10 UTC] erro => 
+[03-Dec-2014 18:42:10 UTC] PHP Parse error:  syntax error, unexpected ']' in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 59
+[03-Dec-2014 18:42:10 UTC] PHP Stack trace:
+[03-Dec-2014 18:42:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 18:42:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 18:42:18 UTC] erro => 
+[03-Dec-2014 18:42:20 UTC] erro => 
+[03-Dec-2014 18:42:23 UTC] erro => 
+[03-Dec-2014 18:42:26 UTC] erro => 
+[03-Dec-2014 18:43:06 UTC] erro => 
+[03-Dec-2014 18:43:25 UTC] erro => 
+[03-Dec-2014 18:43:28 UTC] erro => 
+[03-Dec-2014 18:43:30 UTC] erro => 
+[03-Dec-2014 18:43:34 UTC] erro => 
+[03-Dec-2014 18:48:10 UTC] erro => 
+[03-Dec-2014 18:49:16 UTC] erro => 
+[03-Dec-2014 18:49:57 UTC] erro => 
+[03-Dec-2014 18:51:37 UTC] erro => 
+[03-Dec-2014 18:51:49 UTC] erro => 
+[03-Dec-2014 18:52:32 UTC] erro => 
+[03-Dec-2014 18:52:33 UTC] erro => 
+[03-Dec-2014 18:52:41 UTC] erro => 
+[03-Dec-2014 18:52:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`agenda`.`psnAgendaEnvio`, CONSTRAINT `fkDestinatario` FOREIGN KEY (`agnIDDestinatario`) REFERENCES `psnAgendaDestinatario` (`agnID`) ON DELETE NO ACTION ON UPDATE NO ACTION)' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(56): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php(6): QueryStatement->deleteCard('25')
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(46): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 18:54:45 UTC] erro => 
+[03-Dec-2014 18:54:47 UTC] erro => 
+[03-Dec-2014 18:54:58 UTC] erro => 
+[03-Dec-2014 18:55:11 UTC] erro => 
+[03-Dec-2014 18:55:28 UTC] erro => 
+[03-Dec-2014 18:55:31 UTC] erro => 
+[03-Dec-2014 18:55:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`agenda`.`psnAgendaEnvio`, CONSTRAINT `fkDestinatario` FOREIGN KEY (`agnIDDestinatario`) REFERENCES `psnAgendaDestinatario` (`agnID`) ON DELETE NO ACTION ON UPDATE NO ACTION)' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:23
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(23): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(56): DBConnection->runQuery(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php(6): QueryStatement->deleteCard('26')
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(46): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 23
+[03-Dec-2014 19:05:23 UTC] erro => 
+[03-Dec-2014 19:05:25 UTC] erro => 
+[03-Dec-2014 19:05:37 UTC] erro => 
+[03-Dec-2014 19:05:39 UTC] erro => 
+[03-Dec-2014 19:05:44 UTC] erro => 
+[03-Dec-2014 19:05:44 UTC] PHP Warning:  Cannot use a scalar value as an array in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 61
+[03-Dec-2014 19:05:45 UTC] PHP Stack trace:
+[03-Dec-2014 19:05:45 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 19:05:45 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 19:05:45 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 19:05:45 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 19:06:26 UTC] erro => 
+[03-Dec-2014 19:06:26 UTC] PHP Notice:  Undefined offset: 0 in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 45
+[03-Dec-2014 19:06:26 UTC] PHP Stack trace:
+[03-Dec-2014 19:06:26 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 19:06:26 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 19:06:26 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 19:06:27 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 19:06:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php:29
+Stack trace:
+#0 /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php(29): PDOStatement->execute()
+#1 /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php(47): DBConnection->runSelect(Object(PDOStatement))
+#2 /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php(6): QueryStatement->deleteCard('27')
+#3 /usr/local/www/data-dist/projetos/controllers/ctlHeader.php(46): require_once('/usr/local/www/...')
+#4 /usr/local/www/data-dist/projetos/index.php(2): require_once('/usr/local/www/...')
+#5 {main}
+  thrown in /usr/local/www/data-dist/projetos/class/clsDBConnection.class.php on line 29
+[03-Dec-2014 19:06:29 UTC] erro => 
+[03-Dec-2014 19:06:51 UTC] erro => 
+[03-Dec-2014 19:07:03 UTC] erro => 
+[03-Dec-2014 19:07:08 UTC] erro => 
+[03-Dec-2014 19:07:10 UTC] erro => 
+[03-Dec-2014 19:07:13 UTC] erro => 
+[03-Dec-2014 19:10:32 UTC] erro => 
+[03-Dec-2014 19:10:33 UTC] erro => 
+[03-Dec-2014 19:10:46 UTC] erro => 
+[03-Dec-2014 19:10:47 UTC] erro => 
+[03-Dec-2014 19:10:50 UTC] erro => 
+[03-Dec-2014 19:12:19 UTC] erro => 
+[03-Dec-2014 19:12:21 UTC] erro => 
+[03-Dec-2014 19:12:42 UTC] erro => 
+[03-Dec-2014 19:12:59 UTC] erro => 
+[03-Dec-2014 19:13:01 UTC] erro => 
+[03-Dec-2014 19:13:39 UTC] erro => 
+[03-Dec-2014 19:14:26 UTC] erro => 
+[03-Dec-2014 19:14:30 UTC] erro => 
+[03-Dec-2014 19:14:34 UTC] erro => 
+[03-Dec-2014 19:15:14 UTC] erro => 
+[03-Dec-2014 19:15:34 UTC] erro => 
+[03-Dec-2014 19:15:49 UTC] erro => 
+[03-Dec-2014 19:16:05 UTC] erro => 
+[03-Dec-2014 19:16:19 UTC] erro => 
+[03-Dec-2014 19:17:38 UTC] erro => 
+[03-Dec-2014 19:18:20 UTC] erro => 
+[03-Dec-2014 19:18:49 UTC] erro => 
+[03-Dec-2014 19:19:03 UTC] erro => 
+[03-Dec-2014 19:19:41 UTC] erro => 
+[03-Dec-2014 19:19:46 UTC] erro => 
+[03-Dec-2014 19:19:49 UTC] erro => 
+[03-Dec-2014 19:19:51 UTC] erro => 
+[03-Dec-2014 19:19:53 UTC] erro => 
+[03-Dec-2014 19:20:12 UTC] erro => 
+[03-Dec-2014 19:20:21 UTC] erro => 
+[03-Dec-2014 19:20:31 UTC] erro => 
+[03-Dec-2014 19:20:39 UTC] erro => 
+[03-Dec-2014 19:20:50 UTC] erro => 
+[03-Dec-2014 19:21:12 UTC] erro => 
+[03-Dec-2014 19:21:24 UTC] erro => 
+[03-Dec-2014 19:22:27 UTC] erro => 
+[03-Dec-2014 19:22:28 UTC] PHP Notice:  Undefined variable: retorno in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 68
+[03-Dec-2014 19:22:28 UTC] PHP Stack trace:
+[03-Dec-2014 19:22:28 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 19:22:28 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 19:22:28 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 19:22:28 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 19:23:46 UTC] erro => 
+[03-Dec-2014 19:24:02 UTC] erro => 
+[03-Dec-2014 19:24:15 UTC] erro => 
+[03-Dec-2014 19:24:59 UTC] erro => 
+[03-Dec-2014 19:25:22 UTC] erro => 
+[03-Dec-2014 19:25:40 UTC] erro => 
+[03-Dec-2014 19:25:56 UTC] erro => 
+[03-Dec-2014 19:26:12 UTC] erro => 
+[03-Dec-2014 19:26:24 UTC] erro => 
+[03-Dec-2014 19:26:38 UTC] erro => 
+[03-Dec-2014 19:27:51 UTC] erro => 
+[03-Dec-2014 19:28:00 UTC] erro => 
+[03-Dec-2014 19:28:28 UTC] erro => 
+[03-Dec-2014 19:28:40 UTC] erro => 
+[03-Dec-2014 19:28:50 UTC] erro => 
+[03-Dec-2014 19:29:11 UTC] erro => 
+[03-Dec-2014 19:30:34 UTC] erro => 
+[03-Dec-2014 19:31:15 UTC] erro => 
+[03-Dec-2014 19:31:59 UTC] erro => 
+[03-Dec-2014 19:33:03 UTC] erro => 
+[03-Dec-2014 19:33:49 UTC] erro => 
+[03-Dec-2014 19:33:49 UTC] PHP Notice:  Undefined variable: retorno in /usr/local/www/data-dist/projetos/class/clsQueryStatement.class.php on line 68
+[03-Dec-2014 19:33:49 UTC] PHP Stack trace:
+[03-Dec-2014 19:33:50 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[03-Dec-2014 19:33:50 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[03-Dec-2014 19:33:50 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:46
+[03-Dec-2014 19:33:50 UTC] PHP   4. QueryStatement->deleteCard() /usr/local/www/data-dist/projetos/actions/actExcluirMensagens.php:6
+[03-Dec-2014 19:37:46 UTC] erro => 
+[03-Dec-2014 19:38:04 UTC] erro => 
+[03-Dec-2014 19:39:41 UTC] erro => 
+[03-Dec-2014 19:40:26 UTC] erro => 
+[03-Dec-2014 19:45:43 UTC] erro => 
+[03-Dec-2014 19:46:07 UTC] erro => 
+[03-Dec-2014 19:46:21 UTC] erro => 
+[03-Dec-2014 19:46:43 UTC] erro => 
+[03-Dec-2014 19:46:51 UTC] erro => 
+[03-Dec-2014 19:47:06 UTC] erro => 
+[03-Dec-2014 19:47:14 UTC] erro => 
+[03-Dec-2014 19:47:16 UTC] erro => 
+[03-Dec-2014 19:50:20 UTC] erro => 
+[03-Dec-2014 19:51:04 UTC] erro => 
+[03-Dec-2014 19:51:42 UTC] erro => 
+[03-Dec-2014 19:52:08 UTC] erro => 
+[03-Dec-2014 19:52:35 UTC] erro => 
+[03-Dec-2014 19:53:06 UTC] erro => 
+[03-Dec-2014 19:53:26 UTC] erro => 

@@ -36,12 +36,50 @@ class QueryStatement extends DBConnection {
     }
 
     public function deleteCard($id) {
-        $sql = "DELETE FROM psnAgendaEnvio WHERE agnID= :id";
-        $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        return $this->runQuery($stm); //nao retorna false caso nao seja encontrado o id para deletar
-    }
+        $retorno = array('status'=>false);
+        
+        $select1 = "SELECT * FROM psnAgendaEnvio WHERE agnID = :id";
+        $stm1 = $this->DB->prepare($select1);
+        $stm1->bindParam(":id", $id, PDO::PARAM_INT);
+        $arrayID = $this->RunSelect($stm1);  
+        
+        $retorno['mensagem'] = $arrayID[0]["agnIDMensagem"];
+        
+        $select3 = "SELECT COUNT(*) AS ocorrencias FROM psnAgendaEnvio WHERE agnIDDestinatario = {$arrayID[0]["agnIDDestinatario"]}";
+        $stm3 = $this->DB->prepare($select3);
+        $numOcorrenciaDestinatario = $this->RunSelect($stm3); 
+        if($numOcorrenciaDestinatario[0]['ocorrencias'] == 1){
+            $retorno['destinatario'] = $arrayID[0]["agnIDDestinatario"];
+        }
+        
+        $select5 = "SELECT COUNT(*) AS ocorrencias FROM psnAgendaEnvio WHERE agnIDRemetente = {$arrayID[0]["agnIDRemetente"]}";
+        $stm5 = $this->DB->prepare($select5);
+        $numOcorrenciaRemetente = $this->RunSelect($stm5);
+        if($numOcorrenciaRemetente[0]['ocorrencias'] == 1){
+            $retorno['remetente'] = $arrayID[0]["agnIDRemetente"];
+        }
+        
+        $delete2 = "DELETE FROM psnAgendaEnvio WHERE agnID= :id";
+        $stm2 = $this->DB->prepare($delete2);
+        $stm2->bindParam(":id", $id, PDO::PARAM_INT);
+        $retorno['status'] = $this->runQuery($stm2);
 
+        return $retorno; //nao retorna false caso nao seja encontrado o id para deletar
+    }
+    public function deleteUser($table, $id){
+        $delete = "DELETE FROM {$table} WHERE agnID= :id";
+        $stm = $this->DB->prepare($delete);
+        $stm->bindParam(":id", $id, PDO::PARAM_INT);
+        return $this->runQuery($stm);
+    }
+    
+    public function deleteMessage($id){
+        $delete = "DELETE FROM psnAgendaMensagem WHERE agnID= :id";
+        $stm = $this->DB->prepare($delete);
+        $stm->bindParam(":id", $id, PDO::PARAM_INT);
+        return $this->runQuery($stm);
+    }
+    
     public function updateLine($array) {
         $sql = "UPDATE {$array['table']} SET {$array['column']} = :value WHERE agnID = :id";
         $stm = $this->DB->prepare($sql);
