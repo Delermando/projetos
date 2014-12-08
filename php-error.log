@@ -4419,3 +4419,805 @@ Stack trace:
 [03-Dec-2014 19:52:35 UTC] erro => 
 [03-Dec-2014 19:53:06 UTC] erro => 
 [03-Dec-2014 19:53:26 UTC] erro => 
+[04-Dec-2014 11:40:22 UTC] erro => 
+[04-Dec-2014 11:40:23 UTC] erro => 
+[04-Dec-2014 11:40:24 UTC] erro => 
+[08-Dec-2014 21:05:51 UTC] erro => 
+[08-Dec-2014 21:05:51 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:05:51 UTC] PHP Stack trace:
+[08-Dec-2014 21:05:51 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:05:51 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:05:51 UTC] PHP   3. key() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:06:07 UTC] erro => 
+[08-Dec-2014 21:06:07 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:06:07 UTC] PHP Stack trace:
+[08-Dec-2014 21:06:07 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:06:07 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:06:07 UTC] PHP   3. key() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:06:07 UTC] erro => 
+[08-Dec-2014 21:06:08 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:06:08 UTC] PHP Stack trace:
+[08-Dec-2014 21:06:08 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:06:08 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:06:08 UTC] PHP   3. key() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:06:08 UTC] erro => 
+[08-Dec-2014 21:06:08 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:06:08 UTC] PHP Stack trace:
+[08-Dec-2014 21:06:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:06:09 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:06:09 UTC] PHP   3. key() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:06:09 UTC] erro => 
+[08-Dec-2014 21:06:09 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:06:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:06:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:06:09 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:06:09 UTC] PHP   3. key() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:06:09 UTC] erro => 
+[08-Dec-2014 21:06:09 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:06:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:06:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:06:09 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:06:09 UTC] PHP   3. key() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:06:09 UTC] erro => 
+[08-Dec-2014 21:06:09 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:06:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:06:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:06:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:06:10 UTC] PHP   3. key() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:06:15 UTC] erro => 
+[08-Dec-2014 21:08:07 UTC] erro => 
+[08-Dec-2014 21:08:07 UTC] PHP Fatal error:  Call to undefined function array_key() in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:08:07 UTC] PHP Stack trace:
+[08-Dec-2014 21:08:07 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:08:07 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:08:19 UTC] erro => 
+[08-Dec-2014 21:08:19 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, string given in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 22
+[08-Dec-2014 21:08:19 UTC] PHP Stack trace:
+[08-Dec-2014 21:08:19 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:08:19 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:08:19 UTC] PHP   3. array_keys() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:22
+[08-Dec-2014 21:09:35 UTC] erro => 
+[08-Dec-2014 21:09:43 UTC] erro => 
+[08-Dec-2014 21:09:45 UTC] erro => 
+[08-Dec-2014 21:09:52 UTC] erro => 
+[08-Dec-2014 21:09:53 UTC] erro => 
+[08-Dec-2014 21:10:02 UTC] erro => 
+[08-Dec-2014 21:10:03 UTC] erro => 
+[08-Dec-2014 21:10:03 UTC] erro => 
+[08-Dec-2014 21:10:04 UTC] erro => 
+[08-Dec-2014 21:11:06 UTC] erro => 
+[08-Dec-2014 21:11:21 UTC] erro => 
+[08-Dec-2014 21:11:22 UTC] erro => 
+[08-Dec-2014 21:19:37 UTC] erro => 
+[08-Dec-2014 21:19:37 UTC] PHP Warning:  require_once(modelo/CartaoModelo.class.php): failed to open stream: No such file or directory in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 21
+[08-Dec-2014 21:19:37 UTC] PHP Stack trace:
+[08-Dec-2014 21:19:37 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:19:37 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:19:37 UTC] PHP Fatal error:  require_once(): Failed opening required 'modelo/CartaoModelo.class.php' (include_path='.:/usr/share/php:/usr/share/pear') in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 21
+[08-Dec-2014 21:19:37 UTC] PHP Stack trace:
+[08-Dec-2014 21:19:37 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:19:37 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:19:52 UTC] erro => 
+[08-Dec-2014 21:19:52 UTC] PHP Notice:  Undefined index: $toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:19:52 UTC] PHP Stack trace:
+[08-Dec-2014 21:19:52 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:19:52 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:19:53 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:19:53 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:19:53 UTC] PHP Notice:  Undefined variable:  in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:19:53 UTC] PHP Stack trace:
+[08-Dec-2014 21:19:53 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:19:53 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:19:53 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:19:53 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:19:53 UTC] PHP Notice:  Undefined index: $toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:19:53 UTC] PHP Stack trace:
+[08-Dec-2014 21:19:53 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:19:53 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:19:53 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:19:53 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:19:53 UTC] PHP Notice:  Undefined variable:  in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:19:53 UTC] PHP Stack trace:
+[08-Dec-2014 21:19:54 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:19:54 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:19:54 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:19:54 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:19:54 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:19:54 UTC] PHP Stack trace:
+[08-Dec-2014 21:19:54 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:19:54 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:19:54 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:19:54 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:20:09 UTC] erro => 
+[08-Dec-2014 21:20:09 UTC] PHP Notice:  Undefined index: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:20:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:20:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:20:09 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:20:09 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:20:09 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:20:09 UTC] PHP Notice:  Undefined variable:  in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:20:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:20:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:20:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:20:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:20:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:20:10 UTC] PHP Notice:  Undefined index: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:20:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:20:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:20:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:20:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:20:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:20:10 UTC] PHP Notice:  Undefined variable:  in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:20:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:20:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:20:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:20:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:20:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:20:10 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:20:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:20:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:20:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:20:11 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:20:11 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:21:10 UTC] erro => 
+[08-Dec-2014 21:21:10 UTC] PHP Notice:  Undefined index: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:21:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:21:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:21:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:21:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:21:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:21:10 UTC] PHP Notice:  Undefined index: toName in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:21:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:21:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:21:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:21:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:21:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:21:10 UTC] PHP Notice:  Undefined index: fromEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:21:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:21:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:21:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:21:11 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:21:11 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:21:11 UTC] PHP Notice:  Undefined index: fromName in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:21:11 UTC] PHP Stack trace:
+[08-Dec-2014 21:21:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:21:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:21:11 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:21:11 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:21:11 UTC] PHP Notice:  Undefined index: message in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:21:11 UTC] PHP Stack trace:
+[08-Dec-2014 21:21:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:21:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:21:11 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:21:11 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:21:12 UTC] PHP Notice:  Undefined offset: 0 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:21:12 UTC] PHP Stack trace:
+[08-Dec-2014 21:21:12 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:21:12 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:21:12 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:21:12 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:21:41 UTC] erro => 
+[08-Dec-2014 21:21:55 UTC] erro => 
+[08-Dec-2014 21:22:17 UTC] erro => 
+[08-Dec-2014 21:22:48 UTC] erro => 
+[08-Dec-2014 21:22:48 UTC] PHP Notice:  Undefined index: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:22:48 UTC] PHP Stack trace:
+[08-Dec-2014 21:22:48 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:22:48 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:22:48 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:22:49 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:22:49 UTC] PHP Notice:  Undefined index: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:22:49 UTC] PHP Stack trace:
+[08-Dec-2014 21:22:49 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:22:49 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:22:49 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:22:49 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:22:49 UTC] PHP Notice:  Undefined variable:  in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:22:49 UTC] PHP Stack trace:
+[08-Dec-2014 21:22:49 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:22:49 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:22:49 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:22:49 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:22:49 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:22:49 UTC] PHP Stack trace:
+[08-Dec-2014 21:22:49 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:22:49 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:22:50 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:22:50 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:09 UTC] erro => 
+[08-Dec-2014 21:23:09 UTC] PHP Notice:  Undefined index: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:10 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:25 UTC] erro => 
+[08-Dec-2014 21:23:37 UTC] erro => 
+[08-Dec-2014 21:23:37 UTC] PHP Notice:  Undefined variable: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:37 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:37 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:38 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:38 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:38 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:38 UTC] PHP Notice:  Undefined variable: toName in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:38 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:38 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:38 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:38 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:38 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:38 UTC] PHP Notice:  Undefined variable: fromEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:38 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:38 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:38 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:38 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:38 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:38 UTC] PHP Notice:  Undefined variable: fromName in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:38 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:39 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:39 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:39 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:39 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:39 UTC] PHP Notice:  Undefined variable: message in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:39 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:39 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:39 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:39 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:39 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:23:39 UTC] PHP Notice:  Undefined variable: date in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:23:39 UTC] PHP Stack trace:
+[08-Dec-2014 21:23:39 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:23:39 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:23:39 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:23:39 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:24:08 UTC] erro => 
+[08-Dec-2014 21:24:56 UTC] erro => 
+[08-Dec-2014 21:25:24 UTC] erro => 
+[08-Dec-2014 21:25:38 UTC] erro => 
+[08-Dec-2014 21:26:52 UTC] erro => 
+[08-Dec-2014 21:26:52 UTC] PHP Parse error:  syntax error, unexpected '}' in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 28
+[08-Dec-2014 21:26:52 UTC] PHP Stack trace:
+[08-Dec-2014 21:26:52 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:26:52 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:26:59 UTC] erro => 
+[08-Dec-2014 21:26:59 UTC] PHP Notice:  Undefined index: toEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:26:59 UTC] PHP Stack trace:
+[08-Dec-2014 21:26:59 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:26:59 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:26:59 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:26:59 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:26:59 UTC] PHP Notice:  Undefined index: toName in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:26:59 UTC] PHP Stack trace:
+[08-Dec-2014 21:26:59 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:26:59 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:27:00 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:27:00 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:27:00 UTC] PHP Notice:  Undefined index: fromEmail in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:27:00 UTC] PHP Stack trace:
+[08-Dec-2014 21:27:00 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:27:00 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:27:00 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:27:00 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:27:00 UTC] PHP Notice:  Undefined index: fromName in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:27:00 UTC] PHP Stack trace:
+[08-Dec-2014 21:27:00 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:27:00 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:27:00 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:27:00 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:27:00 UTC] PHP Notice:  Undefined index: message in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:27:00 UTC] PHP Stack trace:
+[08-Dec-2014 21:27:00 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:27:01 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:27:01 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:27:01 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:27:01 UTC] PHP Notice:  Undefined index: date in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:27:01 UTC] PHP Stack trace:
+[08-Dec-2014 21:27:01 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:27:01 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:27:01 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:27:01 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:27:30 UTC] erro => 
+[08-Dec-2014 21:29:46 UTC] erro => 
+[08-Dec-2014 21:29:46 UTC] PHP Notice:  Undefined offset: 0 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:29:46 UTC] PHP Stack trace:
+[08-Dec-2014 21:29:46 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:29:46 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:29:46 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:29:46 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:29:49 UTC] erro => 
+[08-Dec-2014 21:29:49 UTC] PHP Fatal error:  Cannot use [] for reading in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:29:50 UTC] PHP Stack trace:
+[08-Dec-2014 21:29:50 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:29:50 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:29:54 UTC] erro => 
+[08-Dec-2014 21:30:07 UTC] erro => 
+[08-Dec-2014 21:32:01 UTC] erro => 
+[08-Dec-2014 21:32:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 29
+[08-Dec-2014 21:32:01 UTC] PHP Stack trace:
+[08-Dec-2014 21:32:01 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:32:01 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:32:09 UTC] erro => 
+[08-Dec-2014 21:32:09 UTC] PHP Notice:  Undefined offset: 0 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 21:32:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:32:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:32:09 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:32:09 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:32:09 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:32:09 UTC] PHP Notice:  Undefined offset: 1 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 21:32:09 UTC] PHP Stack trace:
+[08-Dec-2014 21:32:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:32:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:32:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:32:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:32:10 UTC] PHP Notice:  Undefined offset: 2 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 21:32:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:32:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:32:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:32:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:32:10 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:32:10 UTC] PHP Notice:  Undefined offset: 3 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 21:32:10 UTC] PHP Stack trace:
+[08-Dec-2014 21:32:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:32:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:32:11 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:32:11 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:32:11 UTC] PHP Notice:  Undefined offset: 4 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 21:32:11 UTC] PHP Stack trace:
+[08-Dec-2014 21:32:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:32:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:32:11 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:32:11 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:32:11 UTC] PHP Notice:  Undefined offset: 5 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 21:32:11 UTC] PHP Stack trace:
+[08-Dec-2014 21:32:11 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:32:11 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:32:11 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:32:11 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:33:25 UTC] erro => 
+[08-Dec-2014 21:34:10 UTC] erro => 
+[08-Dec-2014 21:34:41 UTC] erro => 
+[08-Dec-2014 21:35:30 UTC] erro => 
+[08-Dec-2014 21:36:12 UTC] erro => 
+[08-Dec-2014 21:37:09 UTC] erro => 
+[08-Dec-2014 21:37:23 UTC] erro => 
+[08-Dec-2014 21:37:24 UTC] erro => 
+[08-Dec-2014 21:37:25 UTC] erro => 
+[08-Dec-2014 21:37:25 UTC] erro => 
+[08-Dec-2014 21:37:25 UTC] erro => 
+[08-Dec-2014 21:37:25 UTC] erro => 
+[08-Dec-2014 21:37:26 UTC] erro => 
+[08-Dec-2014 21:37:32 UTC] erro => 
+[08-Dec-2014 21:37:44 UTC] erro => 
+[08-Dec-2014 21:37:45 UTC] erro => 
+[08-Dec-2014 21:37:45 UTC] erro => 
+[08-Dec-2014 21:38:30 UTC] erro => 
+[08-Dec-2014 21:39:53 UTC] erro => 
+[08-Dec-2014 21:41:42 UTC] erro => 
+[08-Dec-2014 21:41:42 UTC] PHP Notice:  Undefined variable: key in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 21:41:42 UTC] PHP Stack trace:
+[08-Dec-2014 21:41:42 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:41:42 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:41:42 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:41:42 UTC] PHP   4. CartaoModelo->setVariables() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:12
+[08-Dec-2014 21:41:50 UTC] erro => 
+[08-Dec-2014 21:42:02 UTC] erro => 
+[08-Dec-2014 21:42:44 UTC] erro => 
+[08-Dec-2014 21:42:45 UTC] erro => 
+[08-Dec-2014 21:43:05 UTC] erro => 
+[08-Dec-2014 21:59:42 UTC] erro => 
+[08-Dec-2014 21:59:42 UTC] PHP Notice:  Undefined variable: arr in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 23
+[08-Dec-2014 21:59:42 UTC] PHP Stack trace:
+[08-Dec-2014 21:59:42 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:59:42 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:59:43 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:59:43 UTC] PHP Stack trace:
+[08-Dec-2014 21:59:43 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:59:43 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:59:43 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:59:43 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 21:59:43 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:25
+[08-Dec-2014 21:59:43 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:59:43 UTC] PHP Stack trace:
+[08-Dec-2014 21:59:43 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:59:43 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:59:43 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:59:43 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 21:59:52 UTC] erro => 
+[08-Dec-2014 21:59:52 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 21:59:52 UTC] PHP Stack trace:
+[08-Dec-2014 21:59:52 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:59:52 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:59:52 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:59:53 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 21:59:53 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:25
+[08-Dec-2014 21:59:53 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 21:59:53 UTC] PHP Stack trace:
+[08-Dec-2014 21:59:53 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 21:59:53 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 21:59:53 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 21:59:53 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:00:23 UTC] erro => 
+[08-Dec-2014 22:00:23 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 22:00:23 UTC] PHP Stack trace:
+[08-Dec-2014 22:00:23 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:00:24 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:00:24 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:00:24 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:00:24 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:25
+[08-Dec-2014 22:00:47 UTC] erro => 
+[08-Dec-2014 22:00:47 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 22:00:47 UTC] PHP Stack trace:
+[08-Dec-2014 22:00:47 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:00:47 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:00:47 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:00:47 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:00:47 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:25
+[08-Dec-2014 22:00:48 UTC] erro => 
+[08-Dec-2014 22:00:48 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 22:00:48 UTC] PHP Stack trace:
+[08-Dec-2014 22:00:48 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:00:48 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:00:48 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:00:49 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:00:49 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:25
+[08-Dec-2014 22:00:53 UTC] erro => 
+[08-Dec-2014 22:00:55 UTC] erro => 
+[08-Dec-2014 22:00:55 UTC] erro => 
+[08-Dec-2014 22:01:25 UTC] erro => 
+[08-Dec-2014 22:01:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 29
+[08-Dec-2014 22:01:25 UTC] PHP Stack trace:
+[08-Dec-2014 22:01:25 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:01:25 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:01:48 UTC] erro => 
+[08-Dec-2014 22:01:49 UTC] erro => 
+[08-Dec-2014 22:01:50 UTC] erro => 
+[08-Dec-2014 22:02:11 UTC] erro => 
+[08-Dec-2014 22:02:11 UTC] erro => 
+[08-Dec-2014 22:02:12 UTC] erro => 
+[08-Dec-2014 22:02:27 UTC] erro => 
+[08-Dec-2014 22:02:44 UTC] erro => 
+[08-Dec-2014 22:02:45 UTC] erro => 
+[08-Dec-2014 22:02:46 UTC] erro => 
+[08-Dec-2014 22:02:46 UTC] erro => 
+[08-Dec-2014 22:02:46 UTC] erro => 
+[08-Dec-2014 22:03:26 UTC] erro => 
+[08-Dec-2014 22:03:37 UTC] erro => 
+[08-Dec-2014 22:03:47 UTC] erro => 
+[08-Dec-2014 22:04:01 UTC] erro => 
+[08-Dec-2014 22:04:40 UTC] erro => 
+[08-Dec-2014 22:06:59 UTC] erro => 
+[08-Dec-2014 22:06:59 UTC] PHP Notice:  Undefined variable: variableNames in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:06:59 UTC] PHP Stack trace:
+[08-Dec-2014 22:06:59 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:00 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:00 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:00 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:07:00 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:07:00 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:00 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:00 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:00 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:00 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:07:00 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:27
+[08-Dec-2014 22:07:00 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 28
+[08-Dec-2014 22:07:00 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:00 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:00 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:00 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:00 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:07:00 UTC] PHP Notice:  Undefined index: array in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:07:01 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:01 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:01 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:01 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:01 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:07:01 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:07:01 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:01 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:01 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:01 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:01 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:07:01 UTC] PHP   5. array_keys() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:44
+[08-Dec-2014 22:07:14 UTC] erro => 
+[08-Dec-2014 22:07:14 UTC] PHP Notice:  Undefined variable: variableNames in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:07:14 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:14 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:14 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:14 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:14 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:07:14 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:07:14 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:14 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:14 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:15 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:15 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:07:15 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:27
+[08-Dec-2014 22:07:15 UTC] PHP Notice:  Undefined index: array in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:07:15 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:15 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:15 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:15 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:15 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:07:15 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:07:15 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:15 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:15 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:15 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:15 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:07:15 UTC] PHP   5. array_keys() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:44
+[08-Dec-2014 22:07:37 UTC] erro => 
+[08-Dec-2014 22:07:37 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:07:37 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:37 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:37 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:38 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:38 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:07:38 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:27
+[08-Dec-2014 22:07:38 UTC] PHP Notice:  Undefined index: array in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:07:38 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:38 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:38 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:38 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:38 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:07:38 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:07:38 UTC] PHP Stack trace:
+[08-Dec-2014 22:07:38 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:07:38 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:07:38 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:07:38 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:07:38 UTC] PHP   5. array_keys() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:44
+[08-Dec-2014 22:08:09 UTC] erro => 
+[08-Dec-2014 22:08:09 UTC] PHP Notice:  Undefined index: array in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:08:09 UTC] PHP Stack trace:
+[08-Dec-2014 22:08:09 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:08:09 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:08:09 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:08:09 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:08:10 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 44
+[08-Dec-2014 22:08:10 UTC] PHP Stack trace:
+[08-Dec-2014 22:08:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:08:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:08:10 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:08:10 UTC] PHP   4. CartaoModelo->setListVars() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:08:10 UTC] PHP   5. array_keys() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:44
+[08-Dec-2014 22:08:10 UTC] PHP Fatal error:  Cannot access private property CartaoModelo::$arrayNameVarInter in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 24
+[08-Dec-2014 22:08:10 UTC] PHP Stack trace:
+[08-Dec-2014 22:08:10 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:08:10 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:09:05 UTC] erro => 
+[08-Dec-2014 22:09:05 UTC] PHP Fatal error:  Cannot access private property CartaoModelo::$arrayNameVarInter in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 24
+[08-Dec-2014 22:09:05 UTC] PHP Stack trace:
+[08-Dec-2014 22:09:05 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:09:05 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:09:12 UTC] erro => 
+[08-Dec-2014 22:09:18 UTC] erro => 
+[08-Dec-2014 22:11:02 UTC] erro => 
+[08-Dec-2014 22:11:02 UTC] PHP Fatal error:  Cannot access private property CartaoModelo::$arrayNameVarInter in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 24
+[08-Dec-2014 22:11:02 UTC] PHP Stack trace:
+[08-Dec-2014 22:11:02 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:11:02 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:11:06 UTC] erro => 
+[08-Dec-2014 22:12:07 UTC] erro => 
+[08-Dec-2014 22:12:07 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 22:12:07 UTC] PHP Stack trace:
+[08-Dec-2014 22:12:07 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:12:07 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:12:07 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:12:07 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:12:07 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:25
+[08-Dec-2014 22:12:07 UTC] PHP Fatal error:  Cannot access private property CartaoModelo::$arrayNameVarInter in /usr/local/www/data-dist/projetos/controllers/ctlHeader.php on line 24
+[08-Dec-2014 22:12:07 UTC] PHP Stack trace:
+[08-Dec-2014 22:12:07 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:12:07 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:12:29 UTC] erro => 
+[08-Dec-2014 22:12:29 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 25
+[08-Dec-2014 22:12:29 UTC] PHP Stack trace:
+[08-Dec-2014 22:12:29 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:12:29 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:12:29 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:12:29 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:12:29 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:25
+[08-Dec-2014 22:13:38 UTC] erro => 
+[08-Dec-2014 22:13:38 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 22:13:38 UTC] PHP Stack trace:
+[08-Dec-2014 22:13:39 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:13:39 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:13:39 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:13:39 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:13:39 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:26
+[08-Dec-2014 22:13:39 UTC] erro => 
+[08-Dec-2014 22:13:40 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 22:13:40 UTC] PHP Stack trace:
+[08-Dec-2014 22:13:40 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:13:40 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:13:40 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:13:40 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:13
+[08-Dec-2014 22:13:40 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:26
+[08-Dec-2014 22:14:37 UTC] erro => 
+[08-Dec-2014 22:14:37 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_FUNCTION in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 9
+[08-Dec-2014 22:14:37 UTC] PHP Stack trace:
+[08-Dec-2014 22:14:37 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:14:37 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:14:42 UTC] erro => 
+[08-Dec-2014 22:15:08 UTC] erro => 
+[08-Dec-2014 22:15:54 UTC] erro => 
+[08-Dec-2014 22:15:54 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:15:54 UTC] PHP Stack trace:
+[08-Dec-2014 22:15:54 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:15:54 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:15:54 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:15:54 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:15:54 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:15:54 UTC] PHP Stack trace:
+[08-Dec-2014 22:15:54 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:15:54 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:15:54 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:15:55 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:16:52 UTC] erro => 
+[08-Dec-2014 22:16:52 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 22:16:52 UTC] PHP Stack trace:
+[08-Dec-2014 22:16:52 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:16:52 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:16:52 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:16:52 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:16:52 UTC] PHP Warning:  array_values() expects parameter 1 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 26
+[08-Dec-2014 22:16:52 UTC] PHP Stack trace:
+[08-Dec-2014 22:16:52 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:16:52 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:16:52 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:16:53 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:16:53 UTC] PHP   5. array_values() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:26
+[08-Dec-2014 22:16:53 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:16:53 UTC] PHP Stack trace:
+[08-Dec-2014 22:16:53 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:16:53 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:16:53 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:16:53 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:17:17 UTC] erro => 
+[08-Dec-2014 22:17:17 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 27
+[08-Dec-2014 22:17:17 UTC] PHP Stack trace:
+[08-Dec-2014 22:17:17 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:17:18 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:17:18 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:17:18 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:18:04 UTC] erro => 
+[08-Dec-2014 22:18:15 UTC] erro => 
+[08-Dec-2014 22:18:30 UTC] erro => 
+[08-Dec-2014 22:19:10 UTC] erro => 
+[08-Dec-2014 22:19:29 UTC] erro => 
+[08-Dec-2014 22:19:29 UTC] PHP Notice:  Undefined offset: 0 in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 28
+[08-Dec-2014 22:19:30 UTC] PHP Stack trace:
+[08-Dec-2014 22:19:30 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:19:30 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:19:30 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:19:30 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:19:30 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 28
+[08-Dec-2014 22:19:30 UTC] PHP Stack trace:
+[08-Dec-2014 22:19:30 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:19:30 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:19:30 UTC] PHP   3. CartaoModelo->__construct() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:23
+[08-Dec-2014 22:19:30 UTC] PHP   4. CartaoModelo->setVariablesInter() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:14
+[08-Dec-2014 22:21:35 UTC] erro => 
+[08-Dec-2014 22:21:50 UTC] erro => 
+[08-Dec-2014 22:21:59 UTC] erro => 
+[08-Dec-2014 22:22:56 UTC] erro => 
+[08-Dec-2014 22:23:35 UTC] erro => 
+[08-Dec-2014 22:23:43 UTC] erro => 
+[08-Dec-2014 22:29:57 UTC] erro => 
+[08-Dec-2014 22:30:04 UTC] erro => 
+[08-Dec-2014 22:30:05 UTC] erro => 
+[08-Dec-2014 22:30:06 UTC] erro => 
+[08-Dec-2014 22:30:06 UTC] erro => 
+[08-Dec-2014 22:32:16 UTC] erro => 
+[08-Dec-2014 22:32:16 UTC] PHP Notice:  Undefined variable: status in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 42
+[08-Dec-2014 22:32:16 UTC] PHP Stack trace:
+[08-Dec-2014 22:32:17 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:32:17 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:32:17 UTC] PHP   3. CartaoModelo->verifyIfIsSet() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:24
+[08-Dec-2014 22:32:17 UTC] PHP Warning:  array_search() expects parameter 2 to be array, null given in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 42
+[08-Dec-2014 22:32:17 UTC] PHP Stack trace:
+[08-Dec-2014 22:32:17 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:32:17 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:32:17 UTC] PHP   3. CartaoModelo->verifyIfIsSet() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:24
+[08-Dec-2014 22:32:17 UTC] PHP   4. array_search() /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php:42
+[08-Dec-2014 22:32:26 UTC] erro => 
+[08-Dec-2014 22:32:34 UTC] erro => 
+[08-Dec-2014 22:32:35 UTC] erro => 
+[08-Dec-2014 22:32:35 UTC] erro => 
+[08-Dec-2014 22:32:42 UTC] erro => 
+[08-Dec-2014 22:32:43 UTC] erro => 
+[08-Dec-2014 22:33:20 UTC] erro => 
+[08-Dec-2014 22:33:20 UTC] erro => 
+[08-Dec-2014 22:33:21 UTC] erro => 
+[08-Dec-2014 22:33:26 UTC] erro => 
+[08-Dec-2014 22:33:27 UTC] erro => 
+[08-Dec-2014 22:33:39 UTC] erro => 
+[08-Dec-2014 22:34:03 UTC] erro => 
+[08-Dec-2014 22:34:22 UTC] erro => 
+[08-Dec-2014 22:34:22 UTC] PHP Parse error:  syntax error, unexpected '{' in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 35
+[08-Dec-2014 22:34:22 UTC] PHP Stack trace:
+[08-Dec-2014 22:34:22 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:34:22 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:34:26 UTC] erro => 
+[08-Dec-2014 22:34:57 UTC] erro => 
+[08-Dec-2014 22:35:32 UTC] erro => 
+[08-Dec-2014 22:35:32 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 35
+[08-Dec-2014 22:35:32 UTC] PHP Stack trace:
+[08-Dec-2014 22:35:32 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:35:33 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:35:33 UTC] PHP   3. CartaoModelo->verifyIfIsSet() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:24
+[08-Dec-2014 22:35:33 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 35
+[08-Dec-2014 22:35:33 UTC] PHP Stack trace:
+[08-Dec-2014 22:35:33 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:35:33 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:35:33 UTC] PHP   3. CartaoModelo->verifyIfIsSet() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:24
+[08-Dec-2014 22:35:56 UTC] erro => 
+[08-Dec-2014 22:35:56 UTC] PHP Notice:  Undefined variable: arrayNameVarInter in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 36
+[08-Dec-2014 22:35:56 UTC] PHP Stack trace:
+[08-Dec-2014 22:35:56 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:35:56 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:35:56 UTC] PHP   3. CartaoModelo->verifyIfIsSet() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:24
+[08-Dec-2014 22:35:56 UTC] PHP Fatal error:  Cannot access empty property in /usr/local/www/data-dist/projetos/modelo/CartaoModelo.php on line 36
+[08-Dec-2014 22:35:56 UTC] PHP Stack trace:
+[08-Dec-2014 22:35:56 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[08-Dec-2014 22:35:56 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[08-Dec-2014 22:35:56 UTC] PHP   3. CartaoModelo->verifyIfIsSet() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:24
+[08-Dec-2014 22:36:19 UTC] erro => 
+[08-Dec-2014 22:36:33 UTC] erro => 
+[08-Dec-2014 22:36:53 UTC] erro => 
+[08-Dec-2014 22:37:03 UTC] erro => 
+[08-Dec-2014 22:37:04 UTC] erro => 
+[08-Dec-2014 22:37:32 UTC] erro => 
+[08-Dec-2014 22:37:42 UTC] erro => 
+[08-Dec-2014 22:38:34 UTC] erro => 
+[08-Dec-2014 22:38:43 UTC] erro => 
+[08-Dec-2014 22:39:14 UTC] erro => 
+[08-Dec-2014 22:39:21 UTC] erro => 
+[08-Dec-2014 22:39:45 UTC] erro => 
+[08-Dec-2014 22:39:45 UTC] erro => 
+[08-Dec-2014 22:39:45 UTC] erro => 
+[08-Dec-2014 22:39:49 UTC] erro => 
+[08-Dec-2014 22:39:52 UTC] erro => 
+[08-Dec-2014 22:40:07 UTC] erro => 
+[08-Dec-2014 22:51:28 UTC] erro => 
+[08-Dec-2014 22:51:29 UTC] erro => 
+[08-Dec-2014 22:51:29 UTC] erro => 
+[08-Dec-2014 22:51:29 UTC] erro => 
+[08-Dec-2014 22:51:38 UTC] erro => 
+[08-Dec-2014 22:51:39 UTC] erro => 
+[08-Dec-2014 22:51:39 UTC] erro => 
+[08-Dec-2014 22:51:39 UTC] erro => 
+[08-Dec-2014 22:51:39 UTC] erro => 
+[08-Dec-2014 22:52:15 UTC] erro => 
+[08-Dec-2014 22:52:30 UTC] erro => 
+[08-Dec-2014 22:52:35 UTC] erro => 
+[08-Dec-2014 22:52:35 UTC] erro => 
+[08-Dec-2014 22:52:35 UTC] erro => 
+[08-Dec-2014 22:52:56 UTC] erro => 
+[08-Dec-2014 22:53:08 UTC] erro => 
+[08-Dec-2014 22:53:15 UTC] erro => 
+[08-Dec-2014 22:53:49 UTC] erro => 
+[08-Dec-2014 22:53:50 UTC] erro => 
+[08-Dec-2014 22:54:06 UTC] erro => 
+[08-Dec-2014 22:54:06 UTC] erro => 
+[08-Dec-2014 22:54:07 UTC] erro => 
+[08-Dec-2014 22:54:11 UTC] erro => 
+[08-Dec-2014 22:54:12 UTC] erro => 
+[08-Dec-2014 22:55:18 UTC] erro => 
+[08-Dec-2014 22:55:19 UTC] erro => 
+[08-Dec-2014 22:55:25 UTC] erro => 
+[08-Dec-2014 22:55:26 UTC] erro => 
+[08-Dec-2014 22:55:30 UTC] erro => 
+[08-Dec-2014 22:55:45 UTC] erro => 
+[08-Dec-2014 22:55:46 UTC] erro => 
+[08-Dec-2014 22:55:52 UTC] erro => 
+[08-Dec-2014 22:55:56 UTC] erro => 
+[08-Dec-2014 22:56:00 UTC] erro => 
+[08-Dec-2014 22:56:01 UTC] erro => 
+[08-Dec-2014 22:56:01 UTC] erro => 
+[08-Dec-2014 22:56:04 UTC] erro => 
