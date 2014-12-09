@@ -2,7 +2,7 @@
 //require_once("/usr/local/www/data-dist/projetos/class/clsValidation.class.php");
 //require_once("/usr/local/www/data-dist/projetos/model/CartaoModelo.php");
 
-class CartaoControl {
+class CardControl {
 //    private $cadastrarCartao = true;
 //    private $instancia;
 //    

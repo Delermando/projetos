@@ -3,7 +3,8 @@
 class DBConnection {
 
     protected $conn;
-
+    
+    
     protected function Connect() {
         try {
             $this->conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
@@ -19,15 +20,13 @@ class DBConnection {
         return $this->Connect()->prepare($sql);
     }
 
-    protected function runQuery($stm) {//INSERT, UPDATE, DELETE
-        return $stm->execute(); //RETORNA TRUE OR FALSE
-        //return $stm->fetch(PDO::FETCH_ASSOC);
-
+    protected function runQuery($stm) {
+        return $stm->execute(); 
     }
 
     protected function runSelect($stm) {//SELECT
         $stm->execute();
         return $stm->fetchAll(PDO::FETCH_ASSOC);
     }
-
+    
 }

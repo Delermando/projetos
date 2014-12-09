@@ -17,12 +17,8 @@ require_once("class/clsQueryStatement.class.php");
 require_once("class/clsMensages.class.php");
 require_once("class/clsValidation.class.php");
 require_once("class/clsFormatacao.class.php");
-
-require_once("modelo/CartaoModelo.php");
-$arr = array('toEmail' => 'sds','toName'=>'asdas','fromEmail'=>'sds','fromName'=>'dododo','message'=>'dududu','date'=>'dedede');
-$d = new CartaoModelo($arr);
-var_dump($d->verifyIfIsSet());
-
+//nova classe
+require_once('model/DataMap.php');
 
 switch ($action) {
     case "":
@@ -57,3 +53,7 @@ switch ($action) {
         $title = $arrayTitle['error'];
         $caminho = 'actions/actErroMensage.php';
 }
+
+
+
+
