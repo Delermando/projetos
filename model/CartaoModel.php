@@ -1,5 +1,5 @@
 <?php
-class CartaoModelo {
+class CartaoModel {
     public $toEmail;
     public $toName;
     public $fromEmail;
@@ -22,8 +22,7 @@ class CartaoModelo {
             return true;
         }
     }
-
-    
+  
     private function setVariablesInter($array){
         $arrayVarNameInter = $this->arrayNameVarInter;
         for($i=0; $i < sizeof($arrayVarNameInter); $i++){      
