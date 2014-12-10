@@ -1,4 +1,4 @@
-<?php
+<?php //
 
 ob_start();
 session_start();
@@ -17,13 +17,15 @@ define('DB_PASS', 'agenda');
 
 require_once('model/CardModel.php');
 
-$teste = array('toEmail' => 'stancmanssss@hotmail.com.br',
+$teste = array('toEmail' => 'stancmansssss@hotmail.com.br',
                 'toName'=>'dadasdasada',
-                'fromEmail'=>'sdelsantoss@hotmail.com.br',
+                'fromEmail'=>'delsantoss@hotmail.com.br',
                 'fromName'=>'dododasdaso',
                 'message'=>'dudusdsdu',
-                'date'=>'24/01s/1999');
+                'date'=>'24/01/1999');
 
 $cardModel = new CardModel();
-var_dump($cardModel->save($teste));
+var_dump($cardModel->update('10-fe:an'));
+
+
 

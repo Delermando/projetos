@@ -26,11 +26,11 @@ class QueryStatement extends DBConnection {
     }
 
     public function selectAllCard() {
-        $sql = "SELECT e.agnID AS idEnvio, r.agnID AS idRemetente, d.agnID AS idDestinatario, m.agnID AS idMensagem ,agnRemetenteEmail,agnRemetenteNome, agnEmailDestinatario,agnNomeDestinatario,angMensagem,agnDataCriacao,agnDataEnvio
-                FROM psnAgendaEnvio AS e 
-                INNER JOIN psnAgendaRemetente AS r ON (e.agnIDRemetente = r.agnID) 
-                INNER JOIN psnAgendaDestinatario AS d ON (e.agnIDDestinatario = d.agnID)
-                INNER JOIN psnAgendaMensagem AS m ON (e.agnIDMensagem = m.agnID)";
+        $sql = "SELECT e.agnID AS idEnvio, r.agnID AS idRemetente, d.agnID AS idDestinatario, m.agnID AS idMensagem , r.angEmail, r.angName, d.angEmail, d.angName,angMensagem,agnCreateDate,agnDateToSend
+                FROM psnScheduleSend AS e 
+                INNER JOIN psnFromEmail AS r ON (e.agnIDRemetente = r.agnID) 
+                INNER JOIN psnToEmail AS d ON (e.agnIDDestinatario = d.agnID)
+                INNER JOIN psnMessageToSend AS m ON (e.agnIDMensagem = m.agnID)";
         $stm = $this->DB->prepare($sql);
         return $this->RunSelect($stm);
     }
@@ -38,28 +38,28 @@ class QueryStatement extends DBConnection {
     public function deleteCard($id) {
         $retorno = array('status'=>false);
         
-        $select1 = "SELECT * FROM psnAgendaEnvio WHERE agnID = :id";
+        $select1 = "SELECT * FROM psnScheduleSend WHERE agnID = :id";
         $stm1 = $this->DB->prepare($select1);
         $stm1->bindParam(":id", $id, PDO::PARAM_INT);
         $arrayID = $this->RunSelect($stm1);  
         
         $retorno['mensagem'] = $arrayID[0]["agnIDMensagem"];
         
-        $select3 = "SELECT COUNT(*) AS ocorrencias FROM psnAgendaEnvio WHERE agnIDDestinatario = {$arrayID[0]["agnIDDestinatario"]}";
+        $select3 = "SELECT COUNT(*) AS ocorrencias FROM psnScheduleSend WHERE agnIDDestinatario = {$arrayID[0]["agnIDDestinatario"]}";
         $stm3 = $this->DB->prepare($select3);
         $numOcorrenciaDestinatario = $this->RunSelect($stm3); 
         if($numOcorrenciaDestinatario[0]['ocorrencias'] == 1){
             $retorno['destinatario'] = $arrayID[0]["agnIDDestinatario"];
         }
         
-        $select5 = "SELECT COUNT(*) AS ocorrencias FROM psnAgendaEnvio WHERE agnIDRemetente = {$arrayID[0]["agnIDRemetente"]}";
+        $select5 = "SELECT COUNT(*) AS ocorrencias FROM psnScheduleSend WHERE agnIDRemetente = {$arrayID[0]["agnIDRemetente"]}";
         $stm5 = $this->DB->prepare($select5);
         $numOcorrenciaRemetente = $this->RunSelect($stm5);
         if($numOcorrenciaRemetente[0]['ocorrencias'] == 1){
             $retorno['remetente'] = $arrayID[0]["agnIDRemetente"];
         }
         
-        $delete2 = "DELETE FROM psnAgendaEnvio WHERE agnID= :id";
+        $delete2 = "DELETE FROM psnScheduleSend WHERE agnID= :id";
         $stm2 = $this->DB->prepare($delete2);
         $stm2->bindParam(":id", $id, PDO::PARAM_INT);
         $retorno['status'] = $this->runQuery($stm2);
@@ -74,7 +74,7 @@ class QueryStatement extends DBConnection {
     }
     
     public function deleteMessage($id){
-        $delete = "DELETE FROM psnAgendaMensagem WHERE agnID= :id";
+        $delete = "DELETE FROM psnMessageToSend WHERE agnID= :id";
         $stm = $this->DB->prepare($delete);
         $stm->bindParam(":id", $id, PDO::PARAM_INT);
         return $this->runQuery($stm);
@@ -93,21 +93,21 @@ class QueryStatement extends DBConnection {
         $retorno = true;
 
         $tableDestinatario = array(
-            'table' => 'psnAgendaDestinatario',
-            'column' => 'agnEmailDestinatario',
+            'table' => 'psnToEmail',
+            'column' => 'angEmail',
             'email' => $arrayInsert['emailDestinatario']
         );
         $arrayIDRepetido['destinatario'] = $this->selectUnicUser($tableDestinatario);
 
         $tableRemetente = array(
-            'table' => 'psnAgendaRemetente',
-            'column' => 'agnRemetenteEmail',
+            'table' => 'psnFromEmail',
+            'column' => 'angEmail',
             'email' => $arrayInsert['emailRemetente']
         );
         $arrayIDRepetido['remetente'] = $this->selectUnicUser($tableRemetente);
 
         if ($arrayIDRepetido['destinatario'] == false) {
-            $sql1 = "INSERT INTO psnAgendaDestinatario(agnEmailDestinatario,agnNomeDestinatario) VALUES (:destinatarioEmail, :destinatarioNome)";
+            $sql1 = "INSERT INTO psnToEmail(angEmail,angName) VALUES (:destinatarioEmail, :destinatarioNome)";
             $stm1 = $this->DB->prepare($sql1);
             $stm1->bindParam(":destinatarioEmail", $arrayInsert['emailDestinatario'], PDO::PARAM_STR);
             $stm1->bindParam(":destinatarioNome", $arrayInsert['nomeDestinatario'], PDO::PARAM_STR);
@@ -118,7 +118,7 @@ class QueryStatement extends DBConnection {
         }
 
         if ($arrayIDRepetido['remetente'] == false) {
-            $sql2 = "INSERT INTO psnAgendaRemetente(agnRemetenteEmail,agnRemetenteNome) VALUES (:remetenteEmail, :remetenteNome)";
+            $sql2 = "INSERT INTO psnFromEmail(angEmail,angName) VALUES (:remetenteEmail, :remetenteNome)";
             $stm2 = $this->DB->prepare($sql2);
             $stm2->bindParam(":remetenteEmail", $arrayInsert['emailRemetente'], PDO::PARAM_STR);
             $stm2->bindParam(":remetenteNome", $arrayInsert['nomeRemetente'], PDO::PARAM_STR);
@@ -128,13 +128,13 @@ class QueryStatement extends DBConnection {
             $insertRelacao['remetente'] = $arrayIDRepetido['remetente'];
         }
 
-        $sql3 = "INSERT INTO psnAgendaMensagem(angMensagem) VALUES (:mensagem)";
+        $sql3 = "INSERT INTO psnMessageToSend(angMensagem) VALUES (:mensagem)";
         $stm3 = $this->DB->prepare($sql3);
         $stm3->bindParam(":mensagem", $arrayInsert['mensagem'], PDO::PARAM_STR);
         $this->runQuery($stm3);
         $insertRelacao['mensagem'] = $this->DB->lastInsertId();
 
-        $sql4 = "INSERT INTO psnAgendaEnvio(agnDataEnvio, agnIDDestinatario, agnIDRemetente, agnIDMensagem) VALUES (:dataEnvio, {$insertRelacao['destinatario']}, {$insertRelacao['remetente']}, {$insertRelacao['mensagem']})";
+        $sql4 = "INSERT INTO psnScheduleSend(agnDateToSend, agnIDDestinatario, agnIDRemetente, agnIDMensagem) VALUES (:dataEnvio, {$insertRelacao['destinatario']}, {$insertRelacao['remetente']}, {$insertRelacao['mensagem']})";
         $stm4 = $this->DB->prepare($sql4);
         $stm4->bindParam(":dataEnvio", $arrayInsert['dataEnvio'], PDO::PARAM_STR);
         $retorno = $this->runQuery($stm4);

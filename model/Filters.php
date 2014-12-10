@@ -1,8 +1,15 @@
 <?php
 
 class Filters {
-
+    
     private $arrayBaseToInsert = array('toEmail' => '', 'toName' => '', 'fromEmail' => '', 'fromName' => '', 'message' => '', 'date' => '');
+    private $arrayTablesAndColumns = array(
+            'fe:ae' => array('psnFromEmail', 'agnEmail'),
+            'fe:an' => array('psnFromEmail', 'agnName'),
+            'te:ae' => array('psnToEmail', 'agnEmail'),
+            'te:an' => array('psnToEmail', 'agnName'),
+            'ms:am' => array('psnMessageToSend', 'angMessage'),
+            'ss:ds' => array('psnScheduleSend', 'agnDateToSend'));
     private $arrayToSave;
 
     public function setArrayToSave($array) {
@@ -12,7 +19,114 @@ class Filters {
         }
         return $return;
     }
+    public function checkIfIsSet($var) {
+        if ($var != "" && $var != "") {
+            return true;
+        }
+        return false;
+    }
 
+    public function checkIfIsEmail($email) {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return true;
+        }else{
+            return false;
+        }
+        return true;
+    }
+    
+    public function checkIfIsInt($int) {
+        if(preg_match( '/^[1-9][0-9]*$/' , $int )){
+            return true;
+        }
+        return false;
+    }
+
+    public function checkIfIsDate($date) {
+        $regexTesteDate = "~^\d{2}/\d{2}/\d{4}$~";
+        $testRegex = filter_var(
+            $date,FILTER_VALIDATE_REGEXP,
+            array("options"=>array("regexp"=> $regexTesteDate))
+        );
+        
+        if($testRegex !== false){
+            return true;
+        }
+        return false;      
+    }
+    
+    public function checkIdsToDelete($arrayIDDelete) {
+        if($this->checkIfIDIsIntToDelete($arrayIDDelete) && $this->checkIfIDIsIntToDelete($arrayIDDelete)){
+            return true;
+        }
+        return false;
+    }
+    
+    public function getIdColumAndTableFromIdetifier($identifier) {
+        $arrayIdAndTableColumn = $this->testAllVerificationsByIdentifier($identifier);
+        if($arrayIdAndTableColumn){
+            $extracted = $this->extractColunAndTableFromIndenfier($arrayIdAndTableColumn[1]);
+            return array('id'=>$arrayIdAndTableColumn[0], 'table' => $extracted['table'], 'column' => $extracted['column']);
+        }
+    }
+    
+    private function testAllVerificationsByIdentifier($identifier) {
+        $arrayIdentifierAndId = $this->testFormatIdentifier($identifier);
+        if($arrayIdentifierAndId!== false){
+             $status[] = $this->checkIfIsInt($arrayIdentifierAndId[0]);
+             $status[] = $this->testIdentifierExist($arrayIdentifierAndId[1]);
+        }else{
+            return false;
+        }
+        if(array_search(false, $status) === false){
+            return $arrayIdentifierAndId;
+        }
+        return false;
+    }
+
+
+    private function testFormatIdentifier($identifier) {
+        $array = explode('-', $identifier);
+        if(sizeof($array) == 2){
+            return $array;
+        }else{
+            return false;
+        }
+    }
+
+    
+    private function extractColunAndTableFromIndenfier($identifier) {
+        return array('table'=>$this->arrayTablesAndColumns[$identifier][0], 
+                    'column'=>$this->arrayTablesAndColumns[$identifier][1]);
+    }
+    
+    private function testIdentifierExist($identifierTableColumn) {
+        $identifierList = array_keys($this->arrayTablesAndColumns);
+        $statusTestExist = array_search($identifierTableColumn, $identifierList);
+        if($statusTestExist === false){
+            return false;
+        }
+        return true;
+    }
+
+
+    private function checkIfIDIsSetToDelete($arrayIDDelete) {
+        foreach($arrayIDDelete as $value){
+            if(!$this->checkIfIsSet($value)){
+                return false;
+            }
+        }
+        return true;
+    }
+    private function checkIfIDIsIntToDelete($arrayIDDelete) {
+        foreach($arrayIDDelete as $value){
+            if(!$this->checkIfIsInt($value)){
+                return false;
+            }
+        }
+        return true;
+    }
+    
     private function checkIfAllVerificationsIsToSaveIsTrue($array) {
        $return = true;
        $status['keysCompare'] = $this->compareArrayKeysExternWithIntern($array);
@@ -58,30 +172,4 @@ class Filters {
         }
         return false;
     }
-
-    private function checkIfIsSet($var) {
-        if ($var != "" && $var != "") {
-            return true;
-        }
-        return false;
-    }
-
-    public function checkIfIsEmail($email) {
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            return true;
-        }else{
-            return false;
-        }
-        return true;
-    }
-
-    public function checkIfIsDate($date) {
-        $regexTesteDate = "~^\d{2}/\d{2}/\d{4}$~";
-        $testRegex = filter_var($date,FILTER_VALIDATE_REGEXP,array("options"=>array("regexp"=> $regexTesteDate)));
-        if($testRegex !== false){
-            return true;
-        }
-        return false;      
-    }
-
 }

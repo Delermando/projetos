@@ -19,7 +19,7 @@ class FromEmail extends DBConnection{
     }
     
     public function delete($id) {
-        $delete = "DELETE FROM psnAgendaDestinatario WHERE agnID= :id";
+        $delete = "DELETE FROM psnFromEmail WHERE agnID= :id";
         $stm = $this->DB->prepare($delete);
         $stm->bindParam(":id", $id, PDO::PARAM_INT);
         $this->runQuery($stm);       
@@ -27,7 +27,7 @@ class FromEmail extends DBConnection{
     }
     
     public function update($column, $value, $id){
-        $sql = "UPDATE psnAgendaDestinatario SET {$column} = :value WHERE agnID = :id";
+        $sql = "UPDATE psnFromEmail SET {$column} = :value WHERE agnID = :id";
         $stm = $this->DB->prepare($sql);
         $stm->bindParam(":value", $value, PDO::PARAM_STR);
         $stm->bindParam(":id", $id, PDO::PARAM_INT);
@@ -35,11 +35,11 @@ class FromEmail extends DBConnection{
     }
     
     private function insert($name, $email) {
-         $sql = "INSERT INTO psnAgendaDestinatario(agnEmailDestinatario,agnNomeDestinatario)"
-                    ." VALUES (:destinatarioEmail, :destinatarioNome)";
+         $sql = "INSERT INTO psnFromEmail(agnEmail,agnName)"
+                    ." VALUES (:email, :name)";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":destinatarioNome", $name, PDO::PARAM_STR);
-        $stm->bindParam(":destinatarioEmail", $email, PDO::PARAM_STR);
+        $stm->bindParam(":name", $name, PDO::PARAM_STR);
+        $stm->bindParam(":email", $email, PDO::PARAM_STR);
         $this->runQuery($stm);
         return intval($this->DB->lastInsertId());
     }
@@ -52,7 +52,7 @@ class FromEmail extends DBConnection{
     }
     
     private function selectByEmail($email) {
-        $sql = "SELECT agnID FROM psnAgendaDestinatario WHERE agnEmailDestinatario = :email";
+        $sql = "SELECT agnID FROM psnFromEmail WHERE agnEmail = :email";
         $stm = $this->DB->prepare($sql);
         $stm->bindValue(":email", $email, PDO::PARAM_STR);
         return  sizeof($this->RunSelect($stm));

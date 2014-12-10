@@ -5251,3 +5251,7 @@ Stack trace:
 [10-Dec-2014 13:26:32 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
 [10-Dec-2014 13:26:32 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:15
 [10-Dec-2014 13:28:14 UTC] erro => 
+[10-Dec-2014 14:33:02 UTC] erro => 
+[10-Dec-2014 14:33:02 UTC] erro => 
+[10-Dec-2014 14:33:02 UTC] erro => 
+[10-Dec-2014 15:40:32 UTC] erro => 
