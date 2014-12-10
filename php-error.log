@@ -5221,3 +5221,33 @@ Stack trace:
 [08-Dec-2014 22:56:01 UTC] erro => 
 [08-Dec-2014 22:56:01 UTC] erro => 
 [08-Dec-2014 22:56:04 UTC] erro => 
+[10-Dec-2014 13:22:34 UTC] erro => 
+[10-Dec-2014 13:22:34 UTC] PHP Fatal error:  Class 'DataMap' not found in /usr/local/www/data-dist/projetos/controllers/ctlGlobals.php on line 83
+[10-Dec-2014 13:22:34 UTC] PHP Stack trace:
+[10-Dec-2014 13:22:34 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[10-Dec-2014 13:22:34 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[10-Dec-2014 13:22:34 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:15
+[10-Dec-2014 13:23:15 UTC] erro => 
+[10-Dec-2014 13:23:15 UTC] PHP Fatal error:  Class 'DataMap' not found in /usr/local/www/data-dist/projetos/controllers/ctlGlobals.php on line 83
+[10-Dec-2014 13:23:15 UTC] PHP Stack trace:
+[10-Dec-2014 13:23:15 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[10-Dec-2014 13:23:15 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[10-Dec-2014 13:23:15 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:15
+[10-Dec-2014 13:24:29 UTC] erro => 
+[10-Dec-2014 13:24:29 UTC] PHP Fatal error:  Class 'DataMap' not found in /usr/local/www/data-dist/projetos/controllers/ctlGlobals.php on line 83
+[10-Dec-2014 13:24:29 UTC] PHP Stack trace:
+[10-Dec-2014 13:24:29 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[10-Dec-2014 13:24:29 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[10-Dec-2014 13:24:29 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:15
+[10-Dec-2014 13:26:31 UTC] erro => 
+[10-Dec-2014 13:26:32 UTC] PHP Notice:  Undefined variable: dataMap in /usr/local/www/data-dist/projetos/controllers/ctlGlobals.php on line 114
+[10-Dec-2014 13:26:32 UTC] PHP Stack trace:
+[10-Dec-2014 13:26:32 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[10-Dec-2014 13:26:32 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[10-Dec-2014 13:26:32 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:15
+[10-Dec-2014 13:26:32 UTC] PHP Fatal error:  Call to a member function addQuerie() on a non-object in /usr/local/www/data-dist/projetos/controllers/ctlGlobals.php on line 114
+[10-Dec-2014 13:26:32 UTC] PHP Stack trace:
+[10-Dec-2014 13:26:32 UTC] PHP   1. {main}() /usr/local/www/data-dist/projetos/index.php:0
+[10-Dec-2014 13:26:32 UTC] PHP   2. require_once() /usr/local/www/data-dist/projetos/index.php:2
+[10-Dec-2014 13:26:32 UTC] PHP   3. require_once() /usr/local/www/data-dist/projetos/controllers/ctlHeader.php:15
+[10-Dec-2014 13:28:14 UTC] erro => 

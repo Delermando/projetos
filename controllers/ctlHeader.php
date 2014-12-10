@@ -18,7 +18,7 @@ require_once("class/clsMensages.class.php");
 require_once("class/clsValidation.class.php");
 require_once("class/clsFormatacao.class.php");
 //nova classe
-require_once('model/DataMap.php');
+//require_once('model/DataMap.php');
 
 switch ($action) {
     case "":

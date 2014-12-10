@@ -5,11 +5,11 @@ require_once ('FromEmail.php');
 class CardModel extends Filters{
     
     public function save($arrayToSave) {
-        $arrayChecked = $this->setArrayToSave($arrayToSave);
-        $sizeArrayToSave = sizeof($arrayChecked);
+        $return = $this->setArrayToSave($arrayToSave);
+        $sizeArrayToSave = sizeof($return);
         if($sizeArrayToSave == 6){
             $FromEmail = new FromEmail();
-            $return = $FromEmail->save($arrayChecked['fromName'], $arrayChecked['fromEmail']);
+            $return = $FromEmail->save($return['fromName'], $return['fromEmail']);
         }
         return $return;
     }

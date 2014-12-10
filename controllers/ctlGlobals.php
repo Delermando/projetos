@@ -80,7 +80,7 @@ $enderecoSubmit = $_SERVER['PHP_SELF'];
 
 
 //data map, nova estrutura para disponibilizacao de dados
-$dataMap = new DataMap();
+//$dataMap = new DataMap();
 
 $arrayTables = array(
     'destinatario' => 'psnAgendaDestinatario',
@@ -111,7 +111,7 @@ $arrayColumns = array(
 );
 
 
-$dataMap->addQuerie($arrayQueries);
-$dataMap->addTable($arrayTables);
-$dataMap->addColumn($arrayColumns);
-
+//$dataMap->addQuerie($arrayQueries);
+//$dataMap->addTable($arrayTables);
+//$dataMap->addColumn($arrayColumns);
+//
