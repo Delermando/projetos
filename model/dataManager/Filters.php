@@ -43,7 +43,7 @@ class Filters {
     }
 
     public function checkIfIsDate($date) {
-        $regexTesteDate = "~^\d{2}/\d{2}/\d{4}$~";
+        $regexTesteDate = "~^\d{2}-\d{2}-\d{4}$~";
         $testRegex = filter_var(
             $date,FILTER_VALIDATE_REGEXP,
             array("options"=>array("regexp"=> $regexTesteDate))

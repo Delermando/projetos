@@ -1,5 +1,5 @@
 <?php
-require_once ('../model/db/DBConnection.php');
+require_once ('model/db/DBConnection.php');
 
 class FromEmail extends DBConnection{
     
@@ -55,13 +55,14 @@ class FromEmail extends DBConnection{
         $sql = "SELECT agnID FROM psnFromEmail WHERE agnEmail = :email";
         $stm = $this->DB->prepare($sql);
         $stm->bindValue(":email", $email, PDO::PARAM_STR);
-        return  sizeof($this->RunSelect($stm));
-    }
+        return  $this->RunSelect($stm);
+    }  
     private  function testIfExist($email) {
-        if($this->selectByEmail($email) == 0){
+        $emailExist = $this->selectByEmail($email);
+        if(sizeof($emailExist) == 0){
             return true;
         }
-        return array('emailExist' => true);
+        return intval($emailExist[0]['agnID']);
     }
     
 }
