@@ -1,5 +1,6 @@
 <?php
-require_once("/usr/local/www/data-dist/projetos/model/DataMap.php");
+require_once("/usr/local/www/data-dist/projetos/model/--thinkingAndDataMap/DataMap.php");
+
 
 class DataMapTest extends PHPUnit_Framework_TestCase {
     

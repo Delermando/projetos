@@ -1,8 +1,9 @@
 <?php
-require_once ('Filters.php');
-require_once ('FromEmail.php');
+require_once ('../model/dataManager/Filters.php');
+require_once ('../model/core/FromEmail.php');
 
 class CardModel extends Filters{
+    
     public function save($arrayToSave) {
         $return = $this->setArrayToSave($arrayToSave);
         $sizeArrayToSave = sizeof($return);
@@ -19,10 +20,9 @@ class CardModel extends Filters{
         return false;
     }
     
-    public function update($identifier) {
-        return $arrayIDColumnAndTable = $this->getIdColumAndTableFromIdetifier($identifier);
-        //$this->intanceUpdateFromEmail($column, $value, $id);
-        
+    public function update($identifier, $value) {
+        $arrayIDColumnAndTable = $this->getIdColumAndTableFromIdetifier($identifier);
+        return $this->chooseInstanceForUpdate($arrayIDColumnAndTable, $value);
     }
     
     public function select($param) {
@@ -43,5 +43,21 @@ class CardModel extends Filters{
         return $FromEmail->update($column, $value, $id);
     }
     
-    
+    private function chooseInstanceForUpdate($arrayDataForUpdate, $value) {
+       switch ($arrayDataForUpdate['table']){
+           case "psnFromEmail":
+               return $this->intanceUpdateFromEmail($arrayDataForUpdate['column'], $value, $arrayDataForUpdate['id']);
+               break;
+           case "psnToEmail":
+               echo "falta instanciar";
+               break;
+           case "psnMessageToSend":
+               echo "falta instanciar";
+               break;
+           default :
+               return false;
+       }
+        return true;
+    }
+
 }

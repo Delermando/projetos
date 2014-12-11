@@ -20,7 +20,7 @@ class Filters {
         return $return;
     }
     public function checkIfIsSet($var) {
-        if ($var != "" && $var != "") {
+        if ($var !== "" && $var !== " " && $var !== null) {
             return true;
         }
         return false;
@@ -56,7 +56,7 @@ class Filters {
     }
     
     public function checkIdsToDelete($arrayIDDelete) {
-        if($this->checkIfIDIsIntToDelete($arrayIDDelete) && $this->checkIfIDIsIntToDelete($arrayIDDelete)){
+        if($this->checkSizeArrayIdsToDelete($arrayIDDelete) && $this->checkIfIDIsSetToDelete($arrayIDDelete) && $this->checkIfIDIsIntToDelete($arrayIDDelete)){
             return true;
         }
         return false;
@@ -68,6 +68,7 @@ class Filters {
             $extracted = $this->extractColunAndTableFromIndenfier($arrayIdAndTableColumn[1]);
             return array('id'=>$arrayIdAndTableColumn[0], 'table' => $extracted['table'], 'column' => $extracted['column']);
         }
+        return false;
     }
     
     private function testAllVerificationsByIdentifier($identifier) {
@@ -118,6 +119,13 @@ class Filters {
         }
         return true;
     }
+    private function checkSizeArrayIdsToDelete($arrayIDDelete) {
+        if(sizeof($arrayIDDelete) == 4){
+            return true;
+        }
+        return false;
+    }
+
     private function checkIfIDIsIntToDelete($arrayIDDelete) {
         foreach($arrayIDDelete as $value){
             if(!$this->checkIfIsInt($value)){

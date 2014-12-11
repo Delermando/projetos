@@ -1,5 +1,5 @@
 <?php
-require_once("/usr/local/www/data-dist/projetos/model/CardModel.php");
+require_once("/usr/local/www/data-dist/projetos/model/core/CardModel.php");
 
 class CardModelTest extends PHPUnit_Framework_TestCase {
     

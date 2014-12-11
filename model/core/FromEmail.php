@@ -1,5 +1,5 @@
 <?php
-require_once ('class/clsDBConnection.class.php');
+require_once ('../model/db/DBConnection.php');
 
 class FromEmail extends DBConnection{
     

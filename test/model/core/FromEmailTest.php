@@ -1,6 +1,7 @@
 <?php
-require_once("/usr/local/www/data-dist/projetos/model/FromEmail.php");
-require_once ('/usr/local/www/data-dist/projetos/class/clsDBConnection.class.php');
+require_once("/usr/local/www/data-dist/projetos/model/core/FromEmail.php");
+require_once("/usr/local/www/data-dist/projetos/model/dataManager/Filters.php");
+
 
 define('DB_HOST', '192.168.0.198');
 define('DB_NAME', 'agenda');
