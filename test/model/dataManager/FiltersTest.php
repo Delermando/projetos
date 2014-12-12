@@ -122,25 +122,6 @@ class FiltersTest extends PHPUnit_Framework_TestCase {
         );
     }
     
-    
-     /**
-     * @group testIDsToDeleteIsSet
-     * @dataProvider dataForTestIDsToDeleteIsSet
-     */
-    public function testIDsToDeleteIsSet($expected, $data) {
-        $this->assertEquals($expected, $this->instancia->checkIdsToDelete($data));
-    }
-    public function dataForTestIDsToDeleteIsSet() {
-         return array(
-            array(true, array(2, 12, 8,9)), 
-            array(false, array(2, 12, 8)),
-            array(false, array('', 12, 8,9)), 
-            array(false, array(2, 12, ' ',9)), 
-            array(false, array(2, 12, 'de',9)),
-        );
-    }
-    
-    
     /**
      * @group testIfIsSet
      * @dataProvider dataForTestIfIsSet

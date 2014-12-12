@@ -81,34 +81,34 @@ $enderecoSubmit = $_SERVER['PHP_SELF'];
 
 //data map, nova estrutura para disponibilizacao de dados
 //$dataMap = new DataMap();
-
-$arrayTables = array(
-    'destinatario' => 'psnAgendaDestinatario',
-    'relacao' => 'psnAgendaEnvio',
-    'mensagem'=>'psnAgendaMensagem',
-    'remetente'=>'psnAgendaRemetente'
-);
-
-$arrayQueries = array(
-    'destinatario' => 'INSERT INTO %s (%s) VALUES (%s)',
-    'select' => 'SELECT %s FROM %s WHERE %s',
-);
-
-
-$arrayColumns = array(
-    'idGeral' => 'agnID',
-    'padEmail' => 'agnEmailDestinatario',
-    'padDestinatario' => 'agnNomeDestinatario',
-    'parEmail' => 'agnRemetenteEmail',
-    'parNome' => 'agnRemetenteNome',
-    'pamMensagem' => 'angMensagem',
-    'pamDataCriacao'=>'agnDataCriacao',
-    'paeDataEnvio' => 'agnDataEnvio',
-    'paeIDDestinatario' => 'agnIDDestinatario',
-    'paeIDRemetente' => 'agnIDRemetente',
-    'paeIDMensagem' => 'agnIDMensagem',
-  
-);
+//
+//$arrayTables = array(
+//    'destinatario' => 'psnAgendaDestinatario',
+//    'relacao' => 'psnAgendaEnvio',
+//    'mensagem'=>'psnAgendaMensagem',
+//    'remetente'=>'psnAgendaRemetente'
+//);
+//
+//$arrayQueries = array(
+//    'destinatario' => 'INSERT INTO %s (%s) VALUES (%s)',
+//    'select' => 'SELECT %s FROM %s WHERE %s',
+//);
+//
+//
+//$arrayColumns = array(
+//    'idGeral' => 'agnID',
+//    'padEmail' => 'agnEmailDestinatario',
+//    'padDestinatario' => 'agnNomeDestinatario',
+//    'parEmail' => 'agnRemetenteEmail',
+//    'parNome' => 'agnRemetenteNome',
+//    'pamMensagem' => 'angMensagem',
+//    'pamDataCriacao'=>'agnDataCriacao',
+//    'paeDataEnvio' => 'agnDataEnvio',
+//    'paeIDDestinatario' => 'agnIDDestinatario',
+//    'paeIDRemetente' => 'agnIDRemetente',
+//    'paeIDMensagem' => 'agnIDMensagem',
+//  
+//);
 
 
 //$dataMap->addQuerie($arrayQueries);

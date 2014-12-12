@@ -16,21 +16,68 @@ define('DB_PASS', 'agenda');
 
 
 require_once('model/core/CardModel.php');
+require_once('model/repository/DataMap.php');
+require_once('model/fileManager/HTML.php');
 
-$arrayToSave = array('toEmail' => 'ppdestancmansssss@hotmail.com.br',
-                'toName'=>'dadasdasada',
-                'fromEmail'=>'ppdestancmansssss@hotmail.com.bf',
-                'fromName'=>'dododasdaso',
-                'message'=>'dudusdsdu',
-                'date'=>'24-01-1999');
+$arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
+                    'toName'=>'testeNameToName',
+                    'fromEmail'=>'d.santos@personarel.com.br',
+                    'fromName'=>'testNameFromName',
+                    'message'=>'Mensagem',
+                    'date'=>'24-01-1999');
 
-$cardModel = new CardModel();
 $id = $_GET['id'];
+//$cardModel = new CardModel();
 //var_dump($cardModel->update('12-fe:ae', 'personare'));
 //var_dump($cardModel->update('151-te:ae', 'deler'));
 //var_dump($cardModel->update('3-ms:am', 'deler'));
-//$cardModel->save($arrayToSave);
-var_dump($cardModel->delete($id));
-//$cardModel->delete($idFromEmail, $idToEmail, $IdMessage, $IdSchedule);
-//var_dump($cardModel->de(23));
+//var_dump)$cardModel->save($arrayToSave));
+//var_dump($cardModel->delete($id));
 //var_dump($cardModel->select());
+
+
+
+$DataMap = new DataMap();
+
+$pathHTML = 'views/html/%s';
+$arrayPathHTMLFiles = array(
+    'home', 
+    'header',
+    'footer',
+    'signUpPage',    
+    'erroMessage',  
+    'editePage'  
+);
+
+$pathCSS = 'views/css/%s';
+$arrayPathCSSFiles = array(
+    'editOnPage',
+    'style'
+);
+
+$pathJS = 'views/js/%s';
+$arrayPathJSFiles = array(
+    'configJeditable', 
+    'editOnPage',
+    'jQuery',
+    'jeditable',    
+    'placeHolderFormLoginEng',  
+    'scripts',  
+    'scriptsConfiguracoes'  
+);
+
+$DataMap->addHTMLFile($pathHTML, $arrayPathHTMLFiles);
+$DataMap->addCSSFile($pathCSS, $arrayPathCSSFiles);
+$DataMap->addJSLFile($pathJS, $arrayPathJSFiles);
+
+//var_dump($DataMap->get('html', 'erroMessage'));
+echo var_dump($DataMap->get('css', 'style'));
+//var_dump($DataMap->get('js', 'jQuery'));
+
+//$HTML = NEW HTML($DataMap);
+//$HTML->setPage('home', 'delermando');
+//$HTML->pageRender();
+
+
+
+
