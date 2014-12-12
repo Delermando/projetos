@@ -6,6 +6,10 @@ require_once ('model/core/Message.php');
 require_once ('model/core/RelationCard.php');
 
 class CardModel extends Filters{
+    private $FromEmail = 'FromEmail';
+    private $ToEmail = 'ToEmail';
+    private $Message = 'Message';
+    private $RelationCard = 'RelationCard';
     
     public function save($arrayToSave) {
         $return = $this->setArrayToSave($arrayToSave);
@@ -16,11 +20,11 @@ class CardModel extends Filters{
         return $return;
     }
     
-    public function delete($idFromEmail,$idToEmail, $IdMessage, $IdSchedule) {
-        $arrayDelete = array('idFromEmail' => $idFromEmail,'idToEmail'=>$idToEmail, 
-                            'idMessage'=>$IdMessage, 'idSchedule'=>$IdSchedule);
-        if($this->checkIdsToDelete($arrayDelete)){
-            return $this->deleteInAllEntities($arrayDelete);
+    public function delete($IdSchedule) {
+        $arrayListID = $this->instanceSelectIDsToDeleteRelationCard($IdSchedule);
+        if(sizeof($arrayListID) > 0){
+            $arrayListID[0]['IDSchedule'] = $IdSchedule;
+            return $this->deleteInAllEntities($arrayListID[0]);
         }
         return false;
     }
@@ -30,8 +34,8 @@ class CardModel extends Filters{
         return $this->chooseInstanceForUpdate($arrayIDColumnAndTable, $value);
     }
     
-    public function select($param) {
-        return $param;
+    public function select() {
+        return $this->instanceSelectRelationCard();
     }
     
     private function saveInAllEntities($arrayDataToInsert) {
@@ -42,103 +46,96 @@ class CardModel extends Filters{
     }
 
     private function deleteInAllEntities($arrayDelete) {
-        $return = $this->intanceDeleteRelationCard($arrayDelete['idSchedule']);
-        $this->deleteFromEmailIfIsUnic($arrayDelete['idFromEmail']);
-        $this->deleteToEmailIfIsUnic($arrayDelete['idToEmail']);
-        $this->intanceDeleteMessage($arrayDelete['idMessage']);
+        $return = $this->instanceDeleteRelationCard($arrayDelete['IDSchedule']);
+        $this->deleteFromEmailIfIsUnic($arrayDelete['IDFromEmail']);
+        $this->deleteToEmailIfIsUnic($arrayDelete['IDToEmail']);
+        $this->instanceDeleteMessage($arrayDelete['IDMessage']);
         return $return;
     } 
     
     private function instanceSaveFromEmail($name, $email) {
-        $FromEmail = new FromEmail();
-        return $FromEmail->save($name, $email);
+        return $this->chooseInstance($this->FromEmail)->save($name, $email);
     }
-    private function intanceDeleteFromEmail($id) {
-        $FromEmail = new FromEmail();
-        return $FromEmail->delete($id);
+    private function instanceDeleteFromEmail($id) {
+        return $this->chooseInstance($this->FromEmail)->delete($id);
     }
-    private function intanceUpdateFromEmail($column, $value, $id) {
-        $FromEmail = new FromEmail();
-        return $FromEmail->update($column, $value, $id);
-    }
-    
+    private function instanceUpdateFromEmail($column, $value, $id) {
+        return $this->chooseInstance($this->FromEmail)->update($column, $value, $id);
+    } 
     
     private function instanceSaveToEmail($name, $email) {
-        $toEmail = new ToEmail();
-        return $toEmail->save($name, $email);
+        return $this->chooseInstance($this->ToEmail)->save($name, $email);
     }
-    private function intanceDeleteToEmail($id) {
-        $toEmail = new ToEmail();
-        return $toEmail->delete($id);
+    private function instanceDeleteToEmail($id) {
+        return $this->chooseInstance($this->ToEmail)->delete($id);
     }
-    private function intanceUpdateToEmail($column, $value, $id) {
-        $toEmail = new ToEmail();
-        return $toEmail->update($column, $value, $id);
+    private function instanceUpdateToEmail($column, $value, $id) {
+        return $this->chooseInstance($this->ToEmail)->update($column, $value, $id);
     }
     
     
     private function instanceSaveMessage($messageToInsert) {
-        $message = new Message();
-        return $message->save($messageToInsert);
+        return $this->chooseInstance($this->Message)->save($messageToInsert);
     }
-    private function intanceDeleteMessage($id) {
-        $message = new Message();
-        return $message->delete($id);
+    private function instanceDeleteMessage($id) {
+        return $this->chooseInstance($this->Message)->delete($id);
     }
-    private function intanceUpdateMessage($column, $value, $id) {
-        $message = new Message();
-        return $message->update($column, $value, $id);
+    private function instanceUpdateMessage($column, $value, $id) {
+        return $this->chooseInstance($this->Message)->update($column, $value, $id);
     }
 
     
     private function instanceSaveRelationCard($idFromEmail, $idToEmail, $idMessage, $dataEnvio) {
-        $relationCard = new RelationCard();
-        return $relationCard->save($idFromEmail, $idToEmail, $idMessage, $dataEnvio);
+        return $this->chooseInstance($this->RelationCard)->save($idFromEmail, $idToEmail, $idMessage, $dataEnvio);
     }
-    private function intanceDeleteRelationCard($id) {
-        $relationCard = new RelationCard();
-        return $relationCard->delete($id);
+    private function instanceDeleteRelationCard($id) {
+        return $this->chooseInstance($this->RelationCard)->delete($id);
+    }
+    private function instanceSelecCountIDIsnFromEmail($id) {
+        return $this->chooseInstance($this->RelationCard)->selecCountIDsInFromEmail($id);
+    }
+    private function instanceSelecCountIDIsnToEmail($id) {
+        return $this->chooseInstance($this->RelationCard)->selecCountIDsInToEmail($id);
+    }
+    private function instanceSelectRelationCard() {
+        return $this->chooseInstance($this->RelationCard)->selectAllRegisters();
+    }
+    private function instanceSelectIDsToDeleteRelationCard($id) {
+        return $this->chooseInstance($this->RelationCard)->selectIDsToDelete($id);
     }
     
-    private function intanceSelecCountIDIsnFromEmail($id) {
-        $relationCard = new RelationCard();
-        return $relationCard->selecCountIDsInFromEmail($id);
-    }
-    
-    private function intanceSelecCountIDIsnToEmail($id) {
-        $relationCard = new RelationCard();
-        return $relationCard->selecCountIDsInToEmail($id);
-    }
     
     private function deleteFromEmailIfIsUnic($id) {
-        $status = $this->intanceSelecCountIDIsnFromEmail($id);
-        if($status[0]['repeated'] == 0){
-            $this->intanceDeleteFromEmail($id);
+        $fromEmail = $this->instanceSelecCountIDIsnFromEmail($id);
+        if($fromEmail[0]['repeated'] == 0){
+            $this->instanceDeleteFromEmail($id);
         }
     }
     private function deleteToEmailIfIsUnic($id) {
-        $status = $this->intanceSelecCountIDIsnToEmail($id);
-        if($status[0]['repeated'] == 0){
-            $this->intanceDeleteFromEmail($id);
+        $toEmail = $this->instanceSelecCountIDIsnToEmail($id);
+        if($toEmail[0]['repeated'] == 0){
+            $this->instanceDeleteToEmail($id);
         }
     }
-
     
     private function chooseInstanceForUpdate($arrayDataForUpdate, $value) {
        switch ($arrayDataForUpdate['table']){
            case "psnFromEmail":
-               return $this->intanceUpdateFromEmail($arrayDataForUpdate['column'], $value, $arrayDataForUpdate['id']);
+               return $this->instanceUpdateFromEmail($arrayDataForUpdate['column'], $value, $arrayDataForUpdate['id']);
                break;
            case "psnToEmail":
-               return $this->intanceUpdateToEmail($arrayDataForUpdate['column'], $value, $arrayDataForUpdate['id']);
+               return $this->instanceUpdateToEmail($arrayDataForUpdate['column'], $value, $arrayDataForUpdate['id']);
                break;
            case "psnMessageToSend":
-              return $this->intanceUpdateMessage($arrayDataForUpdate['column'], $value, $arrayDataForUpdate['id']);
+              return $this->instanceUpdateMessage($arrayDataForUpdate['column'], $value, $arrayDataForUpdate['id']);
                break;
            default :
                return false;
        }
-        return true;
+    }
+    
+    private function chooseInstance($className) {
+        return new $className();
     }
 
 }

@@ -35,6 +35,15 @@ class RelationCard extends DBConnection{
         return  $this->RunSelect($stm);
     }
     
+    public function selectIDsToDelete($id) {
+        $sql = "SELECT agnIDFromEmail AS IDFromEmail, agnIDToEmail AS IDToEmail, agnIDMessage AS IDMessage "
+                . "FROM psnScheduleSend WHERE agnID = :id";
+        $stm = $this->DB->prepare($sql);
+        $stm->bindParam(":id", $id, PDO::PARAM_INT);
+        return  $this->RunSelect($stm);
+    }
+
+    
     private function insert($idFromEmail, $idToEmail, $idMessage, $dataEnvio) {
         $sql = "INSERT INTO psnScheduleSend (agnIDFromEmail, agnIDToEmail, agnIDMessage, agnDateToSend) "
                 . "VALUES (:idFromEmail, :idToEmail, :idMessage, :dataEnvio)";
@@ -46,6 +55,18 @@ class RelationCard extends DBConnection{
         $this->runQuery($stm);
         return intval($this->DB->lastInsertId());
     }
+    
+    public function selectAllRegisters() {
+        $sql = "SELECT ss.agnID AS IDScheduleSend, fe.agnID AS IDFromEmail, te.agnID AS IDToEmail, ms.agnID AS IDMessage, 
+                fe.agnEmail AS emailFromEmail, fe.agnName AS nameFromEmail, te.agnEmail AS emailToEmail, te.agnName AS nameToEmail, 
+                agnMessage AS message, agnCreateDate AS createDate, agnDateToSend AS dateToSend FROM psnScheduleSend AS ss 
+                INNER JOIN psnFromEmail AS fe ON (ss.agnIDFromEmail = fe.agnID) 
+                INNER JOIN psnToEmail AS te ON (ss.agnIDToEmail = te.agnID)
+                INNER JOIN psnMessageToSend AS ms ON (ss.agnIDMessage = ms.agnID)";
+        $stm = $this->DB->prepare($sql);
+        return  $this->RunSelect($stm);
+    }
+
     
     private function testDelete($rowDelete) {
         if($rowDelete == 1){

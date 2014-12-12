@@ -55,12 +55,12 @@ class Filters {
         return false;      
     }
     
-    public function checkIdsToDelete($arrayIDDelete) {
-        if($this->checkSizeArrayIdsToDelete($arrayIDDelete) && $this->checkIfIDIsSetToDelete($arrayIDDelete) && $this->checkIfIDIsIntToDelete($arrayIDDelete)){
-            return true;
-        }
-        return false;
-    }
+//    public function checkIdsToDelete($arrayIDDelete) {
+//        if($this->checkSizeArrayIdsToDelete($arrayIDDelete) && $this->checkIfIDIsSetToDelete($arrayIDDelete) && $this->checkIfIDIsIntToDelete($arrayIDDelete)){
+//            return true;
+//        }
+//        return false;
+//    }
     
     public function getIdColumAndTableFromIdetifier($identifier) {
         $arrayIdAndTableColumn = $this->testAllVerificationsByIdentifier($identifier);
@@ -111,29 +111,29 @@ class Filters {
     }
 
 
-    private function checkIfIDIsSetToDelete($arrayIDDelete) {
-        foreach($arrayIDDelete as $value){
-            if(!$this->checkIfIsSet($value)){
-                return false;
-            }
-        }
-        return true;
-    }
-    private function checkSizeArrayIdsToDelete($arrayIDDelete) {
-        if(sizeof($arrayIDDelete) == 4){
-            return true;
-        }
-        return false;
-    }
-
-    private function checkIfIDIsIntToDelete($arrayIDDelete) {
-        foreach($arrayIDDelete as $value){
-            if(!$this->checkIfIsInt($value)){
-                return false;
-            }
-        }
-        return true;
-    }
+//    private function checkIfIDIsSetToDelete($arrayIDDelete) {
+//        foreach($arrayIDDelete as $value){
+//            if(!$this->checkIfIsSet($value)){
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+//    private function checkSizeArrayIdsToDelete($arrayIDDelete) {
+//        if(sizeof($arrayIDDelete) == 4){
+//            return true;
+//        }
+//        return false;
+//    }
+//
+//    private function checkIfIDIsIntToDelete($arrayIDDelete) {
+//        foreach($arrayIDDelete as $value){
+//            if(!$this->checkIfIsInt($value)){
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
     
     private function checkIfAllVerificationsIsToSaveIsTrue($array) {
        $return = true;

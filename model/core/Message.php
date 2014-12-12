@@ -30,7 +30,7 @@ class Message extends DBConnection{
     }
     
     private function insert($message) {
-        $sql = "INSERT INTO psnMessageToSend (angMessage) VALUES (:message)";
+        $sql = "INSERT INTO psnMessageToSend (agnMessage) VALUES (:message)";
         $stm = $this->DB->prepare($sql);
         $stm->bindParam(":message", $message, PDO::PARAM_STR);
         $this->runQuery($stm);
