@@ -6,6 +6,9 @@ class DataMap {
     private $css;
     private $js;
     private $title;
+    private $message;
+    private $get;
+    private $post;
 
     public function get($dataType, $key) {
         if($this->isArray($this->$dataType)){
@@ -13,12 +16,8 @@ class DataMap {
         }else{
             return false;
         }
-//        if($return[0] !== 'wrongName'){
-//            $return = $this->checkIfFIleExist($return);
-//        }
         return $return;
     }
-    
     
     public function addHTMLFile($path, $arrayHTMLFile) {
         if ($this->isArray($arrayHTMLFile)) {
@@ -50,13 +49,26 @@ class DataMap {
         $this->title = $arrayTitle;
         return true;
     }
+    public function addSystemMessage($arraySystemMessages) {
+        $this->message = $arraySystemMessages;
+        return true;
+    }
+    public function addVarGET($varGET) {
+        $this->get = $this->setVarGET($varGET);
+        return true;
+    }
+    
+    public function addVarPOST($varPOST) {
+       $this->post = $this->setVarPOST($varPOST);
+       return true;
+    }
     
     private function constructArray($path, $arrayToAdd, $fileType) {
         return array_combine($arrayToAdd, array_map(function($fileName) use ($path, $fileType) {
                     return sprintf($path, $fileName . '.' . $fileType);
                 }, $arrayToAdd));
     }
-    public function wrapPath($format, $arrayPaths) {
+    private function wrapPath($format, $arrayPaths) {
         $values = array_values($arrayPaths);
         $keys = array_keys($arrayPaths);
         $values  = array_map(function ($path) use ($format){
@@ -64,7 +76,6 @@ class DataMap {
         }, $arrayPaths);
         return array_combine($keys, $values);
     }
-    // sprintf('<script type="text/javascript" lang="javascript" src="%s">', $this->js)
 
     private function isArray($varInto) {
         if (is_array($varInto)) {
@@ -79,12 +90,48 @@ class DataMap {
         }
         return array('wrongName');
     }
-
-    private function checkIfFIleExist($fileName) {
-        if (file_exists($fileName)) {
-            return $fileName;
+       
+    private function setVarGET($arrayVars){
+        for ($a = 0; sizeof($arrayVars) > $a; $a++) {
+            if (!isset($_GET[$arrayVars[$a]])) {
+                $arrayVarsOUT[$a] = "";
+            } else {                   
+                $arrayVarsOUT[$a] = $this->setStrings($_GET[$arrayVars[$a]]);
+            }
         }
-        return array('fileNotExist');
+        return array_combine($arrayVars, $arrayVarsOUT);
+    }
+    
+    private function setVarPOST($arrayVars){
+        for ($a = 0; sizeof($arrayVars) > $a; $a++) {
+            if (!isset($_POST[$arrayVars[$a]])) {
+                $arrayVarsOUT[$a] = "";
+            } else {                   
+                $arrayVarsOUT[$a] = $this->setStrings($arrayVars[$a]);
+            }
+        }
+        return array_combine($arrayVars, $arrayVarsOUT);
+    }
+    
+    private function setStrings($string) {
+        if(is_string($string)){
+            $return = addslashes(trim($string));
+        }else{
+            $return = $string;
+        }
+        return $return;
     }
 
+    
+    public static function varIsSet($arrayAssocVarIn = false) {
+        if (is_array($arrayAssocVarIn) !== false) {
+            $qtdIndices = sizeof($arrayAssocVarIn);
+            for ($a = 0; $qtdIndices > $a; $a++) {
+                if (!isset($GLOBALS[$arrayAssocVarIn[$a]])) {
+                    $retorno[$arrayAssocVarIn[$a]] = "";
+                }
+            }
+        }
+        return $retorno;
+    }
 }

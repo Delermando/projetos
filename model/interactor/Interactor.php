@@ -2,40 +2,54 @@
 require_once('model/fileManager/Pages.php');
 require_once('model/core/CardModel.php');
 class Interactor{
-    private  $CardModel;
-    private  $Pages;
+    private $CardModel;
+    private $Pages;
+    private $dataMap;
        
     public function __construct($DataMap) {
+        $this->dataMap = $DataMap;
         $this->CardModel = New CardModel();
         $this->Pages = New Pages($DataMap);
     }
     
     public function homeBase() {
-        return $this->Pages->setPage('home', 'home');
+        
+          
+//       $date = $this->dataMap->get('post', 'selectDia')."-".$this->dataMap->get('post', 'selectMes')."-".$this->dataMap->get('post', 'selectAno');   
+//       $arrayToSave['toEmail'] = $this->dataMap->get('post', 'txtEmailDestinatario');
+//       $arrayToSave['toName'] = $this->dataMap->get('post', 'txtNomeDestinatario');
+//       $arrayToSave['fromEmail'] = $this->dataMap->get('post', 'txtEmailRemetente');
+//       $arrayToSave['fromName'] = $this->dataMap->get('post', 'txtNomeDestinatario');
+//       $arrayToSave['message'] = $this->dataMap->get('post', 'txtMensagem');
+//       $arrayToSave['date'] = $date;
+//       
+        $arrayToSave['toEmail'] = 'delsantos@hotmail.com.br';
+        $arrayToSave['toName'] = 'delermando';
+        $arrayToSave['fromEmail'] = 'd.santos@personare.com.br';
+        $arrayToSave['fromName'] = 'deler';
+        $arrayToSave['message'] = 'teste teste teste';
+        $arrayToSave['date'] =  '24-01-1992';
+        $this->setMessageToSave($this->CardModel->save($arrayToSave));
+        $this->Pages->setContent('home');
+
+        $this->Pages->setPage('htmlDefault');
     }
     
     public  function home() {
-        return $this->Pages->setPage('home', 'home');
+        $this->Pages->setContent('home');
+        return $this->Pages->setPage('htmlDefault');
     }
     public  function teste () {
-        return $this->Pages->setPage('teste', 'teste');
+        $this->Pages->setContent('teste');
+        return $this->Pages->setPage('htmlDefault');
     }
     
     public  function deler () {
-        return $this->Pages->setPage('teste', 'deler');
+        $this->Pages->setContent('deler');
+        return $this->Pages->setPage('htmlDefault');
     }
     
     public function jsonSelectAllCards(){
-        
-        $arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
-                    'toName'=>'testeNameToName',
-                    'fromEmail'=>'d.santos@personarel.com.br',
-                    'fromName'=>'testNameFromName',
-                    'message'=>'Mensagem',
-                    'date'=>'24-01-1999');
-//        $this->CardModel->save($arrayToSave);
-//        $this->cardModel->save($arrayToSave);
-//        var_dump($this->CardModel->select());
          echo json_encode($this->CardModel->select());
     }
             
@@ -43,5 +57,13 @@ class Interactor{
         return $this->Pages->pageRender();
     }
     
+    private function setMessageToSave($backOfClass) {
+        if(is_int($backOfClass)){
+            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registrationSucess'));
+        }else{
+            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registratioFailed'));
+        }
+    }
+
 
 }
