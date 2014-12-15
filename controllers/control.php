@@ -11,13 +11,10 @@ ini_set("log_errors", 1);
 
 require_once('model/repository/DataMap.php');
 require_once ('globals.php');
-require_once('model/core/CardModel.php');
-require_once('model/fileManager/Pages.php');
+require_once('model/router/Router.php');
+require_once('model/interactor/Interactor.php');
 
-define('DB_HOST', '192.168.0.198');
-define('DB_NAME', 'agenda');
-define('DB_USER', 'agenda');
-define('DB_PASS', 'agenda');
+
 
 $arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
                     'toName'=>'testeNameToName',
@@ -36,14 +33,20 @@ $arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
 //var_dump($cardModel->delete($id));
 //var_dump($cardModel->select());
 
+                      
+//$Page = NEW Pages($DataMap);
+
+$action = (isset($_GET['action']) ? $_GET['action'] : '');
+$Interactor = New Interactor($DataMap);
+$Router = New Router($action, $Interactor);
 
 
 
-
-
-$Page = NEW Pages($DataMap);
-$Page->setPage('home', 'delermandodede');
-
+$Router->set('', 'homeBase');
+$Router->set('home', 'home');
+$Router->set('teste', 'teste');
+$Router->set('deler', 'deler');
+$Router->set('jsonSelect', 'jsonSelectAllCards');
 
 
 

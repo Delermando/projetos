@@ -9,76 +9,8 @@ ini_set('display_errors', 'on');
 error_reporting(E_ALL);
 ini_set("log_errors", 1);
 
-define('DB_HOST', '192.168.0.198');
-define('DB_NAME', 'agenda');
-define('DB_USER', 'agenda');
-define('DB_PASS', 'agenda');
+$json_url = "local.agenda.com.br/?action=jsonSelect";
 
-
-require_once('model/core/CardModel.php');
-require_once('model/repository/DataMap.php');
-require_once('model/fileManager/Pages.php');
-
-$arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
-                    'toName'=>'testeNameToName',
-                    'fromEmail'=>'d.santos@personarel.com.br',
-                    'fromName'=>'testNameFromName',
-                    'message'=>'Mensagem',
-                    'date'=>'24-01-1999');
-
-//$id = $_GET['id'];
-//$cardModel = new CardModel();
-//var_dump($cardModel->update('12-fe:ae', 'personare'));
-//var_dump($cardModel->update('151-te:ae', 'deler'));
-//var_dump($cardModel->update('3-ms:am', 'deler'));
-//var_dump)$cardModel->save($arrayToSave));
-//var_dump($cardModel->delete($id));
-//var_dump($cardModel->select());
-
-
-
-$DataMap = new DataMap();
-
-$pathHTML = 'views/html/%s';
-$arrayPathHTMLFiles = array(
-    'home', 
-    'header',
-    'footer',
-    'signUpPage',    
-    'erroMessage',  
-    'editePage'  
-);
-
-$pathCSS = 'views/css/%s';
-$arrayPathCSSFiles = array(
-    'editOnPage',
-    'style'
-);
-
-$pathJS = 'views/js/%s';
-$arrayPathJSFiles = array(
-    'configJeditable', 
-    'editOnPage',
-    'jQuery',
-    'jeditable',    
-    'placeHolderFormLoginEng',  
-    'scripts',  
-    'scriptsConfiguracoes'  
-);
-
-$arrayTitle = array( 
-  'home' => 'Homepage Personare',      
-);
-
-$DataMap->addHTMLFile($pathHTML, $arrayPathHTMLFiles);
-$DataMap->addCSSFile($pathCSS, $arrayPathCSSFiles);
-$DataMap->addJSLFile($pathJS, $arrayPathJSFiles);
-$DataMap->addTitle($arrayTitle);
-
-
-$Page = NEW Pages($DataMap);
-$Page->setPage('home', 'delermandodede');
-
-
-
-
+$json = file_get_contents($json_url);
+$obj = json_decode($json);
+var_dump($obj);

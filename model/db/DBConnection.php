@@ -3,8 +3,7 @@
 class DBConnection {
 
     protected $conn;
-    
-    
+        
     protected function Connect() {
         try {
             $this->conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);

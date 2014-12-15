@@ -16,4 +16,12 @@ class Pages extends CreateHTML{
         return $this->defaultPage();
     }
     
+    protected  function teste() {
+        $this->valuesToReplace['css'] = $this->DataMap->get('css', 'style');
+        $this->valuesToReplace['title'] = $this->DataMap->get('title', 'home');
+        $this->valuesToReplace['dataForContent'] = $this->values; 
+        return $this->defaultPage();
+    }
+    
+    
 }

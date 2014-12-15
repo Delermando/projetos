@@ -1,5 +1,10 @@
 <?php
 
+define('DB_HOST', '192.168.0.198');
+define('DB_NAME', 'agenda');
+define('DB_USER', 'agenda');
+define('DB_PASS', 'agenda');
+
 $DataMap = new DataMap();
 
 $pathHTML = 'views/html/%s';
@@ -33,7 +38,16 @@ $arrayTitle = array(
   'home' => 'Homepage Personare',      
 );
 
+$arrayDatabaseInfo = array(
+    'bd'=>'agenda',
+    'host' => '192.168.0.198',
+    'user' => 'agenda',
+    'pass' => 'agenda'
+);
+
+
 $DataMap->addHTMLFile($pathHTML, $arrayPathHTMLFiles);
 $DataMap->addCSSFile($pathCSS, $arrayPathCSSFiles);
 $DataMap->addJSLFile($pathJS, $arrayPathJSFiles);
 $DataMap->addTitle($arrayTitle);
+//$DataMap->addDabaseInfo($arrayDatabaseInfo);
