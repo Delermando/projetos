@@ -1,3 +1,3 @@
 <?php
-    require_once('indexTest.php');
-    $HTML->pageRender();
+    require_once('controllers/control.php');
+    $Page->pageRender();

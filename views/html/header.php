@@ -2,13 +2,11 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>[:title:]</title>
         [:linksJS:]
         [:linksCSS:]
     </head>
-    <body>
-        [:title:]
-        
+    <body>   
         <div class="container">
             <header>
                     <div class="headerBarMenu">

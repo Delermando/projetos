@@ -9,15 +9,15 @@ ini_set('display_errors', 'on');
 error_reporting(E_ALL);
 ini_set("log_errors", 1);
 
+require_once('model/repository/DataMap.php');
+require_once ('globals.php');
+require_once('model/core/CardModel.php');
+require_once('model/fileManager/Pages.php');
+
 define('DB_HOST', '192.168.0.198');
 define('DB_NAME', 'agenda');
 define('DB_USER', 'agenda');
 define('DB_PASS', 'agenda');
-
-
-require_once('model/core/CardModel.php');
-require_once('model/repository/DataMap.php');
-require_once('model/fileManager/Pages.php');
 
 $arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
                     'toName'=>'testeNameToName',
@@ -25,6 +25,7 @@ $arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
                     'fromName'=>'testNameFromName',
                     'message'=>'Mensagem',
                     'date'=>'24-01-1999');
+
 
 //$id = $_GET['id'];
 //$cardModel = new CardModel();
@@ -37,43 +38,7 @@ $arrayToSave = array('toEmail' => 'delsantos@hotmail.com.br',
 
 
 
-$DataMap = new DataMap();
 
-$pathHTML = 'views/html/%s';
-$arrayPathHTMLFiles = array(
-    'home', 
-    'header',
-    'footer',
-    'signUpPage',    
-    'erroMessage',  
-    'editePage'  
-);
-
-$pathCSS = 'views/css/%s';
-$arrayPathCSSFiles = array(
-    'editOnPage',
-    'style'
-);
-
-$pathJS = 'views/js/%s';
-$arrayPathJSFiles = array(
-    'configJeditable', 
-    'editOnPage',
-    'jQuery',
-    'jeditable',    
-    'placeHolderFormLoginEng',  
-    'scripts',  
-    'scriptsConfiguracoes'  
-);
-
-$arrayTitle = array( 
-  'home' => 'Homepage Personare',      
-);
-
-$DataMap->addHTMLFile($pathHTML, $arrayPathHTMLFiles);
-$DataMap->addCSSFile($pathCSS, $arrayPathCSSFiles);
-$DataMap->addJSLFile($pathJS, $arrayPathJSFiles);
-$DataMap->addTitle($arrayTitle);
 
 
 $Page = NEW Pages($DataMap);
