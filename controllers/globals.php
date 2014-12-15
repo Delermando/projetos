@@ -1,4 +1,5 @@
 <?php
+
 $DataMap = new DataMap();
 
 define('DB_HOST', '192.168.0.198');
@@ -17,12 +18,12 @@ define('DB_PASS', 'agenda');
 
 $pathHTML = 'views/html/%s';
 $arrayPathHTMLFiles = array(
-    'home', 
+    'home',
     'header',
     'footer',
-    'signUpPage',    
-    'erroMessage',  
-    'editePage'  
+    'signUpPage',
+    'erroMessage',
+    'editePage'
 );
 
 $pathCSS = 'views/css/%s';
@@ -33,29 +34,29 @@ $arrayPathCSSFiles = array(
 
 $pathJS = 'views/js/%s';
 $arrayPathJSFiles = array(
-    'configJeditable', 
+    'configJeditable',
     'editOnPage',
     'jQuery',
-    'jeditable',    
-    'placeHolderFormLoginEng',  
-    'scripts',  
-    'scriptsConfiguracoes'  
+    'jeditable',
+    'placeHolderFormLoginEng',
+    'scripts',
+    'scriptsConfiguracoes'
 );
 
-$arrayTitle = array( 
-     'default'=>'Teste',
+$arrayTitle = array(
+    'default' => 'Teste',
     'error' => 'Personare - Error',
-    'home' => 'Personare - Homepage',      
+    'home' => 'Personare - Homepage',
     'editar' => 'Personare - Editar',
-    'cadastro' => 'Personare - Cadastro' 
+    'cadastro' => 'Personare - Cadastro'
 );
 
 $arraySystemMessages = array(
     'registratioFailed' => "Por favor tente novamente! Ocorreu algum erro durante o cadastro!",
     'registrationSucess' => 'Cadastro realizado com sucesso!',
     'fieldIncomplete' => 'Preencha todos os campos!',
-    'dataExclusionSucess'=> 'Os dados foram excluidos com sucesso! Total de linhas: ',
-    'dataExclusionFailed'=> 'Nem todos os dados foram excluidos com sucesso!'
+    'dataExclusionSucess' => 'Os dados foram excluidos com sucesso! Total de linhas: ',
+    'dataExclusionFailed' => 'Nem todos os dados foram excluidos com sucesso!'
 );
 
 $varPOST = array(
@@ -88,21 +89,3 @@ $DataMap->addVarGET($varGET);
 $DataMap->addVarPOST($varPOST);
 
 
-
-
-
-
-//
-//$varSetadas = setVar::varIsSet($varSet);
-//extract($varSetadas);
-//
-//$postSetadas = setVar::post($varPOST);
-//extract($postSetadas);
-//
-//$getSetadas = setVar::get($varGET);
-//extract($getSetadas);
-//
-//if (isset($action)) {
-//    $action = explode("-", $action);
-//    $action = $action[0];
-//}

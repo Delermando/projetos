@@ -30,9 +30,16 @@ class Interactor{
         $arrayToSave['message'] = 'teste teste teste';
         $arrayToSave['date'] =  '24-01-1992';
         $this->setMessageToSave($this->CardModel->save($arrayToSave));
-        $this->Pages->setContent('home');
+        $this->Pages->setContent('teste ok');
 
         $this->Pages->setPage('htmlDefault');
+    }
+    private function setMessageToSave($backOfClass) {
+        if(is_int($backOfClass)){
+            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registrationSucess'));
+        }else{
+            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registratioFailed'));
+        }
     }
     
     public  function home() {
@@ -57,13 +64,7 @@ class Interactor{
         return $this->Pages->pageRender();
     }
     
-    private function setMessageToSave($backOfClass) {
-        if(is_int($backOfClass)){
-            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registrationSucess'));
-        }else{
-            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registratioFailed'));
-        }
-    }
+    
 
 
 }
