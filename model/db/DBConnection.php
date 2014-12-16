@@ -1,31 +1,31 @@
-<?php
+<?php namespace Cartao\model\db;
 
 class DBConnection {
 
-    protected $conn;
+    protected  $conn;
         
-    protected function Connect() {
+    public function Connect() {
         try {
-            $this->conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+            $this->conn = new \PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
+            $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            $this->conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_OBJ);
         } catch (PDOException $e) {
             echo $e->getMessage();
         }
         return $this->conn  ;
     }
 
-    protected function prepare($sql) {
+    public function prepare($sql) {
         return $this->Connect()->prepare($sql);
     }
 
-    protected function runQuery($stm) {
+    public function runQuery($stm) {
         return $stm->execute(); 
     }
 
-    protected function runSelect($stm) {//SELECT
+    public function runSelect($stm) {//SELECT
         $stm->execute();
-        return $stm->fetchAll(PDO::FETCH_ASSOC);
+        return $stm->fetchAll(\PDO::FETCH_ASSOC);
     }
     
 }

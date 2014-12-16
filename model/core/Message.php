@@ -1,12 +1,10 @@
-<?php 
-require_once ('model/db/DBConnection.php');
+<?php namespace Cartao\model\core;
 
-class Message extends DBConnection{
-    private $DB;
-
-    public function __construct() {
-        $conn = new DBConnection();
-        $this->DB = $conn->Connect();
+class Message{
+     private $DB;
+     
+     public function __construct() {
+        $this->DB = new \Cartao\model\db\DBConnection();
     }
     
     public function save($message){
@@ -16,25 +14,25 @@ class Message extends DBConnection{
     public function delete($id) {
         $delete = "DELETE FROM psnMessageToSend WHERE agnID= :id";
         $stm = $this->DB->prepare($delete);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        $this->runQuery($stm);       
+        $stm->bindParam(":id", $id, \PDO::PARAM_INT);
+        $this->DB->runQuery($stm);       
         return $this->testDelete($stm->rowCount());
     }
     
     public function update($column, $value, $id){
         $sql = "UPDATE psnMessageToSend SET {$column} = :value WHERE agnID = :id";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":value", $value, PDO::PARAM_STR);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        return $this->runQuery($stm);
+        $stm->bindParam(":value", $value, \PDO::PARAM_STR);
+        $stm->bindParam(":id", $id, \PDO::PARAM_INT);
+        return $this->DB->runQuery($stm);
     }
     
     private function insert($message) {
         $sql = "INSERT INTO psnMessageToSend (agnMessage) VALUES (:message)";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":message", $message, PDO::PARAM_STR);
-        $this->runQuery($stm);
-        return intval($this->DB->lastInsertId());
+        $stm->bindParam(":message", $message, \PDO::PARAM_STR);
+        $this->DB->runQuery($stm);
+        return intval($this->DB->Connect()->lastInsertId());
     }
     
     private function testDelete($rowDelete) {

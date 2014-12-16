@@ -1,4 +1,4 @@
-<?php 
+<?php namespace Cartao\filters;
 
 class Filters {
     
@@ -8,8 +8,9 @@ class Filters {
             'fe:an' => array('psnFromEmail', 'agnName'),
             'te:ae' => array('psnToEmail', 'agnEmail'),
             'te:an' => array('psnToEmail', 'agnName'),
-            'ms:am' => array('psnMessageToSend', 'angMessage'),
-            'ss:ds' => array('psnScheduleSend', 'agnDateToSend'));
+            'ms:am' => array('psnMessageToSend', 'agnMessage'),
+//            'ss:ds' => array('psnScheduleSend', 'agnDateToSend')
+        );
     private $arrayToSave;
 
     public function setArrayToSave($array) {
@@ -54,13 +55,6 @@ class Filters {
         }
         return false;      
     }
-    
-//    public function checkIdsToDelete($arrayIDDelete) {
-//        if($this->checkSizeArrayIdsToDelete($arrayIDDelete) && $this->checkIfIDIsSetToDelete($arrayIDDelete) && $this->checkIfIDIsIntToDelete($arrayIDDelete)){
-//            return true;
-//        }
-//        return false;
-//    }
     
     public function getIdColumAndTableFromIdetifier($identifier) {
         $arrayIdAndTableColumn = $this->testAllVerificationsByIdentifier($identifier);
@@ -109,31 +103,6 @@ class Filters {
         }
         return true;
     }
-
-
-//    private function checkIfIDIsSetToDelete($arrayIDDelete) {
-//        foreach($arrayIDDelete as $value){
-//            if(!$this->checkIfIsSet($value)){
-//                return false;
-//            }
-//        }
-//        return true;
-//    }
-//    private function checkSizeArrayIdsToDelete($arrayIDDelete) {
-//        if(sizeof($arrayIDDelete) == 4){
-//            return true;
-//        }
-//        return false;
-//    }
-//
-//    private function checkIfIDIsIntToDelete($arrayIDDelete) {
-//        foreach($arrayIDDelete as $value){
-//            if(!$this->checkIfIsInt($value)){
-//                return false;
-//            }
-//        }
-//        return true;
-//    }
     
     private function checkIfAllVerificationsIsToSaveIsTrue($array) {
        $return = true;

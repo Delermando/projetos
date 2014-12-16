@@ -6,7 +6,7 @@ class ToEmailTest extends PHPUnit_Framework_TestCase {
     protected $instancia;
 
     protected function setUp(){
-        $this->instancia = New ToEmail();
+        $this->instancia = New \Cartao\model\core\ToEmail();
     }
     
     /**

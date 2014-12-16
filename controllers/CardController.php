@@ -1,7 +1,4 @@
-<?php
-
-require_once('model/htmlManager/HTMLPages.php');
-require_once('model/core/CardModel.php');
+<?php namespace Cartao\controllers;
 
 class CardController{
     
@@ -11,8 +8,8 @@ class CardController{
        
     public function __construct($DataMap) {
         $this->DataMap = $DataMap;
-        $this->CardModel = New CardModel();
-        $this->HTMLPage = New HTMLPages($DataMap);
+        $this->CardModel = New \Cartao\model\core\CardModel();
+        $this->HTMLPage  = New \Cartao\model\htmlManager\HTMLPages($DataMap);
     }
     
     public function pageHomeBase() {
@@ -22,7 +19,7 @@ class CardController{
     
         
     public  function pageHome() {
-        $this->Pages->setContent('home');
+        $this->HTMLPage->setContent('home');
         return $this->HTMLPage->setPage('htmlDefault');
     }
     public  function pageCadastro() {
@@ -64,7 +61,7 @@ class CardController{
     }
     
     public function jsonSelectAllCards(){
-         echo json_encode($this->CardModel->select());
+//         echo json_encode($this->CardModel->select());
     }
             
     public function render() {

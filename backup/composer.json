@@ -1,0 +1,13 @@
+{
+   "autoload": {
+        "psr-0": {
+            "cartoes": ""
+        },
+        "classmap": [
+            "model",
+            "controllers",
+            "test"
+        ]
+    }
+}
+

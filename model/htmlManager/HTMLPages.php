@@ -1,6 +1,5 @@
-<?php 
+<?php namespace Cartao\model\htmlManager;
 
-require_once 'HTMLStructure.php';
 class HTMLPages extends HTMLStructure{
     protected  $DataMap;
     protected  $values;

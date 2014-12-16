@@ -1,12 +1,7 @@
-<?php 
+<?php namespace Cartao\model\core;
 
-require_once ('model/filters/Filters.php');
-require_once ('model/core/FromEmail.php');
-require_once ('model/core/ToEmail.php');
-require_once ('model/core/Message.php');
-require_once ('model/core/RelationCard.php');
 
-class CardModel extends Filters{
+class CardModel extends \Cartao\filters\Filters{
     private $FromEmail = 'FromEmail';
     private $ToEmail = 'ToEmail';
     private $Message = 'Message';
@@ -136,7 +131,8 @@ class CardModel extends Filters{
     }
     
     private function chooseInstance($className) {
-        return new $className();
+        $mountClass = "\Cartao\\model\\core\\".$className;
+        return new $mountClass();
     }
 
 }

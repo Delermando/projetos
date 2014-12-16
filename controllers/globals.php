@@ -1,6 +1,6 @@
 <?php 
+$DataMap = new Cartao\model\dataRepository\DataMap();
 
-$DataMap = new DataMap();
 define('DB_HOST', '192.168.0.198');
 define('DB_NAME', 'agenda');
 define('DB_USER', 'agenda');

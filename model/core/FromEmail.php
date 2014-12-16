@@ -1,13 +1,10 @@
-<?php 
-require_once ('model/db/DBConnection.php');
+<?php namespace Cartao\model\core;
 
-class FromEmail extends DBConnection{
-    
-    private $DB;
-
-    public function __construct() {
-        $conn = new DBConnection();
-        $this->DB = $conn->Connect();
+class FromEmail{
+     private $DB;
+     
+     public function __construct() {
+        $this->DB = new \Cartao\model\db\DBConnection();
     }
     
     public function save($name, $email){
@@ -21,27 +18,27 @@ class FromEmail extends DBConnection{
     public function delete($id) {
         $delete = "DELETE FROM psnFromEmail WHERE agnID= :id";
         $stm = $this->DB->prepare($delete);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        $this->runQuery($stm);       
+        $stm->bindParam(":id", $id, \PDO::PARAM_INT);
+        $this->DB->runQuery($stm);       
         return $this->testDelete($stm->rowCount());
     }
     
     public function update($column, $value, $id){
         $sql = "UPDATE psnFromEmail SET {$column} = :value WHERE agnID = :id";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":value", $value, PDO::PARAM_STR);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        return $this->runQuery($stm);
+        $stm->bindParam(":value", $value, \PDO::PARAM_STR);
+        $stm->bindParam(":id", $id, \PDO::PARAM_INT);
+        return $this->DB->runQuery($stm);
     }
     
     private function insert($name, $email) {
          $sql = "INSERT INTO psnFromEmail(agnEmail,agnName)"
                     ." VALUES (:email, :name)";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":name", $name, PDO::PARAM_STR);
-        $stm->bindParam(":email", $email, PDO::PARAM_STR);
-        $this->runQuery($stm);
-        return intval($this->DB->lastInsertId());
+        $stm->bindParam(":name", $name, \PDO::PARAM_STR);
+        $stm->bindParam(":email", $email, \PDO::PARAM_STR);
+        $this->DB->runQuery($stm);  
+        return intval($this->DB->Connect()->lastInsertId());
     }
     
     private function testDelete($rowDelete) {
@@ -54,8 +51,8 @@ class FromEmail extends DBConnection{
     private function selectByEmail($email) {
         $sql = "SELECT agnID FROM psnFromEmail WHERE agnEmail = :email";
         $stm = $this->DB->prepare($sql);
-        $stm->bindValue(":email", $email, PDO::PARAM_STR);
-        return  $this->RunSelect($stm);
+        $stm->bindValue(":email", $email, \PDO::PARAM_STR);
+        return  $this->DB->runSelect($stm);
     }  
     private  function testIfExist($email) {
         $emailExist = $this->selectByEmail($email);

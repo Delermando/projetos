@@ -1,6 +1,6 @@
-<?php 
-require_once('controllers/CardController.php');
-class Router extends CardController{
+<?php namespace Cartao\model\router;
+
+class Router extends \Cartao\controllers\CardController{
     private $router;
     private $action;
     private $interactor;
@@ -32,5 +32,5 @@ class Router extends CardController{
             return false;
         }       
     }
-    
+//    
 }

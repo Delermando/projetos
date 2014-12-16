@@ -1,12 +1,10 @@
-<?php 
-require_once ('model/db/DBConnection.php');
+<?php namespace Cartao\model\core;
 
-class RelationCard extends DBConnection{
+class RelationCard{
     private $DB;
 
     public function __construct() {
-        $conn = new DBConnection();
-        $this->DB = $conn->Connect();
+        $this->DB = new \Cartao\model\db\DBConnection();
     }
     
     public function save($idFromEmail, $idToEmail, $idMessage, $dataEnvio){
@@ -16,44 +14,46 @@ class RelationCard extends DBConnection{
     public function delete($id) {
         $delete = "DELETE FROM psnScheduleSend WHERE agnID= :id";
         $stm = $this->DB->prepare($delete);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        $this->runQuery($stm);       
+        $stm->bindParam(":id", $id, \PDO::PARAM_INT);
+        $this->DB->runQuery($stm);       
         return $this->testDelete($stm->rowCount());
     }
     
     public function selecCountIDsInFromEmail($id) {
         $sql = "SELECT count(agnIDFromEmail) AS 'repeated' FROM psnScheduleSend WHERE agnIDFromEmail = :id";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        return  $this->RunSelect($stm);
+        $stm->bindParam(":id", $id,\PDO::PARAM_INT);
+        return  $this->DB->runSelect($stm);
     }
     
     public function selecCountIDsInToEmail($id) {
         $sql = "SELECT count(agnIDToEmail) AS 'repeated' FROM psnScheduleSend WHERE agnIDToEmail = :id";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        return  $this->RunSelect($stm);
+        $stm->bindParam(":id", $id, \PDO::PARAM_INT);
+        return  $this->DB->runSelect($stm);
     }
     
     public function selectIDsToDelete($id) {
         $sql = "SELECT agnIDFromEmail AS IDFromEmail, agnIDToEmail AS IDToEmail, agnIDMessage AS IDMessage "
                 . "FROM psnScheduleSend WHERE agnID = :id";
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":id", $id, PDO::PARAM_INT);
-        return  $this->RunSelect($stm);
+        $stm->bindParam(":id", $id, \PDO::PARAM_INT);
+        return  $this->DB->runSelect($stm);
     }
 
     
-    private function insert($idFromEmail, $idToEmail, $idMessage, $dataEnvio) {
+    private function insert($idFromEmail, $idToEmail, $idMessage = 65, $dataEnvio) {
         $sql = "INSERT INTO psnScheduleSend (agnIDFromEmail, agnIDToEmail, agnIDMessage, agnDateToSend) "
                 . "VALUES (:idFromEmail, :idToEmail, :idMessage, :dataEnvio)";
+        $idMessage2 = 65;
         $stm = $this->DB->prepare($sql);
-        $stm->bindParam(":idFromEmail", $idFromEmail, PDO::PARAM_INT);
-        $stm->bindParam(":idToEmail", $idToEmail, PDO::PARAM_INT);
-        $stm->bindParam(":idMessage", $idMessage, PDO::PARAM_INT);
-        $stm->bindParam(":dataEnvio", $dataEnvio, PDO::PARAM_STR);
-        $this->runQuery($stm);
-        return intval($this->DB->lastInsertId());
+        $stm->bindParam(":idFromEmail", $idFromEmail, \PDO::PARAM_INT);
+        $stm->bindParam(":idToEmail", $idToEmail, \PDO::PARAM_INT);
+        $stm->bindParam(":idMessage", $idMessage2, \PDO::PARAM_INT);
+        $stm->bindParam(":dataEnvio", $dataEnvio, \PDO::PARAM_STR);
+        $this->DB->runQuery($stm);
+        return intval($this->DB->Connect()->lastInsertId());
+//        return $idFromEmail.'-'.$idToEmail.'-'.$idMessage.'-'.$dataEnvio;
     }
     
     public function selectAllRegisters() {
@@ -63,8 +63,8 @@ class RelationCard extends DBConnection{
                 INNER JOIN psnFromEmail AS fe ON (ss.agnIDFromEmail = fe.agnID) 
                 INNER JOIN psnToEmail AS te ON (ss.agnIDToEmail = te.agnID)
                 INNER JOIN psnMessageToSend AS ms ON (ss.agnIDMessage = ms.agnID)";
-        $stm = $this->DB->prepare($sql);
-        return  $this->RunSelect($stm);
+        $stm = $this->DB->prepare($sql);        
+        return  $this->DB->runSelect($stm);
     }
 
     
