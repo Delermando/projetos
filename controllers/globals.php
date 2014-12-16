@@ -1,7 +1,6 @@
-<?php
+<?php 
 
 $DataMap = new DataMap();
-
 define('DB_HOST', '192.168.0.198');
 define('DB_NAME', 'agenda');
 define('DB_USER', 'agenda');
@@ -89,3 +88,4 @@ $DataMap->addVarGET($varGET);
 $DataMap->addVarPOST($varPOST);
 
 
+//var_dump($DataMap->get('html', 'footer'));

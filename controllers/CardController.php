@@ -1,21 +1,32 @@
 <?php
-require_once('model/fileManager/Pages.php');
+
+require_once('model/htmlManager/HTMLPages.php');
 require_once('model/core/CardModel.php');
-class Interactor{
+
+class CardController{
+    
     private $CardModel;
     private $Pages;
-    private $dataMap;
+    private $DataMap;
        
     public function __construct($DataMap) {
-        $this->dataMap = $DataMap;
+        $this->DataMap = $DataMap;
         $this->CardModel = New CardModel();
-        $this->Pages = New Pages($DataMap);
+        $this->HTMLPage = New HTMLPages($DataMap);
     }
     
-    public function homeBase() {
+    public function pageHomeBase() {
+        $this->HTMLPage->setContent('homeBase');
+        return $this->HTMLPage->setPage('htmlDefault');
+    }
+    
         
-          
-//       $date = $this->dataMap->get('post', 'selectDia')."-".$this->dataMap->get('post', 'selectMes')."-".$this->dataMap->get('post', 'selectAno');   
+    public  function pageHome() {
+        $this->Pages->setContent('home');
+        return $this->HTMLPage->setPage('htmlDefault');
+    }
+    public  function pageCadastro() {
+        //       $date = $this->dataMap->get('post', 'selectDia')."-".$this->dataMap->get('post', 'selectMes')."-".$this->dataMap->get('post', 'selectAno');   
 //       $arrayToSave['toEmail'] = $this->dataMap->get('post', 'txtEmailDestinatario');
 //       $arrayToSave['toName'] = $this->dataMap->get('post', 'txtNomeDestinatario');
 //       $arrayToSave['fromEmail'] = $this->dataMap->get('post', 'txtEmailRemetente');
@@ -23,37 +34,33 @@ class Interactor{
 //       $arrayToSave['message'] = $this->dataMap->get('post', 'txtMensagem');
 //       $arrayToSave['date'] = $date;
 //       
+       
+        $this->setMessageToSave($this->CardModel->save($this->arrayDadosToSave()));
+        $this->HTMLPage->setContent('cadastrar');
+        return $this->HTMLPage->setPage('htmlDefault');      
+    }
+    
+    private function setMessageToSave($backOfClass) {
+        if(is_int($backOfClass)){
+            $this->HTMLPage->setMessageFeedBack($this->DataMap->get('message', 'registrationSucess'));
+        }else{
+            $this->HTMLPage->setMessageFeedBack($this->DataMap->get('message', 'registratioFailed'));
+        }
+    }
+    
+    private function arrayDadosToSave() {
         $arrayToSave['toEmail'] = 'delsantos@hotmail.com.br';
         $arrayToSave['toName'] = 'delermando';
         $arrayToSave['fromEmail'] = 'd.santos@personare.com.br';
         $arrayToSave['fromName'] = 'deler';
         $arrayToSave['message'] = 'teste teste teste';
         $arrayToSave['date'] =  '24-01-1992';
-        $this->setMessageToSave($this->CardModel->save($arrayToSave));
-        $this->Pages->setContent('teste ok');
+        return $arrayToSave;
+    }
 
-        $this->Pages->setPage('htmlDefault');
-    }
-    private function setMessageToSave($backOfClass) {
-        if(is_int($backOfClass)){
-            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registrationSucess'));
-        }else{
-            $this->Pages->setMessageFeedBack($this->dataMap->get('message', 'registratioFailed'));
-        }
-    }
-    
-    public  function home() {
-        $this->Pages->setContent('home');
-        return $this->Pages->setPage('htmlDefault');
-    }
-    public  function teste () {
-        $this->Pages->setContent('teste');
-        return $this->Pages->setPage('htmlDefault');
-    }
-    
-    public  function deler () {
-        $this->Pages->setContent('deler');
-        return $this->Pages->setPage('htmlDefault');
+    public  function pageEditar() {
+        $this->HTMLPage->setContent('editar');
+        return $this->HTMLPage->setPage('htmlDefault');
     }
     
     public function jsonSelectAllCards(){
@@ -61,10 +68,6 @@ class Interactor{
     }
             
     public function render() {
-        return $this->Pages->pageRender();
-    }
-    
-    
-
-
+        return $this->HTMLPage->pageRender();
+    }    
 }

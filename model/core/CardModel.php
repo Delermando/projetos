@@ -1,5 +1,6 @@
-<?php
-require_once ('model/dataManager/Filters.php');
+<?php 
+
+require_once ('model/filters/Filters.php');
 require_once ('model/core/FromEmail.php');
 require_once ('model/core/ToEmail.php');
 require_once ('model/core/Message.php');

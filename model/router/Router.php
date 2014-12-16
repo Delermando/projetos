@@ -1,6 +1,6 @@
-<?php
-require_once('model/interactor/Interactor.php');
-class Router extends Interactor{
+<?php 
+require_once('controllers/CardController.php');
+class Router extends CardController{
     private $router;
     private $action;
     private $interactor;

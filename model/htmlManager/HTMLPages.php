@@ -1,12 +1,12 @@
-<?php
-require_once 'CreateHTML.php';
-class Pages extends CreateHTML{
+<?php 
+
+require_once 'HTMLStructure.php';
+class HTMLPages extends HTMLStructure{
     protected  $DataMap;
     protected  $values;
     
-
-    public function __construct($objectDapaMap) {
-        $this->DataMap = $objectDapaMap;
+    public function __construct($objectDataMap) {
+        $this->DataMap = $objectDataMap;
     }
     
     protected  function htmlDefault() {

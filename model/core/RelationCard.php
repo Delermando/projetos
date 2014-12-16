@@ -1,4 +1,4 @@
-<?php
+<?php 
 require_once ('model/db/DBConnection.php');
 
 class RelationCard extends DBConnection{

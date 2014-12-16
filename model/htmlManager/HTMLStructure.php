@@ -1,6 +1,6 @@
-<?php
+<?php 
 
-class CreateHTML {
+class HTMLStructure {
 
     private $page;
     protected $flags = array('[:linksCSS:]', '[:linksJS:]', '[:message:]', '[:dataForContent:]', '[:title:]');
