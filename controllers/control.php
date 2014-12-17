@@ -34,16 +34,18 @@ $Router->set('jsonSelect', 'jsonSelectAllCards');
 //
 ////$db = new Cartao\model\db\DBConnection();
 ////$db->Connect();
-////$cardModel = new \Cartao\model\core\CardModel();
-//////$cardModel->delete(1);
-////
-////
-////$arrayToSave['toEmail'] = 'delsantos@hotmail.com.br';
-////        $arrayToSave['toName'] = 'delermando';
-////        $arrayToSave['fromEmail'] = 'dd.santos@personare.com.br';
-////        $arrayToSave['fromName'] = 'deler';
-////        $arrayToSave['message'] = 'teste teste teste';
-////        $arrayToSave['date'] =  '24-01-1992';
-////$teste = $cardModel->save($arrayToSave);
-////var_dump($teste);
+//$cardModel = new \Cartao\model\core\CardModel();
+//$cardModel->delete(1);
+
+
+//$arrayToSave['toEmail'] = 'delsantos@hotmail.com.br';
+//        $arrayToSave['toName'] = 'delermando';
+//        $arrayToSave['fromEmail'] = 'dd.santos@personare.com.br';
+//        $arrayToSave['fromName'] = 'deler';
+//        $arrayToSave['message'] = 'teste teste teste';
+//        $arrayToSave['date'] =  '24-01-1992';
+//$teste = $cardModel->save($arrayToSave);
+
+
+
 ////

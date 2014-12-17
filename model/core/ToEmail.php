@@ -9,7 +9,7 @@ class ToEmail{
     
     public function save($name, $email){
         $return = $this->testIfExist($email);
-        if($return === true){
+        if($return === true){;
            return  $this->insert($name, $email);
         }
         return $return;
@@ -37,7 +37,7 @@ class ToEmail{
         $stm->bindParam(":name", $name, \PDO::PARAM_STR);
         $stm->bindParam(":email", $email, \PDO::PARAM_STR);
         $this->DB->runQuery($stm);
-        return intval($this->DB->Connect()->lastInsertId());
+        return intval($this->DB->lastIdOnInsert());
     }
     
     private function testDelete($rowDelete) {

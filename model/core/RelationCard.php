@@ -42,18 +42,16 @@ class RelationCard{
     }
 
     
-    private function insert($idFromEmail, $idToEmail, $idMessage = 65, $dataEnvio) {
+    private function insert($idFromEmail, $idToEmail, $idMessage, $dataEnvio) {
         $sql = "INSERT INTO psnScheduleSend (agnIDFromEmail, agnIDToEmail, agnIDMessage, agnDateToSend) "
                 . "VALUES (:idFromEmail, :idToEmail, :idMessage, :dataEnvio)";
-        $idMessage2 = 65;
         $stm = $this->DB->prepare($sql);
         $stm->bindParam(":idFromEmail", $idFromEmail, \PDO::PARAM_INT);
         $stm->bindParam(":idToEmail", $idToEmail, \PDO::PARAM_INT);
-        $stm->bindParam(":idMessage", $idMessage2, \PDO::PARAM_INT);
+        $stm->bindParam(":idMessage", $idMessage, \PDO::PARAM_INT);
         $stm->bindParam(":dataEnvio", $dataEnvio, \PDO::PARAM_STR);
         $this->DB->runQuery($stm);
-        return intval($this->DB->Connect()->lastInsertId());
-//        return $idFromEmail.'-'.$idToEmail.'-'.$idMessage.'-'.$dataEnvio;
+        return intval($this->DB->lastIdOnInsert());
     }
     
     public function selectAllRegisters() {

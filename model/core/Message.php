@@ -32,7 +32,7 @@ class Message{
         $stm = $this->DB->prepare($sql);
         $stm->bindParam(":message", $message, \PDO::PARAM_STR);
         $this->DB->runQuery($stm);
-        return intval($this->DB->Connect()->lastInsertId());
+        return intval($this->DB->lastIdOnInsert());
     }
     
     private function testDelete($rowDelete) {

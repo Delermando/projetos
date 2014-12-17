@@ -38,7 +38,7 @@ class FromEmail{
         $stm->bindParam(":name", $name, \PDO::PARAM_STR);
         $stm->bindParam(":email", $email, \PDO::PARAM_STR);
         $this->DB->runQuery($stm);  
-        return intval($this->DB->Connect()->lastInsertId());
+        return intval($this->DB->lastIdOnInsert());
     }
     
     private function testDelete($rowDelete) {
@@ -54,6 +54,13 @@ class FromEmail{
         $stm->bindValue(":email", $email, \PDO::PARAM_STR);
         return  $this->DB->runSelect($stm);
     }  
+    private function lastInsert() {
+        $sql = "SELECT agnID FROM psnFromEmail WHERE agnEmail = :email";
+        $stm = $this->DB->prepare($sql);
+        $stm->bindValue(":email", $email, \PDO::PARAM_STR);
+        return  $this->DB->runSelect($stm);
+    }
+
     private  function testIfExist($email) {
         $emailExist = $this->selectByEmail($email);
         if(sizeof($emailExist) == 0){
