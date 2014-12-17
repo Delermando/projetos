@@ -11,6 +11,6 @@ class HTMLStructureTest extends PHPUnit_Framework_TestCase {
      * @group testMakeHTMLStructure
      */
     public function testMakeHTMLStructure() {
-        $this->assertInstanceOf('HTMLStructure', $this->instancia);
+        $this->assertInstanceOf('\Cartao\model\htmlManager\HTMLStructure', $this->instancia);
     }
 }

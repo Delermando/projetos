@@ -8,6 +8,6 @@ class CardModelTest extends PHPUnit_Framework_TestCase {
     }
       
     public function testMakeCardModelComParametro() {
-        $this->assertInstanceOf('CardModel', $this->instancia);
+        $this->assertInstanceOf('\Cartao\model\core\CardModel', $this->instancia);
     }
 }

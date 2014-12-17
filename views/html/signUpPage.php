@@ -2,7 +2,7 @@
     <main>
         <article>
             <div class="formCadastro">
-                <form method="POST" action="?action=cadastro&amp;cadastrarCartoes=true" name="MontaCartao">
+                <form method="POST" action="?action=cadastroEfetuar" name="MontaCartao">
                     <div class="formBoxMensagem">  
                         <label for="txtMensagem"><p>Mensagem</p>
                             <textarea name="txtMensagem"></textarea>

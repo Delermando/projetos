@@ -39,7 +39,7 @@ class DataMap {
     public function addJSLFile($path, $arrayJSFile) {
         if ($this->isArray($arrayJSFile)) {
             $this->js = $this->constructArray($path, $arrayJSFile, 'js');
-            $this->js = $this->wrapPath('<script type="text/javascript" lang="javascript" src="%s">', $this->js);
+            $this->js = $this->wrapPath('<script type="text/javascript" lang="javascript" src="%s"></script>', $this->js);
             return true;
         }
         return false;

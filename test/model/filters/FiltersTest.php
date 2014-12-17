@@ -13,7 +13,7 @@ class FiltersTest extends PHPUnit_Framework_TestCase {
      * @group testMakeFilters
      */
     public function testMakeFilters() {
-        $this->assertInstanceOf('Filters', $this->instancia);
+        $this->assertInstanceOf('\Cartao\filters\Filters', $this->instancia);
     }
 
     
@@ -188,7 +188,7 @@ class FiltersTest extends PHPUnit_Framework_TestCase {
             array(array('id'=>'10','table'=>'psnFromEmail','column'=>'agnName'), '10-fe:an'), 
             array(array('id'=>'10','table'=>'psnToEmail','column'=>'agnEmail'), '10-te:ae'), 
             array(array('id'=>'10','table'=>'psnToEmail','column'=>'agnName'), '10-te:an'), 
-            array(array('id'=>'10','table'=>'psnMessageToSend','column'=>'angMessage'), '10-ms:am'), 
+            array(array('id'=>'10','table'=>'psnMessageToSend','column'=>'agnMessage'), '10-ms:am'), 
             array(array('id'=>'10','table'=>'psnScheduleSend','column'=>'agnDateToSend'), '10-ss:ds'), 
             array(false, 's10-ss:ds'), 
             array(false, '-ss:ds'), 

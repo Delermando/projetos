@@ -19,7 +19,7 @@
                 <tr>
                     <td colspan="8"><h3>Informações</h3></td>
                 </tr>
-                <form method="POST" id="formExcluir">
+            <form method="POST" id="formExcluir" action="?action=editarExcluir">
                     <tr>
                         <td><strong><a href="#" id="excluir">Excluir</a></strong></td>
                         <td><strong>E. remetente</strong></td>
@@ -30,7 +30,7 @@
                         <td><strong>Data envio</strong></td>
                         <td><strong>Data criação</strong></td>
                     </tr>
-                    <?php echo $html;?>
+                    [:dataForContent:]
                 </form>
             </tbody>
         </table>

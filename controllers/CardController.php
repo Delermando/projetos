@@ -18,6 +18,11 @@ class CardController{
     }
     
     public  function cadastro() {
+        $this->HTMLPage->setContent('cadastrar');
+        return $this->HTMLPage->setPage('pageSignUp');      
+    }
+    
+    public  function cadastroEfetuar() {
         $this->setMessageToSave($this->CardModel->save($this->arrayDadosToSave()));
         $this->HTMLPage->setContent('cadastrar');
         return $this->HTMLPage->setPage('pageSignUp');      
@@ -43,8 +48,29 @@ class CardController{
     }
 
     public  function editar() {
-        $this->HTMLPage->setContent('editar');
+        $this->HTMLPage->setContent($this->getListOfRegisters());
         return $this->HTMLPage->setPage('pageEdit');
+    }
+    
+    public  function editarExcluir() {
+        $this->deleteCards($this->DataMap->get('post', 'arrayExcluir'));
+        $this->HTMLPage->setContent($this->getListOfRegisters());
+        return $this->HTMLPage->setPage('pageEdit');
+    }
+    
+    public  function editarAtualizar() {
+//        echo $_GET['id'];
+//        $this->CardModel->update($identifier, $value);
+    }
+    
+    private function getListOfRegisters() {
+        return $this->CardModel->select();
+    }
+
+    private function deleteCards($arrayIds) {
+        for($i = 0; sizeof($arrayIds) >$i ;$i++){
+            $this->CardModel->delete($arrayIds[$i]);
+        }
     }
     
     public function jsonSelectAllCards(){

@@ -11,6 +11,6 @@ class HTMLPagesTest extends PHPUnit_Framework_TestCase {
      * @group testMakeHTMLPages
      */
     public function testMakeHTMLPages() {
-        $this->assertInstanceOf('HTMLPages', $this->instancia);
+        $this->assertInstanceOf('Cartao\model\htmlManager\HTMLPages', $this->instancia);
     }
 }

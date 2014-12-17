@@ -37,9 +37,7 @@ $arrayPathJSFiles = array(
     'editOnPage',
     'jQuery',
     'jeditable',
-    'placeHolderFormLoginEng',
     'scripts',
-    'scriptsConfiguracoes'
 );
 
 $arrayTitle = array(
@@ -88,7 +86,7 @@ $DataMap->addVarGET($varGET);
 $DataMap->addVarPOST($varPOST);
 
 
-//var_dump($DataMap->get('html', 'footer'));
+//var_dump();
 //var_dump($DataMap->get('post', 'txtMensagem'));
 //echo '<br/>';
 //echo '<br/>';
