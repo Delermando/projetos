@@ -14,18 +14,21 @@ class HTMLStructure {
         $this->page = $this->constructPage($functionNameReferToPage);
     }
 
-    public function setMessageFeedBack($message) {
-        if (isset($message) && $message !== "") {
-            $this->valuesToReplace['message'] = $message;
+    public function setMessageFeedBack($message, $status) {
+        if($status){
+            $messageToSet = "<div class='error'><div class='errorMensage messageSucessBackground'><h2>{$message}</h2></div></div>";
+        }else{
+            $messageToSet = "<div class='error'><div class='errorMensage messageFailedBackground'><h2>{$message}</h2></div></div>";
         }
+        $this->valuesToReplace['message'] = $messageToSet;
     }
 
     public function setContent($content = '') {
         $this->values = $content;
     }
 
-    protected function defaultPage() {
-        return $this->getHeader() . $this->getContent('home') . $this->getFooter();
+    protected function setContentHTML($htmlNameForContent) {
+        return $this->getHeader().$this->getContent($htmlNameForContent).$this->getFooter();
     }
 
     private function constructPage($functionNameReferToPage) {
@@ -42,7 +45,7 @@ class HTMLStructure {
     }
 
     private function getContent($content) {
-        return $this->getHTML($this->DataMap->get('html', 'home'));
+        return $this->getHTML($this->DataMap->get('html', $content));
     }
 
     private function getFooter() {

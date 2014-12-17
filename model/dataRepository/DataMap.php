@@ -7,8 +7,8 @@ class DataMap {
     private $js;
     private $title;
     private $message;
-    private $get;
-    private $post;
+    public $get;
+    public $post;
 
     public function get($dataType, $key) {
         if($this->isArray($this->$dataType)){
@@ -59,8 +59,8 @@ class DataMap {
     }
     
     public function addVarPOST($varPOST) {
-       $this->post = $this->setVarPOST($varPOST);
-       return true;
+       return $this->post = $this->setVarPOST($varPOST);
+//       return true;
     }
     
     private function constructArray($path, $arrayToAdd, $fileType) {
@@ -107,7 +107,7 @@ class DataMap {
             if (!isset($_POST[$arrayVars[$a]])) {
                 $arrayVarsOUT[$a] = "";
             } else {                   
-                $arrayVarsOUT[$a] = $this->setStrings($arrayVars[$a]);
+                $arrayVarsOUT[$a] = $this->setStrings($_POST[$arrayVars[$a]]);
             }
         }
         return array_combine($arrayVars, $arrayVarsOUT);

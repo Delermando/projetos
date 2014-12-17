@@ -11,57 +11,44 @@ class CardController{
         $this->CardModel = New \Cartao\model\core\CardModel();
         $this->HTMLPage  = New \Cartao\model\htmlManager\HTMLPages($DataMap);
     }
-    
-    public function pageHomeBase() {
-        $this->HTMLPage->setContent('homeBase');
-        return $this->HTMLPage->setPage('htmlDefault');
-    }
-    
-        
-    public  function pageHome() {
-        $this->HTMLPage->setContent('home');
-        return $this->HTMLPage->setPage('htmlDefault');
-    }
-    public  function pageCadastro() {
-        //       $date = $this->dataMap->get('post', 'selectDia')."-".$this->dataMap->get('post', 'selectMes')."-".$this->dataMap->get('post', 'selectAno');   
-//       $arrayToSave['toEmail'] = $this->dataMap->get('post', 'txtEmailDestinatario');
-//       $arrayToSave['toName'] = $this->dataMap->get('post', 'txtNomeDestinatario');
-//       $arrayToSave['fromEmail'] = $this->dataMap->get('post', 'txtEmailRemetente');
-//       $arrayToSave['fromName'] = $this->dataMap->get('post', 'txtNomeDestinatario');
-//       $arrayToSave['message'] = $this->dataMap->get('post', 'txtMensagem');
-//       $arrayToSave['date'] = $date;
-//       
        
+    public function home() {
+        $this->HTMLPage->setContent('home');
+        return $this->HTMLPage->setPage('pageHome');
+    }
+    
+    public  function cadastro() {
         $this->setMessageToSave($this->CardModel->save($this->arrayDadosToSave()));
         $this->HTMLPage->setContent('cadastrar');
-        return $this->HTMLPage->setPage('htmlDefault');      
+        return $this->HTMLPage->setPage('pageSignUp');      
     }
     
     private function setMessageToSave($backOfClass) {
         if(is_int($backOfClass)){
-            $this->HTMLPage->setMessageFeedBack($this->DataMap->get('message', 'registrationSucess'));
+            $this->HTMLPage->setMessageFeedBack($this->DataMap->get('message', 'registrationSucess'), true);
         }else{
-            $this->HTMLPage->setMessageFeedBack($this->DataMap->get('message', 'registratioFailed'));
+            $this->HTMLPage->setMessageFeedBack($this->DataMap->get('message', 'registratioFailed'), false);
         }
     }
     
     private function arrayDadosToSave() {
-        $arrayToSave['toEmail'] = 'delsantos@hotmail.com.br';
-        $arrayToSave['toName'] = 'delermando';
-        $arrayToSave['fromEmail'] = 'd.santos@personare.com.br';
-        $arrayToSave['fromName'] = 'deler';
-        $arrayToSave['message'] = 'teste teste teste';
-        $arrayToSave['date'] =  '24-01-1992';
-        return $arrayToSave;
+       $date = $this->DataMap->get('post', 'selectDia')."-".$this->DataMap->get('post', 'selectMes')."-".$this->DataMap->get('post', 'selectAno');   
+       $arrayToSave['toEmail'] = $this->DataMap->get('post', 'txtEmailDestinatario');
+       $arrayToSave['toName'] = $this->DataMap->get('post', 'txtNomeDestinatario');
+       $arrayToSave['fromEmail'] = $this->DataMap->get('post', 'txtEmailRemetente');
+       $arrayToSave['fromName'] = $this->DataMap->get('post', 'txtNomeRemetente');
+       $arrayToSave['message'] = $this->DataMap->get('post', 'txtMensagem');
+       $arrayToSave['date'] = $date;
+       return $arrayToSave;
     }
 
-    public  function pageEditar() {
+    public  function editar() {
         $this->HTMLPage->setContent('editar');
-        return $this->HTMLPage->setPage('htmlDefault');
+        return $this->HTMLPage->setPage('pageEdit');
     }
     
     public function jsonSelectAllCards(){
-//         echo json_encode($this->CardModel->select());
+         echo json_encode($this->CardModel->select());
     }
             
     public function render() {

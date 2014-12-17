@@ -43,11 +43,11 @@ $arrayPathJSFiles = array(
 );
 
 $arrayTitle = array(
-    'default' => 'Teste',
+    'default' => 'Default',
     'error' => 'Personare - Error',
     'home' => 'Personare - Homepage',
-    'editar' => 'Personare - Editar',
-    'cadastro' => 'Personare - Cadastro'
+    'edit' => 'Personare - Editar',
+    'signUp' => 'Personare - Cadastro'
 );
 
 $arraySystemMessages = array(
@@ -89,3 +89,13 @@ $DataMap->addVarPOST($varPOST);
 
 
 //var_dump($DataMap->get('html', 'footer'));
+//var_dump($DataMap->get('post', 'txtMensagem'));
+//echo '<br/>';
+//echo '<br/>';
+//var_dump($DataMap->post);
+//echo '<br/>';
+//echo '<br/>';
+//var_dump($DataMap->get);
+//echo '<br/>';
+//echo '<br/>';
+//var_dump($_POST['txtMensagem']);
